@@ -1,0 +1,47 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDORDENFABESTADO",
+        "Etiqueta": "Nombre",
+        "EtiqIngles": "Name",
+        "Tipo": "char(2)",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "DESCRIPCION",
+        "Etiqueta": "Descripcion",
+        "EtiqIngles": "Description",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      }
+	  {
+        "Nombre": "COLORAMOSTRAR",
+        "Etiqueta": "Color a mostrar",
+        "EtiqIngles": "Color to show",
+        "Tipo": "INT",
+        "Control": "COL",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 100,
+        "Alto": 0
+      }
+    ],
+    "From": "TBLORDENFABRICACIONESTADO",
+    "Data": "[DATA]"
+  }
+]

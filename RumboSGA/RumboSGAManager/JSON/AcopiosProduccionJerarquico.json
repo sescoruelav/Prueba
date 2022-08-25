@@ -1,0 +1,66 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "fl.IDPEDIDOFAB",
+        "Etiqueta": "Num_PedidoFab",
+        "EtiqIngles": "Order_Number",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "artc.IDARTICULO",
+        "Etiqueta": "Num_Articulo",
+        "EtiqIngles": "Article_Number",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "artc.Referencia",
+        "Etiqueta": "Referencia",
+        "EtiqIngles": "Reference",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "fc.ORDEN",
+        "Etiqueta": "Orden",
+        "EtiqIngles": "Order",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "fl.IDPEDIDOFABLIN",
+        "Etiqueta": "Linea Orden",
+        "EtiqIngles": "Order_Line",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "FL.UDSNECESARIAS",
+        "Etiqueta": "UDSNecesarias",
+        "EtiqIngles": "Necessary_Unities",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "artc.DESCRIPCION",
+        "Etiqueta": "Articulo",
+        "EtiqIngles": "Article",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "coalesce(sum(sal.cantidad),0)",
+        "Etiqueta": "Cantidad_Consumida",
+        "EtiqIngles": "Quantity_Consumed",
+        "EsModificable": false,
+        "EsVisible": true
+      }
+    ],
+    "From": " TBLORDENFABRICACIONLIN Fl left join TBLORDENFABRICACIONCAB Fc on fc.IDPEDIDOFAB = fl.IDPEDIDOFAB left join TBLARTICULOS artc on fl.IDARTICULO = artc.IDARTICULO left join TBLSALIDAS sal on sal.IDPEDIDOFAB=fc.IDPEDIDOFAB and sal.IDPEDIDOFABLIN=fl.IDPEDIDOFABLIN",
+    "Where": "",
+    "Group By": "fl.IDPEDIDOFAB,fc.ORDEN, fl.IDPEDIDOFABLIN ,artc.Referencia, artc.DESCRIPCION,artc.IDARTICULO, FL.UDSNECESARIAS",
+    "Data": "[DATA]"
+  }
+]

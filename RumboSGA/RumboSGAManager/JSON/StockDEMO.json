@@ -1,0 +1,398 @@
+ [
+  {
+    "Scheme": [
+      {
+        "Nombre": "ex.IDENTRADA",
+        "Etiqueta": "ID Entrada",
+        "EtiqIngles": "Entry ID",
+        "TipoColumna": "int",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.IDARTICULO",
+        "Etiqueta": "ID Articulo",
+        "EtiqIngles": "Item ID",
+        "Tipocolumna": "int",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.CANTIDAD",
+        "Etiqueta": "Cantidad",
+        "EtiqIngles": "Quantity",
+        "TipoColumna": "int",
+        "EsModificable": true,
+        "EsVisible": true
+
+      },
+      {
+        "Nombre": "ex.IDUNIDADTIPO",
+        "Etiqueta": "Tipo Unidad",
+        "EtiqIngles": "Unit Type",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.CANTIDADUNIDAD",
+        "Etiqueta": "Cantidad de Unidad",
+        "EtiqIngles": "Unit Quantity",
+        "TipoColumna": "int",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.FECHACADUCIDAD",
+        "Etiqueta": "Fecha de Caducidad",
+        "EtiqIngles": "Date of Expiry",
+        "TipoColumna": "date",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.IDPICKINGESTADO",
+        "Etiqueta": "Estado Picking",
+        "EtiqIngles": "Picking Status",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.IDPALETTIPO",
+        "Etiqueta": "Tipo Palet",
+        "EtiqIngles": "Pallet Type",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.IDHUECO",
+        "Etiqueta": "Hueco",
+        "EtiqIngles": "Cavity",
+        "TipoColumna": "int",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.IDEXISTENCIAESTADO",
+        "Etiqueta": "Estado Existencia",
+        "EtiqIngles": "Stock Status",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.PRIORIDAD",
+        "Etiqueta": "Prioridad",
+        "EtiqIngles": "Priority",
+        "TipoColumna": "int",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.IDEXISTENCIATIPO",
+        "Etiqueta": "Tipo Existencia",
+        "EtiqIngles": "Existence Type",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.PROCESOUBICACION",
+        "Etiqueta": "Proceso Ub",
+        "EtiqIngles": "Ubication Process",
+        "TipoColumna": "int",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.comment",
+        "Etiqueta": "Comentario",
+        "EtiqIngles": "Comment",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.EAN",
+        "Etiqueta": "EAN",
+        "EtiqIngles": "EAN",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.ATRIB1",
+        "Etiqueta": "Calidad",
+        "EtiqIngles": "Quality",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.ATRIB2",
+        "Etiqueta": "Atrib2",
+        "EtiqIngles": "Atrib2",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.ATRIB3",
+        "Etiqueta": "Atrib3",
+        "EtiqIngles": "Atrib3",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.ATRIB4",
+        "Etiqueta": "Atrib4",
+        "EtiqIngles": "Atrib4",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.ATRIB5",
+        "Etiqueta": "Atrib5",
+        "EtiqIngles": "Atrib5",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "a.REFERENCIA",
+        "Etiqueta": "Cod Articulo",
+        "EtiqIngles": "Item Code",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "a.DESCRIPCION",
+        "Etiqueta": "Articulo",
+        "EtiqIngles": "Item",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "a.IDPALETTIPO",
+        "Etiqueta": "paletsart",
+        "EtiqIngles": "Item Pallet",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "a.CANTIDADUNIDAD",
+        "Etiqueta": "Udscjart",
+        "EtiqIngles": "Udscjart",
+        "TipoColumna": "int",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "a.IDUNIDADTIPO",
+        "Etiqueta": "Tipo Ud Art",
+        "EtiqIngles": "Item Unit Type",
+        "TipoColumna": "int",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "a.IDZONAPICKING",
+        "Etiqueta": "Zona Picking",
+        "EtiqIngles": "Picking Zone",
+        "TipoColumna": "int",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "a.IDZONAUBICACION",
+        "Etiqueta": "Zona Ubicacion",
+        "EtiqIngles": "Ubication Zone",
+        "TipoColumna": "int",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "a.IDZONAUBICACION2",
+        "Etiqueta": "Zona Ubicacion 2",
+        "EtiqIngles": "Ubication Zone 2",
+        "TipoColumna": "int",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "a.CANTIDAD",
+        "Etiqueta": "udsart",
+        "EtiqIngles": "udsart",
+        "TipoColumna": "int",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "a.IDARTICULOESTADO",
+        "Etiqueta": "Estado Articulo",
+        "EtiqIngles": "Item Status",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      //{
+      //  "Nombre": "a.IDFORMATO",
+      //  "Etiqueta": "ID Formato",
+      //  "EsModificable": true
+      //},
+      {
+        "Nombre": "en.LOTE",
+        "Etiqueta": "Lote",
+        "EtiqIngles": "Lot",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "en.SSCC",
+        "Etiqueta": "SSCC",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "en.IDENTRADATIPO",
+        "Etiqueta": "Tipo Entrada",
+        "EtiqIngles": "Entry Type",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "en.FECHA",
+        "Etiqueta": "Fecha",
+        "EtiqIngles": "Date",
+        "TipoColumna": "date",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "h.DESCRIPCION",
+        "Etiqueta": "Ubicacion",
+        "EtiqIngles": "Ubication",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "h.idhuecoalmacen",
+        "Etiqueta": "ID Hueco",
+        "EtiqIngles": "Cavity ID",
+        "TipoColumna": "int",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "h.BLOQUE",
+        "Etiqueta": "Bloque",
+        "EtiqIngles": "Block",
+        "TipoColumna": "int",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "h.ACERA",
+        "Etiqueta": "Acera",
+        "EtiqIngles": "Sidewalk",
+        "TipoColumna": "int",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "h.PORTAL",
+        "Etiqueta": "Portal",
+        "EtiqIngles": "Gate",
+        "TipoColumna": "int",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "h.PISO",
+        "Etiqueta": "Piso",
+        "EtiqIngles": "Floor",
+        "TipoColumna": "int",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "HP.DESCRIPCION",
+        "Etiqueta": "HPICKINGCJ",
+        "EtiqIngles": "HPICKINGCJ",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "Hu.DESCRIPCION",
+        "Etiqueta": "HPICKINGUDS",
+        "EtiqIngles": "HPICKINGUDS",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "pc.REFERENCIA",
+        "Etiqueta": "Pedido Prov",
+        "EtiqIngles": "Provider Order",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "en.IDRECEPCION",
+        "Etiqueta": "ID Recepcion",
+        "EtiqIngles": "Reception ID",
+        "TipoColumna": "int",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "pc.IDPEDIDOPRO",
+        "Etiqueta": "ID Pedido Prov",
+        "EtiqIngles": "Provider Order ID",
+        "TipoColumna": "int",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+
+      {
+        "Nombre": "EN.NSERIECLIENTE",
+        "Etiqueta": "N. Serie Cliente",
+        "EtiqIngles": "Customer Serial Number",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "EN.NSERIE",
+        "Etiqueta": "N. Serie",
+        "EtiqIngles": "Serial Number",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "fa.IDFAMILIA",
+        "Etiqueta": "Familia",
+        "EtiqIngles": "Family",
+        "TipoColumna": "string",
+        "EsModificable": false,
+        "EsVisible": true
+      }
+    ],
+    "FROM": "(TBLEXISTENCIAS ex LEFT JOIN TBLARTICULOS a on ex.idarticulo=a.idarticulo) LEFT join TBLHUECOS h on h.idhueco=ex.idhueco LEFT JOIN TBLENTRADAS en on ex.identrada=en.identrada LEFT JOIN TBLHUECOS HP ON A.IDHUECOPICKING=HP.IDHUECO LEFT JOIN TBLHUECOS Hu ON A.IDHUECOPICKINGUDS=Hu.IDHUECO left join tblpedidosprocab pc on en.idpedidopro=pc.idpedidopro LEFT JOIN TBLFAMILIAS fa ON a.FAMILIA=fa.IDFAMILIA",
+    "Data": "[DATA]"
+  }
+  ]

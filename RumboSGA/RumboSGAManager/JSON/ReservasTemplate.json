@@ -1,0 +1,336 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDRESERVA",
+        "Etiqueta": "ID Reserva",
+        "EtiqIngles": "Reservation ID ",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "IDENTRADA",
+        "Etiqueta": "ID Entrada",
+        "EtiqIngles": "",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "IDARTICULO",
+        "Etiqueta": "ID Articulo",
+        "EtiqIngles": "Item ID",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "CANTIDAD",
+        "Etiqueta": "Cantidad",
+        "EtiqIngles": "Quantity",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 1,
+        "Fila": 1,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDHUECOORIGEN",
+        "Etiqueta": "Hueco Origen",
+        "EtiqIngles": "Origin Cavity",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "IDHUECODESTINO",
+        "Etiqueta": "Hueco Destino",
+        "EtiqIngles": "Destiny Cavity",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "IDOPERARIO",
+        "Etiqueta": "Operario",
+        "EtiqIngles": "",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "IDPEDIDOCLI",
+        "Etiqueta": "ID Pedido Cliente",
+        "EtiqIngles": "Customer Order ID",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "FECHA",
+        "Etiqueta": "Fecha",
+        "EtiqIngles": "Date",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "PRIORIDAD",
+        "Etiqueta": "Prioridad",
+        "EtiqIngles": "Priority",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "IDRESERVATIPO",
+        "Etiqueta": "Tipo Reserva",
+        "EtiqIngles": "Reservation Type",
+        "Tipo": "CHAR(2)",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "IDPEDIDOCLILIN",
+        "Etiqueta": "ID Pedido CliLin",
+        "EtiqIngles": "Customer Order Line",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "IDPEDIDOPRO",
+        "Etiqueta": "ID Pedido Prov",
+        "EtiqIngles": "Provider Order ID",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "IDPEDIDOPROLIN",
+        "Etiqueta": "ID Pedido ProLin",
+        "EtiqIngles": "Provider Order Line ID",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "RETRASADO",
+        "Etiqueta": "Retrasado",
+        "EtiqIngles": "Delayed",
+        "Tipo": "CHAR(1)",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "CANTIDADUNIDAD",
+        "Etiqueta": "Cantidad Unidad",
+        "EtiqIngles": "Unit Quantity",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "IDUNIDADTIPO",
+        "Etiqueta": "",
+        "EtiqIngles": "",
+        "Tipo": "CHAR(2)",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "IDRECURSO",
+        "Etiqueta": "ID Recurso",
+        "EtiqIngles": "Resource ID",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "IDPEDIDOFAB",
+        "Etiqueta": "ID Pedido Fab",
+        "EtiqIngles": "",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "IDPEDIDOFABLIN",
+        "Etiqueta": "ID Pedido FabLin",
+        "EtiqIngles": "",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "IDORDENRECOGIDA",
+        "Etiqueta": "ID Orden Recogida",
+        "EtiqIngles": "",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "IDTAREA",
+        "Etiqueta": "ID Tarea",
+        "EtiqIngles": "",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "IDDEVOLCLI",
+        "Etiqueta": "ID Devol Cli",
+        "EtiqIngles": "",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "IDDEVOLCLILIN",
+        "Etiqueta": "ID Devol CliLin",
+        "EtiqIngles": "",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "IDHUECODESTINOSWAP",
+        "Etiqueta": "ID Hueco Destino Swap",
+        "EtiqIngles": "",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "IDORDEN",
+        "Etiqueta": "ID Orden",
+        "EtiqIngles": "Order ID",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "PRECONDICION",
+        "Etiqueta": "Precondicion",
+        "EtiqIngles": "Precondition",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "ZONAINTERMEDIA",
+        "Etiqueta": "Zona Intermedia",
+        "EtiqIngles": "Intermediate Zone",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "ASIGNADO",
+        "Etiqueta": "Asignado",
+        "EtiqIngles": "Assigned",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "HUECOORIGENINTERMEDIO",
+        "Etiqueta": "Hueco Origen Intermedio",
+        "EtiqIngles": "",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "ZONAORIGENINTERMEDIO",
+        "Etiqueta": "Zona Origen Intermedio",
+        "EtiqIngles": "Intermediate Origin Zone",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "IDDEVOLPRO",
+        "Etiqueta": "ID Devolucion Prov",
+        "EtiqIngles": "",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "IDDEVOLPROLIN",
+        "Etiqueta": "ID Devol ProLin",
+        "EtiqIngles": "",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "IDRESERVAESTADO",
+        "Etiqueta": "ID Reserva Estado",
+        "EtiqIngles": "Order Status ID",
+        "Tipo": "CHAR(2)",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "FECHAULTIMAMODIFICACION",
+        "Etiqueta": "Fecha Ultima Modificacion",
+        "EtiqIngles": "Last Modification Date",
+        "Tipo": "DATE",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      },
+      {
+        "Nombre": "SUBTIPORESERVA",
+        "Etiqueta": "Subtipo Reserva",
+        "EtiqIngles": "Order Subtype",
+        "Tipo": "CHAR(2)",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false
+      }
+    ],
+    "From": "TBLRESERVAS",
+    "Data": "[DATA]"
+  }
+]

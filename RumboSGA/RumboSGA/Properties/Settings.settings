@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RumboSGA.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="RumboSGA_ProduccionMotor_WSProduccionMotorService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://172.20.8.91:9080/RumboServices/services/WSProduccionMotor</Value>
+    </Setting>
+    <Setting Name="RumboSGA_SalidaMotor_WSSalidaMotorService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://172.20.8.91:9080/RumboServices/services/WSSalidaMotor</Value>
+    </Setting>
+    <Setting Name="RumboSGA_UbicarMotor_WSUbicarMotorService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://172.20.8.91:9080/RumboServices/services/WSUbicarMotor</Value>
+    </Setting>
+    <Setting Name="RumboSGA_RecepcionMotor_WSRecepcionMotorService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://172.20.8.91:9080/RumboServices/services/WSRecepcionMotor</Value>
+    </Setting>
+    <Setting Name="usuario" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="idioma" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="configuracion" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

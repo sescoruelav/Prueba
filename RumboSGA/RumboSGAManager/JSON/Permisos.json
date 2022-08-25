@@ -1,0 +1,79 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDGRUPO",
+        "Etiqueta": "ID",
+        "EtiqIngles": "ID",
+        "Tipo": "int",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 100,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "RUMGRUPOS",
+          "CampoRelacionado": "IDGRUPO",
+          "CampoMostrado": "DESCGRUPO",
+          "ValorDefecto": "0"
+        }
+      },
+      {
+        "Nombre": "TIPORECURSO",
+        "Etiqueta": "Tipo",
+        "EtiqIngles": "Type",
+        "Tipo": "CHAR(1)",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 0,
+        "Alto": 0
+      },
+      {
+        "Nombre": "RECURSO",
+        "Etiqueta": "Recurso",
+        "EtiqIngles": "Resource",
+        "Tipo": "int",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 2,
+        "Ancho": 0,
+        "Alto": 100
+      },
+      {
+        "Nombre": "PERMISO",
+        "Etiqueta": "Permiso",
+        "EtiqIngles": "Agency ID",
+        "Tipo": "VARCHAR(20)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 3,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "TWHERE",
+        //"Etiqueta": "Operario",
+        "Tipo": "VARCHAR(80)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 4,
+        "Ancho": 100,
+        "Alto": 0
+      }
+    ],
+    "From": "RUMPERMGRUPOS",
+    "Data": "[DATA]"
+  }
+]

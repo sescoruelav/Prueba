@@ -1,0 +1,128 @@
+[
+  {
+    "Scheme": [
+	
+       {
+		"Nombre": "RP.ID",
+        "Etiqueta": "ID",        
+        "Tipo": "int",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 0,
+        "Alto": 0
+      },
+      {
+        "Nombre": "RP.IDGRUPO",
+        "Etiqueta": "Grupo",        
+        "Tipo": "int",
+        "Control": "CMB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 200,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "RUMGRUPOS",
+          "CampoRelacionado": "IDGRUPO",
+          "CampoMostrado": "DESCGRUPO",
+          "ValorDefecto": "0",
+		  "AliasPadre":"RP"
+        }
+      },
+      {
+        "Nombre": "RP.ESTADOINICIO",
+        "Etiqueta": "Estado inicio",
+        "Tipo": "char(2)",
+        "Control": "CMB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 2,
+        "Ancho": 200,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "TBLEXISTENCIASESTADO",
+          "CampoRelacionado": "IDEXISTENCIAESTADO",
+          "CampoMostrado": "DESCRIPCION",
+          "ValorDefecto": "",
+		  "AliasPadre":"RP"
+        }
+      },
+      {
+        "Nombre": "RP.ESTADOFIN",
+        "Etiqueta": "Estado fin",
+        "Tipo": "char(2)",
+        "Control": "CMB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 3,
+        "Ancho": 200,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "TBLEXISTENCIASESTADO",
+          "CampoRelacionado": "IDEXISTENCIAESTADO",
+          "CampoMostrado": "DESCRIPCION",
+          "ValorDefecto": "",
+		  "AliasPadre":"RP"
+        }
+      },
+      {
+        "Nombre": "RP.MENSAJE",
+        "Etiqueta": "Mensaje",        
+        "Tipo": "VARCHAR(80)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 4,
+        "Ancho": 300,
+        "Alto": 0
+      },
+      {
+        "Nombre": "RP.CORRECTO",
+        "Etiqueta": "Correcto",        
+        "Tipo": "CHAR(1)",
+        "Control": "CMB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 5,
+        "Ancho": 100,
+        "Alto": 0,
+		"EsFK": true,
+		"CmbObject": {
+          "TablaRelacionada": "FNTABLASINO()",
+          "CampoRelacionado": "ID",
+          "CampoMostrado": "DESCRIPCION",
+          "ValorDefecto": "",
+		  "AliasPadre":"RP"
+        }
+      },
+      {
+        "Nombre": "RP.ACCION",
+        "Etiqueta": "Acción",
+        "Tipo": "VARCHAR(20)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 6,
+        "Ancho": 300,
+        "Alto": 0
+      }
+    ],
+	"TablaPrincipal":"RUMPERMISOSPORESTADO",
+    "AliasPrincipal":"RP",  
+    "From": "RUMPERMISOSPORESTADO RP",
+	"Where":"",
+    "Data": "[DATA]"
+  }
+]

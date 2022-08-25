@@ -1,0 +1,205 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDRECEPCION",
+        //"Etiqueta": "Pedido",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "ALBARANTRANSPORTISTA",
+        //"etiqueta": "Referencia",
+        "Tipo": "VARCHAR(20)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDRECEPCIONESTADO",
+        "Tipo": "INT",
+        "Control": "CMB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 0,
+        "Ancho": 200,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "TBLRECEPCIONESTADO",
+          "CampoRelacionado": "IDRECEPCIONESTADO",
+          "CampoMostrado": "IDRECEPCIONESTADO",
+          "ValorDefecto": "0"
+        }
+      },
+      {
+        "Nombre": "IDPROVEEDOR",
+        //"Etiqueta": "Pedido",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDAGENCIA",
+        //"Etiqueta": "Pedido",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "FECHACREACION",
+        //"Etiqueta": "Fecha de Creacion",
+        "Tipo": "DATETIME",
+        "Control": "DATE",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 2,
+        "Ancho": 250,
+        "Alto": 0
+      },
+      {
+        "Nombre": "FECHARECEPCION",
+        //"Etiqueta": "Fecha de Creacion",
+        "Tipo": "DATETIME",
+        "Control": "DATE",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 2,
+        "Ancho": 250,
+        "Alto": 0
+      },
+      {
+        "Nombre": "MUELLE",
+        //"Etiqueta": "Pedido",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "CHOFER",
+        //"Etiqueta": "Pedido",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "MATRICULACAMION",
+        //"Etiqueta": "Pedido",
+        "Tipo": "VARCHAR(20)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "OBSERVACIONES",
+        //"Etiqueta": "Pedido",
+        "Tipo": "VARCHAR(30)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDPEDIDOPRO",
+        //"Etiqueta": "Pedido",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "recepcion",
+        //"Etiqueta": "Pedido",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IMPORTACIONESTADO",
+        //"Etiqueta": "Pedido",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDPROPIETARIO",
+        //"Etiqueta": "Pedido",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "REMOLQUE",
+        //"Etiqueta": "Pedido",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      }
+    ],
+    "Data": "[DATA]"
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "TIPOANCHOA",
+        "Etiqueta": "Ancho A",
+        "EtiqIngles": "Width A",
+        "Tipo": "CHAR(2)",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "TIPOANCHOB",
+        "Etiqueta": "Ancho B",
+        "EtiqIngles": "Width B",
+        "Tipo": "CHAR(2)",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 1,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "TIPOANCHOC",
+        "Etiqueta": "Ancho C",
+        "EtiqIngles": "Width C",
+        "Tipo": "CHAR(2)",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "TIPOANCHOD",
+        "Etiqueta": "Width D",
+        "Tipo": "CHAR(2)",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 1,
+        "Fila": 1,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "TIPOANCHOE",
+        "Etiqueta": "Ancho E",
+        "EtiqIngles": "width E",
+        "Tipo": "CHAR(2)",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 2,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "TIPOANCHOF",
+        "Etiqueta": "Ancho F",
+        "EtiqIngles": "Width F",
+        "Tipo": "CHAR(2)",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 1,
+        "Fila": 2,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "TIPOBLOQUE",
+        "Etiqueta": "Tipo Bloque",
+        "EtiqIngles": "Block Type",
+        "Tipo": "CHAR(2)",
+        "Control": "CMB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 3,
+        "Ancho": 50,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "TBLTIPOBLOQUE",
+          "CampoRelacionado": "TIPOBLOQUE",
+          "CampoMostrado": "DESCRIPCION",
+          "ValorDefecto": ""
+        }
+      }
+    ],
+    "From": "TBLCOMBIPALETS",
+    "Data": "[DATA]"
+  }
+]

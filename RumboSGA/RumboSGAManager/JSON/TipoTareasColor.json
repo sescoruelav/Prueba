@@ -1,0 +1,22 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "TIPOTAREA",
+        "Etiqueta": "Tipo_Tarea",
+        "EtiqIngles": "Task Type",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "DESCRIPCION",
+        "Etiqueta": "Descripcion",
+        "EtiqIngles": "Description",
+        "EsModificable": true,
+        "EsVisible": true
+      }
+    ],
+    "From": "TBLTAREASTIPO",
+    "Data": "[DATA]"
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDUSUARIO",
+        "Etiqueta": "Usuario",
+        "EtiqIngles": "User",
+        "Tipo": "INT",
+        "Control": "CMB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 50,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "RUMUSUARIOS",
+          "CampoRelacionado": "IDUSUARIO",
+          "CampoMostrado": "IDUSUARIO",
+          "ValorDefecto": "0"
+        }
+      },
+      {
+        "Nombre": "IDGRUPO",
+        "Etiqueta": "Grupo",
+        "EtiqIngles": "Group",
+        "Tipo": "INT",
+        "Control": "CMB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 200,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "RUMGRUPOS",
+          "CampoRelacionado": "IDGRUPO",
+          "CampoMostrado": "IDGRUPO",
+          "ValorDefecto": "0"
+        }
+      }
+    ],
+    "From": "RUMUSUGRUPO",
+    "Data": "[DATA]"
+  }
+]

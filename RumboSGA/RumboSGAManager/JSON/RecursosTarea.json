@@ -1,0 +1,79 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDRECURSO",
+        "Etiqueta": "Recurso",
+        "EtiqIngles": "Resource",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "PRIORIDAD",
+        "Etiqueta": "Prioridad",
+        "EtiqIngles": "Priority",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDTAREATIPO",
+        "Etiqueta": "Tarea Tipo",
+        "EtiqIngles": "Type Task",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 200,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "TBLTAREASTIPO",
+          "CampoRelacionado": "IDTAREATIPO",
+          "CampoMostrado": "IDTAREATIPO",
+          "ValorDefecto": "0"
+        }
+      },
+      {
+        "Nombre": "DURSEGUNDOS",
+        "Etiqueta": "Duracion Segundos",
+        "EtiqIngles": "Seconds Duration",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "ACTIVA",
+        "Etiqueta": "Activa",
+        "EtiqIngles": "Active",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 50,
+        "Alto": 0
+      }
+    ],
+    "From": "TBLRECURSOSTAREA",
+    "Data": "[DATA]"
+  }
+]

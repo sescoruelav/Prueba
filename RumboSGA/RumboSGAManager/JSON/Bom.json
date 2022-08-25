@@ -1,0 +1,97 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDARTICULOPADRE",
+        "Etiqueta": "Articulo Padre",
+        "EtiqIngles": "Parent ID",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDARTICULOHIJO",
+        "Etiqueta": "Articulo Hijo",
+        "EtiqIngles": "Child ID",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "UNIDADESBOM",
+        "Etiqueta": "Unidades",
+        "EtiqIngles": "Units",
+        "Tipo": "REAL",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 2,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "MINIMOREAB",
+        "Etiqueta": "Minimo Reab",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 3,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "MAXIMOREAB",
+        "Etiqueta": "Maximo Reab",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 4,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "PORTAL",
+        "Etiqueta": "Portal",
+        "EtiqIngles": "Portal",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 5,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "NIVEL",
+        "Etiqueta": "Nivel",
+        "EtiqIngles": "Level",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 6,
+        "Ancho": 50,
+        "Alto": 0
+      }
+    ],
+    "From": "TBLBOM",
+    "Data": "[DATA]"
+  }
+]

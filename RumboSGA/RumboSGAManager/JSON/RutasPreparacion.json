@@ -1,0 +1,155 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDRUTA",
+        "Etiqueta": "ID",
+        "EtiqIngles": "ID",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "DIA",
+        "Etiqueta": "Dia",
+        "EtiqIngles": "Day",
+        "Tipo": "DATETIME",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 0,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "HORA",
+        "Etiqueta": "Hora",
+        "EtiqIngles": "Hour",
+        "Tipo": "DATETIME",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 120,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDRUTAESTADO",
+        "Etiqueta": "Estado",
+        "EtiqIngles": "Status",
+        "Tipo": "CHAR(2)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 1,
+        "Ancho": 100,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "TBLRUTASESTADO",
+          "CampoRelacionado": "IDRUTAESTADO",
+          "CampoMostrado": "DESCRIPCION",
+          "ValorDefecto": ""
+        }
+      },
+      {
+        "Nombre": "TEMP_CARGA_1",
+        //"Etiqueta": "Temp Carga 1",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 2,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "TEMP_CARGA_2",
+        //"Etiqueta": "Temp Carga 2",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 2,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "TEMP_CARGA_3",
+        //"Etiqueta": "Temp Carga 3",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 3,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "PRECINTO",
+        "Etiqueta": "Precinto",
+        "EtiqIngles": "Seal",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 3,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "LLENO",
+        "Etiqueta": "Lleno",
+        "EtiqIngles": "Full",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 4,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "MATRICULA",
+        "Etiqueta": "Matricula",
+        "EtiqIngles": "Enrollment",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 4,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "REMOLQUE",
+        "Etiqueta": "Remolque",
+        "EtiqIngles": "Trailer",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 5,
+        "Ancho": 100,
+        "Alto": 0
+      }
+    ],
+    "From": "TBLRUTASPREPARACION",
+    "Data": "[DATA]"
+  }
+]

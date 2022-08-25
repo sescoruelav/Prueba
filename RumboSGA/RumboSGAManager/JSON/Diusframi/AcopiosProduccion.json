@@ -1,0 +1,159 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "fc.IDPEDIDOFAB",
+        "Etiqueta": "Num_PedidoFab",
+        "EtiqIngles": "Order_Number",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "fc.ORDEN",
+        "Etiqueta": "Orden",
+        "EtiqIngles": "Order",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "FECHAPREVFAB",
+        "Etiqueta": "FechaPrevFab",
+        "EtiqIngles": "Planned Fabrication Date",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+
+      {
+        "Nombre": "artf.referencia",
+        "Etiqueta": "Referencia",
+        "EtiqIngles": "Reference",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "artf.DESCRIPCION",
+        "Etiqueta": "Articulo_Final",
+        "EtiqIngles": "Final_Article",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "fc.UDSPREVISTASFAB",
+        "Etiqueta": "Previstas_Fabricacion",
+        "EtiqIngles": "Fabrication_Planned",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "coalesce(sum(en.cantidad),0)",
+        "Etiqueta": "Cantidad_Fabricado",
+        "EtiqIngles": "Manufactured_Quantity",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "maq.DESCRIPCION",
+        "Etiqueta": "Maquina",
+        "EtiqIngles": "Machine",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "maq.IDMAQUINAESTADO",
+        "Etiqueta": "Estado_Maquina",
+        "EtiqIngles": "Machine_State",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "FECHAREALFAB",
+        "Etiqueta": "FechaRealFab",
+        "EtiqIngles": "Real Fabrication Date",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "IDORDENFABESTADO",
+        "Etiqueta": "Estado_Fabricacion",
+        "EtiqIngles": "Fabrication State",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "fc.FECHACREACION",
+        "Etiqueta": "Fecha_Creacion",
+        "EtiqIngles": "Creation Date",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "TIPOORDEN",
+        "Etiqueta": "Tipo_Orden",
+        "EtiqIngles": "Order Type",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "TIPOPALET",
+        "Etiqueta": "Tipo_Palet",
+        "EtiqIngles": "Palet Type",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "observaciones",
+        "Etiqueta": "Observaciones",
+        "EtiqIngles": "Observations",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "TIEMPODEDICADO",
+        "Etiqueta": "Tiempo_Dedicado",
+        "EtiqIngles": "Dedicated Time",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "FECHAEXPEDICION",
+        "Etiqueta": "Fecha_Expedicion",
+        "EtiqIngles": "Expedition Date",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "CONSUMOAUTOMATICO",
+        "Etiqueta": "Consumo_Automatico",
+        "EtiqIngles": "Automatic Consume",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "TIEMPOESTIMADO",
+        "Etiqueta": "Tiempo_Estimado",
+        "EtiqIngles": "Estimated Time",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "TIEMPOREAL",
+        "Etiqueta": "Tiempo_Real",
+        "EtiqIngles": "Real Time",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "RUTAIMAGEN",
+        "Etiqueta": "Ruta_Imagen",
+        "EtiqIngles": "Image Route",
+        "EsModificable": false,
+        "EsVisible": true
+      }
+    ],
+    "From": "(TBLORDENFABRICACIONCAB FC left join dbo.TBLARTICULOS artF on fc.IDARTICULO=artf.IDARTICULO) left join dbo.TBLENTRADAS en on en.IDPEDIDOFAB=fc.IDPEDIDOFAB left join dbo.TBLMAQUINAS maq on fc.IDMAQUINA=maq.IDMAQUINA",
+    "Where": "",
+    "Group By": "fc.IDPEDIDOFAB,fc.[ORDEN],fc.[FECHACREACION],fc.[UDSPREVISTASFAB],[FECHAPREVFAB],[FECHAREALFAB],[IDORDENFABESTADO],[TIPOORDEN],[TIPOPALET],[observaciones],[TIEMPODEDICADO],[FECHAEXPEDICION],[CONSUMOAUTOMATICO],[TIEMPOESTIMADO],[TIEMPOREAL],[RUTAIMAGEN],artf.referencia, artf.DESCRIPCION, maq.DESCRIPCION, maq.IDMAQUINAESTADO",
+    "Order By": "FECHAPREVFAB,ORDEN",
+    "Data": "[DATA]"
+  }
+]

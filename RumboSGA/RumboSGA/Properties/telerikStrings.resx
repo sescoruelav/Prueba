@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AcabaConValue1" xml:space="preserve">
+    <value>acaba en [Valor1]</value>
+  </data>
+  <data name="AcabaEn" xml:space="preserve">
+    <value>Acaba en</value>
+  </data>
+  <data name="Agregar" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="AgruparPorEstaCoulmna" xml:space="preserve">
+    <value>Agrupar por esta columna</value>
+  </data>
+  <data name="AlineamientoTexto" xml:space="preserve">
+    <value>Alineamiento de texto</value>
+  </data>
+  <data name="AlineamientoTextoFila" xml:space="preserve">
+    <value>Alineamiento de texto de fila</value>
+  </data>
+  <data name="And" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="AndMayusculas" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="Aplicar" xml:space="preserve">
+    <value>Aplicar</value>
+  </data>
+  <data name="AplicarFormatoFilaEntera" xml:space="preserve">
+    <value>Aplicar este formato a la fila entera</value>
+  </data>
+  <data name="AplicarFormatoSiFilaSeleccionada" xml:space="preserve">
+    <value>Aplicar este formato si la fila está seleccionada</value>
+  </data>
+  <data name="Ayer" xml:space="preserve">
+    <value>Ayer</value>
+  </data>
+  <data name="AñadirRegla" xml:space="preserve">
+    <value>Añadir regla nueva</value>
+  </data>
+  <data name="BorrarFila" xml:space="preserve">
+    <value>Borrar Fila</value>
+  </data>
+  <data name="Buscar" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="CabeceraAgrupaciones" xml:space="preserve">
+    <value>Agrupar por:</value>
+  </data>
+  <data name="Campos" xml:space="preserve">
+    <value>Campos</value>
+  </data>
+  <data name="Cancelar" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="ClickAñadirColumna" xml:space="preserve">
+    <value>Click aquí para añadir fila</value>
+  </data>
+  <data name="ColorFondoCelda" xml:space="preserve">
+    <value>Color fondo de celda</value>
+  </data>
+  <data name="ColorFondoFila" xml:space="preserve">
+    <value>Color fondo de fila</value>
+  </data>
+  <data name="ColorTextoCelda" xml:space="preserve">
+    <value>Color de texto de celda</value>
+  </data>
+  <data name="ColorTextoFila" xml:space="preserve">
+    <value>Color de texto de fila</value>
+  </data>
+  <data name="Como" xml:space="preserve">
+    <value>Cómo</value>
+  </data>
+  <data name="Condicion" xml:space="preserve">
+    <value>Condición</value>
+  </data>
+  <data name="Constantes" xml:space="preserve">
+    <value>Constantes</value>
+  </data>
+  <data name="ConstructorExpresiones" xml:space="preserve">
+    <value>Constructor de Expresiones</value>
+  </data>
+  <data name="ContenidoEn" xml:space="preserve">
+    <value>ContenidoEn</value>
+  </data>
+  <data name="Contiene" xml:space="preserve">
+    <value>Contiene</value>
+  </data>
+  <data name="ContieneValue1" xml:space="preserve">
+    <value>contiene [Valor1]</value>
+  </data>
+  <data name="Copiar" xml:space="preserve">
+    <value>Copiar</value>
+  </data>
+  <data name="Cortar" xml:space="preserve">
+    <value>Cortar</value>
+  </data>
+  <data name="DesagruparEstacolumna" xml:space="preserve">
+    <value>Desagrupar esta columna</value>
+  </data>
+  <data name="Descripcion" xml:space="preserve">
+    <value>Descripcion</value>
+  </data>
+  <data name="DescripcionCaseSensitive" xml:space="preserve">
+    <value>Determina si las comparaciones de texto tendrán en cuenta las mayúsculas</value>
+  </data>
+  <data name="DescripcionCellBackColor" xml:space="preserve">
+    <value>Introduce el color de fondo para la celda</value>
+  </data>
+  <data name="DescripcionCellForeColor" xml:space="preserve">
+    <value>Introduce el color de letra para la celda</value>
+  </data>
+  <data name="DescripcionEnabled" xml:space="preserve">
+    <value>Determina si la condición está habilitada(puede ser evaluada y aplicada)</value>
+  </data>
+  <data name="DescripcionRowBackColor" xml:space="preserve">
+    <value>Introduce el color de fondo para la fila entera</value>
+  </data>
+  <data name="DescripcionRowForeColor" xml:space="preserve">
+    <value>Introduce el color de texto para la fila entera</value>
+  </data>
+  <data name="DescripcionRowTextAlignment" xml:space="preserve">
+    <value>Introduce el alineamiento para el texto de las celdas cuando AplicarAFila es verdadero</value>
+  </data>
+  <data name="DescripcionTextAlignment" xml:space="preserve">
+    <value>Introduce el alineamiento para el texto de las celdas</value>
+  </data>
+  <data name="DesfijarColumna" xml:space="preserve">
+    <value>Desfijar Columna</value>
+  </data>
+  <data name="DesfijarFila" xml:space="preserve">
+    <value>Desfijar Fila</value>
+  </data>
+  <data name="Dividir" xml:space="preserve">
+    <value>Dividir</value>
+  </data>
+  <data name="Editar" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="EditorExpresiones" xml:space="preserve">
+    <value>Editor de Expresiones</value>
+  </data>
+  <data name="EmpiezaConValue1" xml:space="preserve">
+    <value>Empieza con [Valor1]</value>
+  </data>
+  <data name="EmpiezaEn" xml:space="preserve">
+    <value>Empieza con</value>
+  </data>
+  <data name="EmpiezaEn2" xml:space="preserve">
+    <value>EmpiezaCon</value>
+  </data>
+  <data name="EnseñaFilasQue" xml:space="preserve">
+    <value>Muestra filas donde:</value>
+  </data>
+  <data name="Entre" xml:space="preserve">
+    <value>Entre</value>
+  </data>
+  <data name="EntreValue1Value2" xml:space="preserve">
+    <value>está entre [Valor1] y  [Valor1]</value>
+  </data>
+  <data name="ErrorFiltro" xml:space="preserve">
+    <value>Error de Filtro</value>
+  </data>
+  <data name="EsNulo" xml:space="preserve">
+    <value>Es nulo</value>
+  </data>
+  <data name="EstableceExpresionValida" xml:space="preserve">
+    <value>Por favor introduce una expresión válida</value>
+  </data>
+  <data name="EstableceValoresValidos" xml:space="preserve">
+    <value>Por favor introduce un valor válido para la celda</value>
+  </data>
+  <data name="EstableceValorValido" xml:space="preserve">
+    <value>Por favor introduce valores válidos para la celda</value>
+  </data>
+  <data name="EstadoFijado" xml:space="preserve">
+    <value>Estado Fijado</value>
+  </data>
+  <data name="EstaVacio" xml:space="preserve">
+    <value>Está Vacio</value>
+  </data>
+  <data name="Expresion" xml:space="preserve">
+    <value>Expresión</value>
+  </data>
+  <data name="Falso" xml:space="preserve">
+    <value>Falso</value>
+  </data>
+  <data name="FijarAbajo" xml:space="preserve">
+    <value>Fijar abajo</value>
+  </data>
+  <data name="FijarArriba" xml:space="preserve">
+    <value>Fijar arriba</value>
+  </data>
+  <data name="FijarDerecha" xml:space="preserve">
+    <value>Fijar a la derecha</value>
+  </data>
+  <data name="FijarIzquierda" xml:space="preserve">
+    <value>Fijar a la izquierda</value>
+  </data>
+  <data name="FilaBusquedaBuscarDesdePosActual" xml:space="preserve">
+    <value>BuscarDesdePosicionActual</value>
+  </data>
+  <data name="FilaBusquedaCasoEncontrado" xml:space="preserve">
+    <value>CasoEncontrado</value>
+  </data>
+  <data name="FilaBusquedaElegircolumna" xml:space="preserve">
+    <value>FilaBusquedaElegirColumnas</value>
+  </data>
+  <data name="FilaBusquedaPlantillaHija" xml:space="preserve">
+    <value>SearchRowMenuItemChildTemplates</value>
+  </data>
+  <data name="FilaBusquedaPlantillaMaestra" xml:space="preserve">
+    <value>SearchRowMenuItemMasterTemplate</value>
+  </data>
+  <data name="FilaBusquedaResultadosEtiqueta" xml:space="preserve">
+    <value>SearchRowResultsOfLabel</value>
+  </data>
+  <data name="FilaBusquedaTextBoxTextoNulo" xml:space="preserve">
+    <value>SearchRowTextBoxNullText</value>
+  </data>
+  <data name="FilaBusquedaTodasColumnas" xml:space="preserve">
+    <value>SearchRowMenuItemAllColumns</value>
+  </data>
+  <data name="FiltrarPorFechas" xml:space="preserve">
+    <value>Filtrar por fecha especifica:</value>
+  </data>
+  <data name="FiltroCompuestoNoValido" xml:space="preserve">
+    <value>El filtro compuesto no es válido</value>
+  </data>
+  <data name="FiltrosDisponibles" xml:space="preserve">
+    <value>Filtros Disponibles</value>
+  </data>
+  <data name="FormatearSoloCeldas" xml:space="preserve">
+    <value>Aplicar formato a celdas con</value>
+  </data>
+  <data name="Formato" xml:space="preserve">
+    <value>Formato</value>
+  </data>
+  <data name="FormatoCondicional" xml:space="preserve">
+    <value>Formato Condicional</value>
+  </data>
+  <data name="Funciones" xml:space="preserve">
+    <value>Funciones</value>
+  </data>
+  <data name="Habilitado" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="Hoy" xml:space="preserve">
+    <value>Hoy</value>
+  </data>
+  <data name="Igual" xml:space="preserve">
+    <value>Igual</value>
+  </data>
+  <data name="IgualValue1" xml:space="preserve">
+    <value>igual que [Valor1]</value>
+  </data>
+  <data name="Item" xml:space="preserve">
+    <value>Objeto</value>
+  </data>
+  <data name="LimpiarFiltro" xml:space="preserve">
+    <value>Limpiar Filtro</value>
+  </data>
+  <data name="LimpiarOrdenacion" xml:space="preserve">
+    <value>Limpiar Ordenación</value>
+  </data>
+  <data name="LimpiarValor" xml:space="preserve">
+    <value>Limpiar Valor</value>
+  </data>
+  <data name="Logical" xml:space="preserve">
+    <value>Logical</value>
+  </data>
+  <data name="LogicalAND" xml:space="preserve">
+    <value>Logical \"AND\""</value>
+  </data>
+  <data name="LogicalNOT" xml:space="preserve">
+    <value>Logical \"NOT\""</value>
+  </data>
+  <data name="LogicalOR" xml:space="preserve">
+    <value>Logical \"OR\""</value>
+  </data>
+  <data name="ManagerReglasFormateo" xml:space="preserve">
+    <value>Gestor de Reglas de Formato Condicional</value>
+  </data>
+  <data name="Mas" xml:space="preserve">
+    <value>Más</value>
+  </data>
+  <data name="Math" xml:space="preserve">
+    <value>Math</value>
+  </data>
+  <data name="Mayor" xml:space="preserve">
+    <value>Mayor</value>
+  </data>
+  <data name="MayorIgual" xml:space="preserve">
+    <value>Mayor o Igual que</value>
+  </data>
+  <data name="MayorIgualValue1" xml:space="preserve">
+    <value>es mayor o igual que [Valor1]</value>
+  </data>
+  <data name="MayorOIgual" xml:space="preserve">
+    <value>Mayor o Igual</value>
+  </data>
+  <data name="MayorQue" xml:space="preserve">
+    <value>Mayor que</value>
+  </data>
+  <data name="MayorQueValue1" xml:space="preserve">
+    <value>es mayor que [Valor1]</value>
+  </data>
+  <data name="MejorAjuste" xml:space="preserve">
+    <value>Mejor Ajuste</value>
+  </data>
+  <data name="Menor" xml:space="preserve">
+    <value>Menor</value>
+  </data>
+  <data name="MenorIgual" xml:space="preserve">
+    <value>Menor o igual que</value>
+  </data>
+  <data name="MenorIgualValue1" xml:space="preserve">
+    <value>es menor o igual que [Valor1]</value>
+  </data>
+  <data name="MenorOIgual" xml:space="preserve">
+    <value>Menor o Igual</value>
+  </data>
+  <data name="MenorQue" xml:space="preserve">
+    <value>Menor que</value>
+  </data>
+  <data name="MenorQueValue1" xml:space="preserve">
+    <value>es menor que [Valor1]</value>
+  </data>
+  <data name="Menos" xml:space="preserve">
+    <value>Menos</value>
+  </data>
+  <data name="MensajeColumnChooser" xml:space="preserve">
+    <value>Arrastra la cabecera de una columna aquí \n para quitarla de la vista actual</value>
+  </data>
+  <data name="MensajePanelAgrupacion" xml:space="preserve">
+    <value>Arrastra una columna para agrupar por ella</value>
+  </data>
+  <data name="MiDescriptorFuente" xml:space="preserve">
+    <value>Mi Descriptor de Fuente</value>
+  </data>
+  <data name="MiFuenteCelda" xml:space="preserve">
+    <value>Mi Fuente de Celda</value>
+  </data>
+  <data name="Modulo" xml:space="preserve">
+    <value>Modulo</value>
+  </data>
+  <data name="Multiplicar" xml:space="preserve">
+    <value>Multiplicar</value>
+  </data>
+  <data name="NoComo" xml:space="preserve">
+    <value>NoComo</value>
+  </data>
+  <data name="NoContenidoEn" xml:space="preserve">
+    <value>NoContenidoEn</value>
+  </data>
+  <data name="NoContiene" xml:space="preserve">
+    <value>No contiene</value>
+  </data>
+  <data name="NoContiene2" xml:space="preserve">
+    <value>NoContiene</value>
+  </data>
+  <data name="NoContieneValue1" xml:space="preserve">
+    <value>no contiene [Valor1]</value>
+  </data>
+  <data name="NoEntre" xml:space="preserve">
+    <value>No entre</value>
+  </data>
+  <data name="NoEntreValue1Value2" xml:space="preserve">
+    <value>no está entre [Valor1] y [Valor1]</value>
+  </data>
+  <data name="NoIgual" xml:space="preserve">
+    <value>No igual a</value>
+  </data>
+  <data name="NoIgual2" xml:space="preserve">
+    <value>NoIgual</value>
+  </data>
+  <data name="NoIgualValue1" xml:space="preserve">
+    <value>is not equal to [Value1]</value>
+  </data>
+  <data name="NombreRegla" xml:space="preserve">
+    <value>Nombre Regla</value>
+  </data>
+  <data name="NoNulo" xml:space="preserve">
+    <value>No es nulo</value>
+  </data>
+  <data name="NoNulo2" xml:space="preserve">
+    <value>NoNulo</value>
+  </data>
+  <data name="NoNulo3" xml:space="preserve">
+    <value>No Nulo</value>
+  </data>
+  <data name="Not" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="NotMayusculas" xml:space="preserve">
+    <value>NO</value>
+  </data>
+  <data name="NoVacio" xml:space="preserve">
+    <value>No está vacio</value>
+  </data>
+  <data name="NoVacio2" xml:space="preserve">
+    <value>NoVacio</value>
+  </data>
+  <data name="Nulo" xml:space="preserve">
+    <value>Nulo</value>
+  </data>
+  <data name="OcultarColumna" xml:space="preserve">
+    <value>Ocultar Columna</value>
+  </data>
+  <data name="OcultarGrupo" xml:space="preserve">
+    <value>Ocultar Grupo</value>
+  </data>
+  <data name="Operadores" xml:space="preserve">
+    <value>Operadores</value>
+  </data>
+  <data name="Or" xml:space="preserve">
+    <value>O</value>
+  </data>
+  <data name="OrdenarAscendente" xml:space="preserve">
+    <value>Ordenar Ascendente</value>
+  </data>
+  <data name="OrdenarColumnasAlfabeticamente" xml:space="preserve">
+    <value>Ordenar columnas alfabéticamente</value>
+  </data>
+  <data name="OrdenarDescendente" xml:space="preserve">
+    <value>Ordenar Descendente</value>
+  </data>
+  <data name="OrMayusculas" xml:space="preserve">
+    <value>OR</value>
+  </data>
+  <data name="Otro" xml:space="preserve">
+    <value>Otro</value>
+  </data>
+  <data name="PanelPaginacionEtiqueta" xml:space="preserve">
+    <value>Pagina</value>
+  </data>
+  <data name="PanelPaginacionOfPagesEtiqueta" xml:space="preserve">
+    <value>de</value>
+  </data>
+  <data name="ParametrosInvalidos" xml:space="preserve">
+    <value>Parametros invalidos</value>
+  </data>
+  <data name="Pegar" xml:space="preserve">
+    <value>Pegar</value>
+  </data>
+  <data name="Personalizado" xml:space="preserve">
+    <value>Personalizado</value>
+  </data>
+  <data name="PrevisualizarResultado" xml:space="preserve">
+    <value>Previsualizar resultado</value>
+  </data>
+  <data name="PropiedadesRegla" xml:space="preserve">
+    <value>Propiedades de Regla</value>
+  </data>
+  <data name="Quitar" xml:space="preserve">
+    <value>Quitar</value>
+  </data>
+  <data name="ReglaAplicaA" xml:space="preserve">
+    <value>Regla aplica a</value>
+  </data>
+  <data name="Rules" xml:space="preserve">
+    <value>Reglas</value>
+  </data>
+  <data name="SeleccionaUno" xml:space="preserve">
+    <value>[Selecciona Uno]</value>
+  </data>
+  <data name="SelectorColumnas" xml:space="preserve">
+    <value>Selector de Columnas</value>
+  </data>
+  <data name="SelecValorValido" xml:space="preserve">
+    <value>Por favor selecciona un valor de celda válido</value>
+  </data>
+  <data name="SensibleMayusculas" xml:space="preserve">
+    <value>SensibleMayusculas</value>
+  </data>
+  <data name="SinDatosQueMostrar" xml:space="preserve">
+    <value>Sin datos que mostrar</value>
+  </data>
+  <data name="SinFiltro" xml:space="preserve">
+    <value>Sin filtro</value>
+  </data>
+  <data name="Texto" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="Todos" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="TodosResultadosBusqueda" xml:space="preserve">
+    <value>Todos los resultados de busqueda</value>
+  </data>
+  <data name="Ultimos7Dias" xml:space="preserve">
+    <value>En los últimos 7 días</value>
+  </data>
+  <data name="Vacio" xml:space="preserve">
+    <value>Vacio</value>
+  </data>
+  <data name="Valor1" xml:space="preserve">
+    <value>Valor 1</value>
+  </data>
+  <data name="Valor2" xml:space="preserve">
+    <value>Valor 2</value>
+  </data>
+  <data name="ValorCelda" xml:space="preserve">
+    <value>Valor de celda</value>
+  </data>
+  <data name="Verdadero" xml:space="preserve">
+    <value>Verdadero</value>
+  </data>
+</root>

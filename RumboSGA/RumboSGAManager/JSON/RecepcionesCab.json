@@ -1,0 +1,44 @@
+//comentario
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDRECEPCION",
+        "Etiqueta": "Recepcion_Numero",
+        "EtiqIngles": "Reception_Num",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "IDPEDIDOPRO",
+        "Etiqueta": "Pedido_Numero",
+        "EtiqIngles": "Order_Num",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "CHOFER",
+        "Etiqueta": "Chofer",
+        "EtiqIngles": "Driver",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "MATRICULACAMION",
+        "Etiqueta": "Matricula_Camion",
+        "EtiqIngles": "Truck_Enrollment",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ALBARANTRANSPORTISTA",
+        "Etiqueta": "Albaran_Transportista",
+        "EtiqIngles": "Delivery Note Transporter",
+        "EsModificable": false,
+        "EsVisible": true
+      }
+    ],
+    "From": "TBLRECEPCIONESCAB",
+    "Data": "[DATA]"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "Recepcion": "REC-201105_203601-22/04/2022",
+    "Albaran Transportista": "1",
+    "Estado": "PE",
+    "Codigo Proveedor": "ALI_2",
+    "Nom. Proveedor": "Industrias Alimentarias del sur",
+    "Muelle": "WMENTRADAS1    ",
+    "F.Creacion": "2022-04-22T10:30:47.107",
+    "F.Recepcion": "2022-04-22T10:30:25",
+    "Obs": "",
+    "Chofer": "",
+    "Matricula": "999999",
+    "Codigo Agencia": "0",
+    "Transportista": "NINGUNA",
+    "Referencia Pedido": null,
+    "Serie": null,
+    "ID": 91
+  }
+]
+
+[
+  {
+    "ID": "91",
+    "ID Pedido": "2",
+    "ID Pedido Pro Lin": "10",
+    "Codigo Proveedor": "",
+    "Atrib1": "",
+    "Pedido": "201105_203601",
+    "Serie": "PC",
+    "ID Articulo": "162",
+    "Codigo Articulo": "ALI_01",
+    "Articulo": "Harina de Trigo Sacos 15Kg",
+    "Cant Pedido": "30",
+    "Cant Recepcion": "6",
+    "Ent Recepcion": "0"
+  },
+  {
+    "ID": "91",
+    "ID Pedido": "2",
+    "ID Pedido Pro Lin": "20",
+    "Codigo Proveedor": "",
+    "Atrib1": "",
+    "Pedido": "201105_203601",
+    "Serie": "PC",
+    "ID Articulo": "163",
+    "Codigo Articulo": "ALI_02",
+    "Articulo": "Barrita Protein meal 12 unidades (Galleta)",
+    "Cant Pedido": "100",
+    "Cant Recepcion": "64",
+    "Ent Recepcion": "0"
+  },
+  {
+    "ID": "91",
+    "ID Pedido": "2",
+    "ID Pedido Pro Lin": "30",
+    "Codigo Proveedor": "",
+    "Atrib1": "",
+    "Pedido": "201105_203601",
+    "Serie": "PC",
+    "ID Articulo": "164",
+    "Codigo Articulo": "ALI_03",
+    "Articulo": "Pack 12x Agua Botella 1,5L",
+    "Cant Pedido": "10000",
+    "Cant Recepcion": "10000",
+    "Ent Recepcion": "0"
+  },
+  {
+    "ID": "91",
+    "ID Pedido": "2",
+    "ID Pedido Pro Lin": "40",
+    "Codigo Proveedor": "",
+    "Atrib1": "",
+    "Pedido": "201105_203601",
+    "Serie": "PC",
+    "ID Articulo": "165",
+    "Codigo Articulo": "ALI_04",
+    "Articulo": "Patatas Sacos 35 Kg",
+    "Cant Pedido": "3000",
+    "Cant Recepcion": "3000",
+    "Ent Recepcion": "0"
+  },
+  {
+    "ID": "91",
+    "ID Pedido": "2",
+    "ID Pedido Pro Lin": "50",
+    "Codigo Proveedor": "",
+    "Atrib1": "",
+    "Pedido": "201105_203601",
+    "Serie": "PC",
+    "ID Articulo": "166",
+    "Codigo Articulo": "ALI_05",
+    "Articulo": "Pack 12x Cerveza Botella 1L",
+    "Cant Pedido": "400",
+    "Cant Recepcion": "16",
+    "Ent Recepcion": "0"
+  }
+]

@@ -1,0 +1,421 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "PL.IDENTRADAPADRE",
+        "Etiqueta": "Matricula Padre",
+        "EtiqIngles":"Parent Enrollment" ,
+        "EsModificable": false,
+          "EsVisible": true
+      },
+      {
+        "Nombre": "ex.IDENTRADA",
+        "Etiqueta": "ID Entrada",
+        "EtiqIngles": "Entry ID",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.IDARTICULO",
+        "Etiqueta": "ID Articulo",
+        "EtiqIngles": "Item ID",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.CANTIDAD",
+        "Etiqueta": "Cantidad",
+        "EtiqIngles": "Quantity",
+        "EsModificable": true,
+        "EsVisible": false
+
+      },
+      {
+        "Nombre": "ex.IDUNIDADTIPO",
+        "Etiqueta": "Tipo Unidad",
+        "EtiqIngles": "Unit Type",
+        "EsModificable": false,
+        "EsVisible": false
+      },
+      {
+        "Nombre": "ex.CANTIDADUNIDAD",
+        "Etiqueta": "Cantidad de Unidad",
+        "EtiqIngles": "Unit Quantity",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.FECHACADUCIDAD",
+        "Etiqueta": "Fecha de Caducidad",
+        "EtiqIngles": "Expiration Date",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.IDPICKINGESTADO",
+        "Etiqueta": "Estado Picking",
+        "EtiqIngles": "Picking Status"
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.IDPALETTIPO",
+        "Etiqueta": "Tipo Palet",
+        "EtiqIngles": "Pallet Type"
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.IDHUECO",
+        "Etiqueta": "Hueco",
+        "EtiqIngles": "Cavity",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.IDEXISTENCIAESTADO",
+        "Etiqueta": "Estado Existencia",
+        "EtiqIngles": "Stock Status",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.PRIORIDAD",
+        "Etiqueta": "Prioridad",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.IDEXISTENCIATIPO",
+        "Etiqueta": "Tipo Existencia",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.ATRIB1",
+        "Etiqueta": "Atrib1",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.ATRIB2",
+        "Etiqueta": "Atrib2",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.ATRIB3",
+        "Etiqueta": "Atrib3",
+        "EsModificable": false,
+        "EsVisible": false
+      },
+      {
+        "Nombre": "ex.ATRIB4",
+        "Etiqueta": "Atrib4",
+        "EsModificable": false,
+        "EsVisible": false
+      },
+      {
+        "Nombre": "ex.ATRIB5",
+        "Etiqueta": "Atrib5",
+        "EsModificable": false,
+        "EsVisible": false
+      },
+      {
+        "Nombre": "ex.ATRIB6",
+        "Etiqueta": "Atrib6",
+        "EsModificable": false,
+        "EsVisible": false
+      },
+      {
+        "Nombre": "ex.ATRIB7",
+        "Etiqueta": "Atrib7",
+        "EsModificable": false,
+        "EsVisible": false
+      },
+      {
+        "Nombre": "ex.ATRIB8",
+        "Etiqueta": "Atrib8",
+        "EsModificable": false,
+        "EsVisible": false
+      },
+      {
+        "Nombre": "ex.ATRIB9",
+        "Etiqueta": "Atrib9",
+        "EsModificable": false,
+        "EsVisible": false
+      },
+      {
+        "Nombre": "ex.ATRIB10",
+        "Etiqueta": "Atrib10",
+        "EsModificable": false,
+        "EsVisible": false
+      },
+      {
+        "Nombre": "ex.ATRIB11",
+        "Etiqueta": "Atrib11",
+        "EsModificable": false,
+        "EsVisible": false
+      },
+      {
+        "Nombre": "ex.ATRIB12",
+        "Etiqueta": "Atrib12",
+        "EsModificable": false,
+        "EsVisible": false
+      },
+      {
+        "Nombre": "ex.ATRIB13",
+        "Etiqueta": "Atrib13",
+        "EsModificable": false,
+        "EsVisible": false
+      },
+      {
+        "Nombre": "ex.ATRIB14",
+        "Etiqueta": "Atrib14",
+        "EsModificable": false,
+        "EsVisible": false
+      },
+      {
+        "Nombre": "ex.ATRIB15",
+        "Etiqueta": "Atrib15",
+        "EsModificable": false,
+        "EsVisible": false
+      },
+      {
+        "Nombre": "ex.ATRIB16",
+        "Etiqueta": "Atrib16",
+        "EsModificable": false,
+        "EsVisible": false
+      },
+      {
+        "Nombre": "ex.ATRIB17",
+        "Etiqueta": "Atrib17",
+        "EsModificable": false,
+        "EsVisible": false
+      },
+      {
+        "Nombre": "ex.ATRIB18",
+        "Etiqueta": "Atrib18",
+        "EsModificable": false,
+        "EsVisible": false
+      },
+      {
+        "Nombre": "ex.PROCESOUBICACION",
+        "Etiqueta": "Proceso Ub",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.comment",
+        "Etiqueta": "comment",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.EAN",
+        "Etiqueta": "EAN",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ex.TIPOMULTI",
+        "Etiqueta": "TIPOMULTI",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "a.REFERENCIA",
+        "Etiqueta": "Cod Articulo",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "a.DESCRIPCION",
+        "Etiqueta": "Descripcion",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "a.IDPALETTIPO",
+        "Etiqueta": "paletsart",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "a.CANTIDADUNIDAD",
+        "Etiqueta": "Cantidad Unidad",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "a.IDZONAPICKING",
+        "Etiqueta": "Zona Picking",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "a.IDZONAUBICACION",
+        "Etiqueta": "Zona Ubicacion",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "a.IDZONAUBICACION2",
+        "Etiqueta": "Zona Ubicacion 2",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "a.CANTIDAD",
+        "Etiqueta": "udsart",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "a.IDARTICULOESTADO",
+        "Etiqueta": "Estado Articulo",
+        "EsModificable": false,
+        "EsVisible": false
+      },
+      //{
+      //  "Nombre": "a.IDFORMATO",
+      //  "Etiqueta": "ID Formato",
+      //  "EsModificable": true
+      //},
+      {
+        "Nombre": "en.LOTE",
+        "Etiqueta": "Lote",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "en.SSCC",
+        "Etiqueta": "SSCC",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "en.IDENTRADATIPO",
+        "Etiqueta": "Tipo Entrada",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "en.FECHA",
+        "Etiqueta": "Fecha",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "h.DESCRIPCION",
+        "Etiqueta": "Ubicacion",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "h.idhuecoalmacen",
+        "Etiqueta": "Id Hueco",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "h.BLOQUE",
+        "Etiqueta": "Bloque",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "h.ACERA",
+        "Etiqueta": "Acera",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "h.PORTAL",
+        "Etiqueta": "Portal",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "h.PISO",
+        "Etiqueta": "Piso",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "HP.DESCRIPCION",
+        "Etiqueta": "HPICKINGCJ",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "Hu.DESCRIPCION",
+        "Etiqueta": "HPICKINGUDS",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "pc.REFERENCIA",
+        "Etiqueta": "Pedido Prov",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "en.IDRECEPCION",
+        "Etiqueta": "ID Recepcion",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "pc.IDPEDIDOPRO",
+        "Etiqueta": "ID Pedido Prov",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "l.FECHACADUCIDAD",
+        "Etiqueta": "Fecha Caducidad Lote",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "h.SITUACIONERP",
+        "Etiqueta": "Almacen ERP",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "EN.NSERIECLIENTE",
+        "Etiqueta": "Nº Serie Cliente",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "EN.NSERIE",
+        "Etiqueta": "Nº Serie",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "c.comentario",
+        "Etiqueta": "Comentario",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "CL.CODIGO",
+        "Etiqueta": "Codigo Cliente",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "CL.NOMBRE",
+        "Etiqueta": "Nombre Cliente",
+        "EsModificable": false,
+        "EsVisible": true
+      }
+    ],
+    "FROM": "(TBLEXISTENCIAS ex LEFT JOIN TBLARTICULOS a on ex.idarticulo=a.idarticulo) LEFT join TBLHUECOS h on h.idhueco=ex.idhueco LEFT JOIN TBLENTRADAS en on ex.identrada=en.identrada LEFT JOIN TBLHUECOS HP ON A.IDHUECOPICKING=HP.IDHUECO LEFT JOIN TBLHUECOS Hu ON A.IDHUECOPICKINGUDS=Hu.IDHUECO left join tblpedidosprocab pc on en.idpedidopro=pc.idpedidopro left join TBLLOTES L on L.idarticulo=ex.idarticulo and L.lote = en.lote left join TBLPALETSMULTIREFERENCIA pl on pl.identradahija=ex.identrada left join TBLCOMENTARIOS C on c.idcomentario=en.idcomentario left join TBLCLIENTES CL on A.ATRIB1=CL.IDCLIENTE",
+    "Data": "[DATA]"
+  }
+]

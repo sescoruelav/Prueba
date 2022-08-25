@@ -1,0 +1,106 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "PARAMETRO",
+        "Etiqueta": "Parametro",
+        "EtiqIngles": "Parameter",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "DESCRIPCION",
+        "Etiqueta": "Descripcion",
+        "EtiqIngles": "Description",
+        "Tipo": "VARCHAR(250)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 2,
+        "Ancho": 0,
+        "Alto": 0
+      },
+      {
+        "Nombre": "VALOR",
+        "Etiqueta": "Valor",
+        "EtiqIngles": "Value",
+        "Tipo": "VARCHAR(2048)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 0,
+        "Alto": 100
+      },
+      {
+        "Nombre": "CLASIFICACION",
+        "Etiqueta": "Clasificacion",
+        "EtiqIngles": "Classification",
+        "Tipo": "VARCHAR(20)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 3,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "CARGA",
+        "Etiqueta": "Carga",
+        "EtiqIngles": "Load",
+        "Tipo": "VARCHAR(20)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 4,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "AYUDA",
+        "Etiqueta": "Ayuda",
+        "EtiqIngles": "Help",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 5,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "OPERARIO",
+        "Etiqueta": "Operario",
+        "EtiqIngles": "'Operator'",
+        "Tipo": "int",
+        "Control": "CMB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 6,
+        "Ancho": 100,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "TBLOPERARIOS",
+          "CampoRelacionado": "IDOPERARIO",
+          "CampoMostrado": "NOMBRE",
+          "ValorDefecto": "0"
+        }
+      }
+    ],
+    "From": "RUMPARAMETROS",
+    "Data": "[DATA]"
+  }
+]

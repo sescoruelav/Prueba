@@ -1,0 +1,100 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDPEDIDOPRO",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDPEDIDOPROLIN",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 1,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDARTICULO",
+        "Tipo": "INT",
+        "Control": "CMB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 200,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "TBLARTICULOS",
+          "CampoRelacionado": "IDARTICULO",
+          "CampoMostrado": "DESCRIPCION",
+          "ValorDefecto": "0"
+        }
+      },
+      {
+        "Nombre": "CANTIDAD",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 1,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDUNIDADTIPO",
+        "Tipo": "CHAR(2)",
+        "Control": "CMB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 2,
+        "Ancho": 200,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "TBLUNIDADESTIPO",
+          "CampoRelacionado": "IDUNIDADTIPO",
+          "CampoMostrado": "DESCRIPCION",
+          "ValorDefecto": "0"
+        }
+      },
+      {
+        "Nombre": "CANTIDADUNIDAD",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 2,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "LINEANUEVA",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 3,
+        "Ancho": 200,
+        "Alto": 0,
+        "ValorDefecto": "0"
+      }
+    ],
+    "From": "TBLPEDIDOSPROLIN",
+    "Data": "[DATA]"
+  }
+]

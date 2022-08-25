@@ -1,0 +1,123 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDZONACAB",
+		"Etiqueta": "ID Zona",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDZONALIN",
+		"Etiqueta": "ID Zona Línea",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 1,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDHUECOALMACEN",
+		"Etiqueta": "Almacén",
+        "Tipo": "INT",
+        "Control": "CMB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 200,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "TBLHUECOSALMACEN",
+          "CampoRelacionado": "IDHUECOALMACEN",
+          "CampoMostrado": "DESCRIPCION",
+          "ValorDefecto": "0"
+        }
+      },
+      {
+        "Nombre": "ACERADESDE",
+		"Etiqueta": "Acera desde",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 2,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "ACERAHASTA",
+		"Etiqueta": "Acera hasta",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 2,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "PORTALDESDE",
+		"Etiqueta": "Portal desde",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 3,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "PORTALHASTA",
+		"Etiqueta": "Portal hasta",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 3,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "PISODESDE",
+		"Etiqueta": "Piso desde",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 4,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "PISOHASTA",
+		"Etiqueta": "Piso hasta",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 4,
+        "Ancho": 200,
+        "Alto": 0
+      }
+    ],
+    "From": "TBLZONALOGLIN",
+    "Data": "[DATA]"
+  }
+]

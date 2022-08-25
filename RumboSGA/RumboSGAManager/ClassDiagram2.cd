@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RumboSGAManager.ExceptionManager" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAACAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>ExceptionManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RumboSGAManager.intermedia" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAEAAAEBAAABIAACAAAQAgAAEAAhAAAAIQAAAAAA=</HashCode>
+      <FileName>Model\DataContext\intermedia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RumboSGAManager.Utilidades" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilidades.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RumboSGAManager.Model.Business" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>3f/w//1vzrP/Z+bafh3Wz/69//3n/f/v/993r7bNu/8=</HashCode>
+      <FileName>Model\Business.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RumboSGAManager.Model.Cache" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Cache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RumboSGAManager.Model.Permisos" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAgAAAQAAAEAAA=</HashCode>
+      <FileName>Model\Permisos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RumboSGAManager.Model.User" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAQBAAAEAQAAAQAAAAEAAAAAABIAAAAAAAAAIAA=</HashCode>
+      <FileName>Model\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RumboSGAManager.Model.DataContext.ConexionSQL" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAClgAgACAAACAgQAAAAAAABAASAAAAAAEA=</HashCode>
+      <FileName>Model\DataContext\ConexionSQL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RumboSGAManager.Model.DataContext.DataAccess" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>//8f+nxV/+1u/4d7vk76z6//dfbPf8/v/7vjz/+Fv38=</HashCode>
+      <FileName>Model\DataContext\DataAccess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RumboSGAManager.Model.Entities.AckResponse" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAIAAIAAA=</HashCode>
+      <FileName>Model\Entities\AckResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RumboSGAManager.Model.Entities.AsignarRecursoScheme" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIQAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Model\Entities\AsignarRecursoScheme.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RumboSGAManager.Model.Entities.Recurso" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Entities\AsignarRecursoScheme.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RumboSGAManager.Model.Entities.ElementoValor" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAEAAABAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Entities\ElementoValor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RumboSGAManager.Model.Entities.GridScheme" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAEAAQAAAAAAAAgAAAQAAIQAAABAAAAAAEAA=</HashCode>
+      <FileName>Model\Entities\GridScheme.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RumboSGAManager.Model.Entities.Claves" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAQABAgAEEAAAAABAAAAAAAAIAAAA=</HashCode>
+      <FileName>Model\Entities\GridScheme.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RumboSGAManager.Model.Entities.ValorTabla" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAABAAAAQAAAQEAAAAEAAAMA=</HashCode>
+      <FileName>Model\Entities\GridScheme.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RumboSGAManager.Model.Entities.HistArticulosScheme" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAEAAIBAAAAAhDAAAAAAACAAAQAAAAgAgAAAAAAAA=</HashCode>
+      <FileName>Model\Entities\HistArticulosScheme.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RumboSGAManager.Model.Entities.LineaScheme" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ARADTQEQAUgAgAERAaAAEQGgAEAEAABAJAIAACACAgU=</HashCode>
+      <FileName>Model\Entities\HistArticulosScheme.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RumboSGAManager.Model.Entities.SentenciasSQL" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEHSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAA=</HashCode>
+      <FileName>Model\Entities\SentenciasSQL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RumboSGAManager.Model.Entities.TableScheme" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAGEAAAgCQAABAAEggBAAEABIYDACEQAAMKAIAQ=</HashCode>
+      <FileName>Model\Entities\TableScheme.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RumboSGAManager.Model.Entities.ComboScheme" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ggAAAAAAAAAAAAAAAAAAAABAAAAQAAAQEAAAAGAAAMA=</HashCode>
+      <FileName>Model\Entities\TableScheme.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RumboSGAManager.Model.Entities.XmlReaderPropio" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CQFQQAIQARAQAQEAAASQCAAgEiAAIQAABAAgREoEhEI=</HashCode>
+      <FileName>Model\Entities\XmlReaderPropio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RumboSGAManager.Model.Security.Security" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Security.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RumboSGAManager.Properties.Resources" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,382 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDHISTORICO",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDRESERVA",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 0,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDENTRADA",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 0,
+        "Alto": 100
+      },
+      {
+        "Nombre": "IDARTICULO",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 1,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "CANTIDAD",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 2,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDHUECOORIGEN",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 2,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDHUECODESTINO",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 3,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDOPERARIO",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 3,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDPEDIDOCLI",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 4,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "PRIORIDAD",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 4,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDRESERVATIPO",
+        "Tipo": "CHAR(2)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 5,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDPEDIDOCLILIN",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 5,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDPEDIDOPRO",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 6,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDPEDIDOPROLIN",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 6,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "RETRASADO",
+        "Tipo": "CHAR(1)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 7,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "CANTIDADUNIDAD",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 7,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDUNIDADTIPO",
+        "Tipo": "CHAR(2)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 8,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDRECURSO",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 8,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDPEDIDOFAB",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 9,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDPEDIDOFABLIN",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 9,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDORDENRECOGIDA",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 10,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDTAREA",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 10,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDORDEN",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 11,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDDEVOLCLI",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 11,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDDEVOLCLILIN",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 12,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "PRECONDICION",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 12,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "ZONAINTERMEDIA",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 13,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "ASIGNADO",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 13,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "HUECOORIGENINTERMEDIO",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 14,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "ZONAORIGENINTERMEDIO",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 14,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "FECHAHIST",
+        "Tipo": "DATETIME",
+        "Control": "DATE",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 15,
+        "Ancho": 250,
+        "Alto": 0
+      },
+      {
+        "Nombre": "MOTIVO",
+        "Tipo": "CHAR(1)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 15,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "USUARIO",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 16,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "OBSERVACIONES",
+        "Tipo": "VARCHAR(255)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 16,
+        "Ancho": 100,
+        "Alto": 0
+      }
+    ],
+    "From": "TBLRESERVASHIST",
+    "Data": "[DATA]"
+  }
+]

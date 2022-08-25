@@ -1,0 +1,123 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDMANTENIMIENTO",
+        "Etiqueta": "Formulario",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "CONEXION",
+        "Etiqueta": "Conexion",
+        "EtiqIngles": "Connection",
+        "Tipo": "VARCHAR(20)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "COLUMNAS",
+        "Etiqueta": "Columnas",
+        "EtiqIngles": "Columns",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 2,
+        "Fila": 0,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "TABLA",
+        "Etiqueta": "Tabla",
+        "EtiqIngles": "Table",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 3,
+        "Fila": 0,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "CAPTION",
+        "Etiqueta": "Caption",
+        "EtiqIngles": "Caption",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 0,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "AYUDA",
+        "Etiqueta": "Ayuda",
+        "EtiqIngles": "Help",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "TWHERE",
+        //"Etiqueta": "TWhere",
+        "Tipo": "VARCHAR(100)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 1,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "COLORFONDO",
+        "Etiqueta": "Color Fondo",
+        "EtiqIngles": "Background Color",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 2,
+        "Fila": 1,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "TSQL",
+        "Etiqueta": "Tira SQL",
+        //"EtiqIngles": "SQL ID",
+        "Tipo": "VARCHAR(250)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 4,
+        "Ancho": 100,
+        "Alto": 100
+      }
+    ],
+    "From": "RUMMANTENIMIENTO",
+    "Data": "[DATA]"
+  }
+]

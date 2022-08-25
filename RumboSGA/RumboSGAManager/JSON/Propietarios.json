@@ -1,0 +1,34 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDPROPIETARIO",
+        "Etiqueta": "ID",
+        "EtiqIngles": "ID",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "PROPIETARIO",
+        "Etiqueta": "Propietario",
+        "EtiqIngles": "Owner",
+        "Tipo": "VARCHAR(20)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 0,
+        "Ancho": 200,
+        "Alto": 0
+      }
+    ],
+    "From": "TBLPROPIETARIOS",
+    "Data": "[DATA]"
+  }
+]

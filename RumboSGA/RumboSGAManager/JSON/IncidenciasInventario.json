@@ -1,0 +1,283 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDINCIDENCIA",
+        //"Etiqueta": "ID Incidencia",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDENTRADA",
+        //"Etiqueta": "ID Entrada",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDHUECO",
+        //"Etiqueta": "Hueco",
+        "Tipo": "INT",
+        "Control": "CMB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 1,
+        "Ancho": 100,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "TBLHUECOS",
+          "CampoRelacionado": "IDHUECO",
+          "CampoMostrado": "DESCRIPCION",
+          "ValorDefecto": "0"
+        }
+      },
+      {
+        "Nombre": "CANTIDADOP1",
+        //"Etiqueta": "Cantidad Op1",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 2,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "CANTUNIDADOP1",
+        //"Etiqueta": "Cant Unidad Op1",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 2,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "CANTIDADORD",
+        //"Etiqueta": "Cantidad Ord",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 3,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "CANTUNIDADORD",
+        //"Etiqueta": "Cantidad Unidad Ord",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 3,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "OPERARIO1",
+        //"Etiqueta": "Operario1",
+        "Tipo": "INT",
+        "Control": "CMB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 4,
+        "Ancho": 100,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "TBLOPERARIOS",
+          "CampoRelacionado": "IDOPERARIO",
+          "CampoMostrado": "NOMBRE",
+          "ValorDefecto": "0"
+        }
+      },
+      {
+        "Nombre": "OPERARIO2",
+        //"Etiqueta": "Operario2",
+        "Tipo": "INT",
+        "Control": "CMB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 4,
+        "Ancho": 100,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "TBLOPERARIOS",
+          "CampoRelacionado": "IDOPERARIO",
+          "CampoMostrado": "NOMBRE",
+          "ValorDefecto": "0"
+        }
+      },
+      {
+        "Nombre": "CANTIDADOP2",
+        //"Etiqueta": "Cantidad Op2",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 5,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "CANTUNIDADOP2",
+        //"Etiqueta": "Cantidad Unidad Op2",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 5,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDENTRADAOP2",
+        //"Etiqueta": "ID Entrada Op2",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 4,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "NINCIDENCIAS",
+        //"Etiqueta": "No Incidencias",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 6,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "FECHA",
+        //"Etiqueta": "Fecha",
+        "Tipo": "DATETIME",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 6,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "CANTIDADRETOP1",
+        //"Etiqueta": "Cantidad Ret Op1",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 7,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "CANTIDADRETOP2",
+        //"Etiqueta": "Cantidad Ret Op2",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 7,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "CANTIDADRETORD",
+        //"Etiqueta": "Cantidad Ret Orden",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 8,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "TIPOINVENTARIO",
+        //"Etiqueta": "Tipo Inventario",
+        "Tipo": "CHAR(2)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 8,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "ESTADO",
+        //"Etiqueta": "Estado",
+        "Tipo": "CHAR(2)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 9,
+        "Ancho": 100,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "TBLESTADOS",
+          "CampoRelacionado": "abreviatura",
+          "CampoMostrado": "DESCRIPCION",
+          "ValorDefecto": ""
+        }
+      },
+      {
+        "Nombre": "INVENTARIO",
+        //"Etiqueta": "Inventario",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 9,
+        "Ancho": 100,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "TBLINVENTARIO",
+          "CampoRelacionado": "IDINVENTARIO",
+          "CampoMostrado": "DESCRIPCION",
+          "ValorDefecto": "0"
+        }
+      }
+    ],
+    "From": "TBLINCIDENCIASINVENTARIO",
+    "Data": "[DATA]"
+  }
+]

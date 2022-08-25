@@ -1,0 +1,78 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "ZLC.IDZONACAB",
+        "Etiqueta": "ID Zona",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+		"AutoIncrementado":true,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "ZLC.DESCRIPCION",
+        "Etiqueta": "Descripción",
+        "Tipo": "VARCHAR",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+		"AutoIncrementado":false,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "ZLC.TIPOZONA",
+        "Etiqueta": "Tipo Zona",
+        "Tipo": "VARCHAR",
+        "Control": "CMB",
+        "EsPK": false,
+        "EsModificable": true,
+        "AutoIncrementado": false,
+        "Columna": 0,
+        "Fila": 2,
+        "Ancho": 200,
+        "Alto": 0,
+        "CmbObject": {
+          "ValorDefecto": "",
+          "Valor": "ES"
+        }
+      }
+
+    ],
+	"TablaPrincipal":"TBLZONALOGCAB",
+	"AliasPrincipal":"ZLC",
+    "From": "TBLZONALOGCAB ZLC",
+	"Where":"",
+    "Data": "[DATA]",
+	"DataGridLin":{
+         "ArchivoJSON":"ZonaLogicaLin",
+         "Filtro":"ZLC.IDZONACAB",
+         "FiltroEnJsonLinea":"ZLL.IDZONACAB",
+         "ValorFiltro":"",
+         "Claves":[
+            {
+               "Nombre":"ZLL.IDZONACAB",
+               "CampoRelacionadoPadre":"ZLC.IDZONACAB",
+               "Valor":""
+            },
+            {
+               "Nombre":"ZLL.IDZONALIN",
+               "Valor":"",
+               "ValorTabla":{
+                  "TablaRelacionada":"TBLZONALOGLIN ZLL",
+                  "CampoMostrado":"ZLL.IDZONALIN",
+                  "ValorDefecto":"1"
+               }
+            }
+         ]
+      }
+            
+          }
+          ]

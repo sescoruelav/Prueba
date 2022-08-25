@@ -1,0 +1,93 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDLOTE",
+        "Etiqueta": "ID Lote",
+        "EtiqIngles": "Lot ID",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDARTICULO",
+        "Etiqueta": "Articulo",
+        "EtiqIngles": "Article",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 2,
+        "Ancho": 200,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "TBLARTICULOS",
+          "CampoRelacionado": "IDARTICULO",
+          "CampoMostrado": "DESCRIPCION",
+          "ValorDefecto": "0"
+        }
+      },
+      {
+        "Nombre": "LOTE",
+        "Etiqueta": "Lote",
+        "EtiqIngles": "Lot",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "FECHACADUCIDAD",
+        "Etiqueta": "Fecha Caducidad",
+        "EtiqIngles": "Expiration Date",
+        "Tipo": "DATETIME",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 3,
+        "Ancho": 120,
+        "Alto": 0
+      },
+      {
+        "Nombre": "UNIDADESESTIMADAS",
+        "Etiqueta": "Unidades Estimadas",
+        "EtiqIngles": "Estimated Units",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 4,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "FECHA2",
+        "Etiqueta": "Fecha 2",
+        "EtiqIngles" :  "Date 2",
+        "Tipo": "DATETIME",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 5,
+        "Ancho": 50,
+        "Alto": 0
+      }
+    ],
+    "From": "TBLLOTES",
+    "Data": "[DATA]"
+  }
+]

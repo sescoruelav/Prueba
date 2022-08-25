@@ -1,0 +1,67 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "ART.DESCRIPCION",
+        "Etiqueta": "Articulo",
+        "EtiqIngles": "Article",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "art.IDARTICULO",
+        "Etiqueta": "Num_Articulo",
+        "EtiqIngles": "Article_Number",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "Fc.ORDEN",
+        "Etiqueta": "Orden",
+        "EtiqIngles": "Order",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "fc.IDPEDIDOFAB",
+        "Etiqueta": "Num_Pedido",
+        "EtiqIngles": "Order_Number",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ord.IDPEDIDOFABLIN",
+        "Etiqueta": "Linea_Pedido",
+        "EtiqIngles": "Order_Line",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "coalesce(ord.UDSNECESARIAS,0)",
+        "Etiqueta": "UDSNecesarias",
+        "EtiqIngles": "Necessary_Unity",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "coalesce(sum(sal.cantidad),0)",
+        "Etiqueta": "Cantidad_Consumida",
+        "EtiqIngles": "Consume_Quantity",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "coalesce(rev.CANTIDAD,0)",
+        "Etiqueta": "Solicitado",
+        "EtiqIngles": "Requested",
+        "EsModificable": false,
+        "EsVisible": true
+      }
+    ],
+    "From": " TBLARTICULOS ART left join TBLORDENFABRICACIONLIN ord on art.IDARTICULO = ord.IDARTICULO left join TBLORDENFABRICACIONCAB Fc on fc.IDPEDIDOFAB = ord.IDPEDIDOFAB left join TBLSALIDAS sal on sal.IDPEDIDOFAB=fc.IDPEDIDOFAB and sal.IDPEDIDOFABLIN=ord.IDPEDIDOFABLIN left join TBLRESERVAS rev on rev.IDARTICULO=art.IDARTICULO ",
+    "Where": "",
+    "Group By": "ART.[DESCRIPCION], Fc.ORDEN,ord.IDPEDIDOFABLIN, ord.UDSNECESARIAS, rev.CANTIDAD,art.IDARTICULO,fc.IDPEDIDOFAB",
+    "Data": "[DATA]"
+  }
+]
+

@@ -1,0 +1,23 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDMAQUINAESTADO",
+        "Etiqueta": "Estado_Maquina",
+        "EtiqIngles": "Status_Machine",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "DESCRIPCION",
+        "Etiqueta": "Descripcion",
+        "EtiqIngles": "Description",
+        "EsModificable": false,
+        "EsVisible": true
+      }
+    ],
+    "From": "TBLMAQUINASESTADO",
+    "Data": "[DATA]"
+  }
+]
+

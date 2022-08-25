@@ -1,0 +1,65 @@
+//comentario
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDRECEPCION",
+        "Etiqueta": "Reception_Numero",
+        "EtiqIngles": "Reception_Num",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "IDPEDIDOPRO",
+        "Etiqueta": "Pedido_Numero",
+        "EtiqIngles": "Order_Num",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "IDRECEPCIONESTADO",
+        "Etiqueta": "Estado_Recepcion",
+        "EtiqIngles": "Status_Reception",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "IDAGENCIA",
+        "Etiqueta": "Agencia",
+        "EtiqIngles": "Agency",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "FECHACREACION",
+        "Etiqueta": "Fecha_Creacion",
+        "EtiqIngles": "Creation_Date",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "CHOFER",
+        "Etiqueta": "Chofer",
+        "EtiqIngles": "Driver",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "MATRICULACAMION",
+        "Etiqueta": "Matricula_Camion",
+        "EtiqIngles": "Truck_Enrollment",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "ALBARANTRANSPORTISTA",
+        "Etiqueta": "Albaran_Transortista",
+        "EtiqIngles": "Delivery Note Transporter",
+        "EsModificable": false,
+        "EsVisible": true
+      }
+    ],
+    "From": "TBLRECEPCIONESCAB",
+    "Data": "[DATA]"
+  }
+]

@@ -1,0 +1,169 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "TP.idtarea",
+        "Etiqueta": "Num_Tarea",
+        "EtiqIngles": "Task Number",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "tp.tipotarea",
+        "Etiqueta": "Tipo_Tarea",
+        "EtiqIngles": "Task Type",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "tt.DESCRIPCION",
+        "Etiqueta": "Descripcion_Tarea",
+        "EtiqIngles": "Task_Description",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "tp.IDTAREAESTADO",
+        "Etiqueta": "Estado_Tarea",
+        "EtiqIngles": "Task_State",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "tp.IDTAREATIPO",
+        "Etiqueta": "Num_TipoTarea",
+        "EtiqIngles": "Task Type Number",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "tp.prioridad",
+        "Etiqueta": "Prioridad",
+        "EtiqIngles": "Priority",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "tp.IDTAREAESTADOEJECUCION",
+        "Etiqueta": "Estado_Tarea_Ejecucion",
+        "EtiqIngles": "Task_State_Execution",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "tp.operario",
+        "Etiqueta": "Operario",
+        "EtiqIngles": "Operator",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "op.NOMBRE",
+        "Etiqueta": "Nombre",
+        "EtiqIngles": "Name",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "RE.DESCRIPCION",
+        "Etiqueta": "Recurso",
+        "EtiqIngles": "Resource",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "RC.recepcion",
+        "Etiqueta": "Recepcion",
+        "EtiqIngles": "Reception",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "rc.OBSERVACIONES",
+        "Etiqueta": "Observaciones_Recepcion",
+        "EtiqIngles": "Reception Observations",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "PL.SSCC",
+        "Etiqueta": "SSCC",
+        "EtiqIngles": "SSCC",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "PPC.REFERENCIA ",
+        "Etiqueta": "Referencia_Pedido_Proveedor",
+        "EtiqIngles": "Provider_Order_Reference",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "PCC.REFERENCIA",
+        "Etiqueta": "Referencia_Pedido_Cliente",
+        "EtiqIngles": "Client_Order_Reference",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "CC.EXPEDICION",
+        "Etiqueta": "Expedicion",
+        "EtiqIngles": "Expedition",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "cc.OBSERVACIONES",
+        "Etiqueta": "Observaciones_Carga",
+        "EtiqIngles": "Load Observations",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "HDC.DESCRIPCION",
+        "Etiqueta": "CarrosDesglose",
+        "EtiqIngles": "Breakdown Cart",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "OFC.ORDEN",
+        "Etiqueta": "Orden_Fabricacion",
+        "EtiqIngles": "Fabrication_Order",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "OFC.observaciones",
+        "Etiqueta": "Observaciones_OF",
+        "EtiqIngles": "Fabrication Order Observations",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "tp.tipoLanzamiento",
+        "Etiqueta": "Tipo_Lanzamiento",
+        "EtiqIngles": "Launching Type",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "TP.PRIORIDADMANUAL",
+        "Etiqueta": "Prioridada_Manual",
+        "EtiqIngles": "Manual Priority",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "tp.PREREQUISITO",
+        "Etiqueta": "Prerequisito",
+        "EtiqIngles": "Prerequisite",
+        "EsModificable": false,
+        "EsVisible": true
+      }
+    ],
+    "FROM": "(TBLTAREASPENDIENTES TP LEFT JOIN TBLRECURSOS RE ON TP.OPERARIO = RE.IDRECURSO LEFT JOIN TBLRESERVAS R ON TP.IDTAREA=R.IDTAREA LEFT JOIN TBLRECEPCIONESCAB RC ON TP.TAREA=RC.IDRECEPCION LEFT JOIN TBLPACKINGLIST PL ON TP.TAREA=PL.IDENTIFICADOR LEFT JOIN TBLPEDIDOSPROCAB PPC ON R.IDPEDIDOPRO = PPC.IDPEDIDOPRO LEFT JOIN TBLPEDIDOSCLICAB PCC ON R.IDPEDIDOCLI = PCC.IDPEDIDOCLI LEFT JOIN TBLORDENRECOGIDACAB OC ON OC.IDORDENRECOGIDA =R.IDORDENRECOGIDA LEFT JOIN TBLORDENFABRICACIONCAB OFC ON R.IDPEDIDOFAB =OFC.IDPEDIDOFAB LEFT JOIN TBLCARGACAB CC ON TP.TAREA=CC.IDCARGA LEFT JOIN TBLORDENRECOGIDACAB OCC ON OCC.IDORDENRECOGIDA =TP.TAREA LEFT JOIN TBLDEVOLCLICAB DCC ON DCC.IDDEVOLCLI=TP.TAREA LEFT JOIN TBLMOVIMIENTOSCARRO MC ON MC.IDMOVIMIENTO=TP.TAREA LEFT JOIN TBLCARROMOVILCAB MCM ON MCM.IDCARRO = MC.IDCARRO LEFT JOIN TBLMOVIMIENTOSBULTO MB ON MB.IDMOVIMIENTO=TP.TAREA LEFT JOIN TBLCARROMOVILCAB DCM ON DCM.IDCARRO = TP.TAREA LEFT JOIN TBLHUECOS HDC ON HDC.IDHUECO = DCM.IDUBICACIONPRINCIPAL left join tbloperarios OP on tp.operario=OP.idoperario left join tbltareastipo tt on tp.TIPOTAREA=tt.TIPOTAREA)",
+    "Data": "[DATA]"
+  }
+]

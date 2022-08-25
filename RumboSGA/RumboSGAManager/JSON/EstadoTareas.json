@@ -1,0 +1,16 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDTAREAESTADO",
+        "Etiqueta": "Estado_Tareas",
+        "EtiqIngles": "Status_Tasks",
+        "EsModificable": false,
+        "EsVisible": true
+      }
+    ],
+    "From": "TBLTAREASPENDIENTESHIST",
+    "Group By": "IDTAREAESTADO",
+    "Data": "[DATA]"
+  }
+]

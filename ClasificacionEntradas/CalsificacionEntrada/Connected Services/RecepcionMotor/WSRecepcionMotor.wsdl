@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:intf="http://motor" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:impl="http://motor" targetNamespace="http://motor" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://motor">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:complexType name="ArrayOf_xsd_string">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="xsd:string[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOf_xsd_anyType">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="xsd:anyType[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfArrayOf_xsd_anyType">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="xsd:anyType[][]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfArrayOfArrayOf_xsd_anyType">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="xsd:anyType[][][]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOf_xsd_int">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="xsd:int[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="isCerradaRecepcionRequest">
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="cerrarPedidoProveedorRequest">
+    <wsdl:part name="idPedidoPro" type="xsd:int" />
+    <wsdl:part name="identificador" type="impl:ArrayOf_xsd_string" />
+  </wsdl:message>
+  <wsdl:message name="modificarRecepcionResponse" />
+  <wsdl:message name="getTareasRAResponse">
+    <wsdl:part name="getTareasRAReturn" type="impl:ArrayOfArrayOfArrayOf_xsd_anyType" />
+  </wsdl:message>
+  <wsdl:message name="generarNuevaLineaRecepcionResponse" />
+  <wsdl:message name="getPedidosResponse">
+    <wsdl:part name="getPedidosReturn" type="impl:ArrayOfArrayOfArrayOf_xsd_anyType" />
+  </wsdl:message>
+  <wsdl:message name="generarEntradaResponse">
+    <wsdl:part name="generarEntradaReturn" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="getArticuloRecepcionDesdeLineaRequest">
+    <wsdl:part name="tipo" type="xsd:string" />
+    <wsdl:part name="idrecepcion" type="xsd:int" />
+    <wsdl:part name="idpedidopro" type="xsd:int" />
+    <wsdl:part name="idpedidoprolin" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="getArticuloRecepcionResponse">
+    <wsdl:part name="getArticuloRecepcionReturn" type="impl:ArrayOfArrayOf_xsd_anyType" />
+  </wsdl:message>
+  <wsdl:message name="crearRecepcionCabYLinRequest">
+    <wsdl:part name="json" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getDatosBDResponse">
+    <wsdl:part name="getDatosBDReturn" type="impl:ArrayOf_xsd_string" />
+  </wsdl:message>
+  <wsdl:message name="generarMultiproductoResponse">
+    <wsdl:part name="generarMultiproductoReturn" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="comprobarPeticionAtributosEANResponse">
+    <wsdl:part name="comprobarPeticionAtributosEANReturn" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="generarTareaRecepcionRequest">
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="isPrimeraEntradaRequest">
+    <wsdl:part name="idpedidopro" type="xsd:int" />
+    <wsdl:part name="identrada" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="crearEtiquetaTransitoMultiReferenciaRequest">
+    <wsdl:part name="tipo" type="xsd:string" />
+    <wsdl:part name="leido" type="xsd:string" />
+    <wsdl:part name="idrecepcion" type="xsd:int" />
+    <wsdl:part name="idpedidopro" type="xsd:int" />
+    <wsdl:part name="idCarroMovil" type="xsd:int" />
+    <wsdl:part name="identificador" type="impl:ArrayOf_xsd_string" />
+    <wsdl:part name="idOperario" type="xsd:int" />
+    <wsdl:part name="idRecurso" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="getHuecoDefectoResponse">
+    <wsdl:part name="getHuecoDefectoReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getEANdesdeSSCCResponse">
+    <wsdl:part name="getEANdesdeSSCCReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cerrarDescargaResponse" />
+  <wsdl:message name="crearEtiquetaTransitoMultiReferenciaResponse">
+    <wsdl:part name="crearEtiquetaTransitoMultiReferenciaReturn" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="getDatosBDRequest" />
+  <wsdl:message name="getHuecoDefectoRequest" />
+  <wsdl:message name="impresionEtiquetasResponse">
+    <wsdl:part name="impresionEtiquetasReturn" type="xsd:boolean" />
+  </wsdl:message>
+  <wsdl:message name="cerrarRecepcionRequest">
+    <wsdl:part name="tipo" type="xsd:string" />
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+    <wsdl:part name="idpedidopro" type="xsd:int" />
+    <wsdl:part name="identificador" type="impl:ArrayOf_xsd_string" />
+    <wsdl:part name="idOperario" type="xsd:int" />
+    <wsdl:part name="idRecurso" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="confirmarMatriculaRARequest">
+    <wsdl:part name="idEntrada" type="xsd:int" />
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+    <wsdl:part name="idOperario" type="xsd:int" />
+    <wsdl:part name="idRecurso" type="xsd:int" />
+    <wsdl:part name="idTarea" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="cerrarRecepcionesMultipleRequest">
+    <wsdl:part name="json" type="xsd:string" />
+    <wsdl:part name="identificador" type="impl:ArrayOf_xsd_string" />
+  </wsdl:message>
+  <wsdl:message name="crearRecepcionCabYLinResponse">
+    <wsdl:part name="crearRecepcionCabYLinReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="generarPreclasificacionEntradasResponse">
+    <wsdl:part name="generarPreclasificacionEntradasReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="comprobarPorcentajeRequest">
+    <wsdl:part name="idPedido" type="xsd:int" />
+    <wsdl:part name="idArticulo" type="xsd:int" />
+    <wsdl:part name="cantidadAEntrar" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="getPedidosProveedorPendientesResponse">
+    <wsdl:part name="getPedidosProveedorPendientesReturn" type="impl:ArrayOfArrayOfArrayOf_xsd_anyType" />
+  </wsdl:message>
+  <wsdl:message name="getResumenRecepcionEANResponse">
+    <wsdl:part name="getResumenRecepcionEANReturn" type="impl:ArrayOfArrayOfArrayOf_xsd_anyType" />
+  </wsdl:message>
+  <wsdl:message name="crearRecepcionResponse">
+    <wsdl:part name="crearRecepcionReturn" type="impl:ArrayOfArrayOfArrayOf_xsd_anyType" />
+  </wsdl:message>
+  <wsdl:message name="estaOtroPedidoResponse">
+    <wsdl:part name="estaOtroPedidoReturn" type="xsd:boolean" />
+  </wsdl:message>
+  <wsdl:message name="impresionEtiquetasRequest">
+    <wsdl:part name="operario" type="xsd:int" />
+    <wsdl:part name="recurso" type="xsd:int" />
+    <wsdl:part name="articulo" type="xsd:int" />
+    <wsdl:part name="copias" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="getConteosPendientesRequest">
+    <wsdl:part name="filtros" type="impl:ArrayOfArrayOf_xsd_anyType" />
+  </wsdl:message>
+  <wsdl:message name="cerrarRecepcionesMultipleResponse">
+    <wsdl:part name="cerrarRecepcionesMultipleReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getResumenRecepcionRequest">
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="getEANdesdeSSCCRequest">
+    <wsdl:part name="SSCC" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="crearEtiquetaTransitoMultiReferenciaPRequest">
+    <wsdl:part name="etiqueta" type="xsd:string" />
+    <wsdl:part name="idrecepcion" type="xsd:int" />
+    <wsdl:part name="idpedidopro" type="xsd:int" />
+    <wsdl:part name="idCarro" type="xsd:int" />
+    <wsdl:part name="idOperario" type="xsd:int" />
+    <wsdl:part name="idRecurso" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="estaOtroPedidoRequest">
+    <wsdl:part name="idpedidopro" type="xsd:int" />
+    <wsdl:part name="SSCC" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="eliminarEntradasResponse" />
+  <wsdl:message name="getArticuloRecepcionDesdeLineaResponse">
+    <wsdl:part name="getArticuloRecepcionDesdeLineaReturn" type="impl:ArrayOfArrayOf_xsd_anyType" />
+  </wsdl:message>
+  <wsdl:message name="modificarRecepcionCabYLinResponse">
+    <wsdl:part name="modificarRecepcionCabYLinReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="generarEntradaDirectaPreavisoCarroRecepcionResponse">
+    <wsdl:part name="generarEntradaDirectaPreavisoCarroRecepcionReturn" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="confirmarMatriculaRAResponse">
+    <wsdl:part name="confirmarMatriculaRAReturn" type="xsd:boolean" />
+  </wsdl:message>
+  <wsdl:message name="getArticulosRecepcionMultiResponse">
+    <wsdl:part name="getArticulosRecepcionMultiReturn" type="impl:ArrayOfArrayOfArrayOf_xsd_anyType" />
+  </wsdl:message>
+  <wsdl:message name="comprobarRestriccionFechaCaducidadRequest">
+    <wsdl:part name="idPedidoPro" type="xsd:int" />
+    <wsdl:part name="idPedidoProlin" type="xsd:int" />
+    <wsdl:part name="fechaCaducidad" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="generarNuevaLineaRecepcionRequest">
+    <wsdl:part name="idpedidopro" type="xsd:int" />
+    <wsdl:part name="idpedidoprolin" type="xsd:int" />
+    <wsdl:part name="idarticulo" type="xsd:int" />
+    <wsdl:part name="cantidad" type="xsd:int" />
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="crearEtiquetaTransitoMultiReferenciaPResponse">
+    <wsdl:part name="crearEtiquetaTransitoMultiReferenciaPReturn" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="getArticuloRecepcionRequest">
+    <wsdl:part name="tipo" type="xsd:string" />
+    <wsdl:part name="leido" type="xsd:string" />
+    <wsdl:part name="idrecepcion" type="xsd:int" />
+    <wsdl:part name="idpedidopro" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="cerrarRecepcionResponse" />
+  <wsdl:message name="comprobarPeticionAtributosEANRequest">
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+    <wsdl:part name="EAN" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="generarTareaRecepcionResponse">
+    <wsdl:part name="generarTareaRecepcionReturn" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="getEANconSSCCRequest">
+    <wsdl:part name="sscc" type="xsd:string" />
+    <wsdl:part name="ean" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="tratarTotalResponse">
+    <wsdl:part name="tratarTotalReturn" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="getTareasRARequest">
+    <wsdl:part name="idRecurso" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="getPresentacionesArticuloResponse">
+    <wsdl:part name="getPresentacionesArticuloReturn" type="impl:ArrayOfArrayOfArrayOf_xsd_anyType" />
+  </wsdl:message>
+  <wsdl:message name="comprobarPeticionAtributosRequest">
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+    <wsdl:part name="idArticulo" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="generarEntradaRequest">
+    <wsdl:part name="tipo" type="xsd:string" />
+    <wsdl:part name="SSCC" type="xsd:string" />
+    <wsdl:part name="tipoEntrada" type="xsd:int" />
+    <wsdl:part name="cantidadPalet" type="xsd:int" />
+    <wsdl:part name="cantidadUnidad" type="xsd:int" />
+    <wsdl:part name="cantidadTotal" type="xsd:int" />
+    <wsdl:part name="idoperario" type="xsd:int" />
+    <wsdl:part name="idunidadtipo" type="xsd:string" />
+    <wsdl:part name="idpalettipo" type="xsd:string" />
+    <wsdl:part name="lote" type="xsd:string" />
+    <wsdl:part name="impresora" type="xsd:string" />
+    <wsdl:part name="muelle" type="xsd:int" />
+    <wsdl:part name="paletContenedor" type="xsd:int" />
+    <wsdl:part name="nEtiquetas" type="xsd:int" />
+    <wsdl:part name="nSerie" type="xsd:string" />
+    <wsdl:part name="ean" type="xsd:string" />
+    <wsdl:part name="identificador" type="impl:ArrayOf_xsd_string" />
+  </wsdl:message>
+  <wsdl:message name="isCerradaRecepcionResponse">
+    <wsdl:part name="isCerradaRecepcionReturn" type="xsd:boolean" />
+  </wsdl:message>
+  <wsdl:message name="existeSSCCResponse">
+    <wsdl:part name="existeSSCCReturn" type="xsd:boolean" />
+  </wsdl:message>
+  <wsdl:message name="getPedidosRequest">
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="getPedidosProveedorPendientesRequest">
+    <wsdl:part name="modo" type="xsd:int" />
+    <wsdl:part name="filtros" type="impl:ArrayOf_xsd_string" />
+    <wsdl:part name="valores" type="impl:ArrayOf_xsd_string" />
+  </wsdl:message>
+  <wsdl:message name="getEANconSSCCResponse">
+    <wsdl:part name="getEANconSSCCReturn" type="impl:ArrayOfArrayOf_xsd_anyType" />
+  </wsdl:message>
+  <wsdl:message name="cumpleCondicionCierreRequest">
+    <wsdl:part name="tipo" type="xsd:string" />
+    <wsdl:part name="id" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="generarEntradaDirectaPreavisoCarroRecepcionRequest">
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+    <wsdl:part name="idHueco" type="xsd:int" />
+    <wsdl:part name="identificador" type="impl:ArrayOf_xsd_string" />
+    <wsdl:part name="idOperario" type="xsd:int" />
+    <wsdl:part name="idRecurso" type="xsd:int" />
+    <wsdl:part name="impresora" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="existeNSerieRequest">
+    <wsdl:part name="nSerie" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="isPrimeraEntradaResponse">
+    <wsdl:part name="isPrimeraEntradaReturn" type="xsd:boolean" />
+  </wsdl:message>
+  <wsdl:message name="existeNSerieResponse">
+    <wsdl:part name="existeNSerieReturn" type="xsd:boolean" />
+  </wsdl:message>
+  <wsdl:message name="comprobarPeticionAtributosResponse">
+    <wsdl:part name="comprobarPeticionAtributosReturn" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="crearRecepcionRequest">
+    <wsdl:part name="idpedidopro" type="xsd:int" />
+    <wsdl:part name="muelle" type="xsd:string" />
+    <wsdl:part name="albaran" type="xsd:string" />
+    <wsdl:part name="matricula" type="xsd:string" />
+    <wsdl:part name="chofer" type="xsd:string" />
+    <wsdl:part name="observaciones" type="xsd:string" />
+    <wsdl:part name="modo" type="xsd:int" />
+    <wsdl:part name="idOperario" type="xsd:int" />
+    <wsdl:part name="idRecurso" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="cumpleCondicionCierreResponse">
+    <wsdl:part name="cumpleCondicionCierreReturn" type="impl:ArrayOf_xsd_anyType" />
+  </wsdl:message>
+  <wsdl:message name="comprobarRestriccionFechaCaducidadResponse">
+    <wsdl:part name="comprobarRestriccionFechaCaducidadReturn" type="xsd:boolean" />
+  </wsdl:message>
+  <wsdl:message name="generarMultiproductoRequest">
+    <wsdl:part name="idArticulo" type="xsd:int" />
+    <wsdl:part name="idHueco" type="xsd:int" />
+    <wsdl:part name="idPaletTipo" type="xsd:string" />
+    <wsdl:part name="idOperario" type="xsd:int" />
+    <wsdl:part name="idRecurso" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="getVersionResponse">
+    <wsdl:part name="getVersionReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getArticulosRecepcionMultiRequest">
+    <wsdl:part name="tipoRecepcion" type="xsd:string" />
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="generarPreclasificacionEntradasRequest">
+    <wsdl:part name="json" type="xsd:string" />
+    <wsdl:part name="identificador" type="impl:ArrayOf_xsd_string" />
+  </wsdl:message>
+  <wsdl:message name="cerrarPedidoProveedorResponse" />
+  <wsdl:message name="eliminarEntradasRequest">
+    <wsdl:part name="idEntrada" type="impl:ArrayOf_xsd_int" />
+    <wsdl:part name="idOperario" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="cerrarDescargaRequest">
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+    <wsdl:part name="identificador" type="impl:ArrayOf_xsd_string" />
+    <wsdl:part name="idOperario" type="xsd:int" />
+    <wsdl:part name="idRecurso" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="getVersionRequest" />
+  <wsdl:message name="getResumenRecepcionEANRequest">
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+    <wsdl:part name="EAN" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getResumenRecepcionResponse">
+    <wsdl:part name="getResumenRecepcionReturn" type="impl:ArrayOfArrayOfArrayOf_xsd_anyType" />
+  </wsdl:message>
+  <wsdl:message name="modificarRecepcionCabYLinRequest">
+    <wsdl:part name="json" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="generarEntradaDirectaPreavisoRecepcionResponse">
+    <wsdl:part name="generarEntradaDirectaPreavisoRecepcionReturn" type="impl:ArrayOf_xsd_anyType" />
+  </wsdl:message>
+  <wsdl:message name="getConteosPendientesResponse">
+    <wsdl:part name="getConteosPendientesReturn" type="impl:ArrayOfArrayOfArrayOf_xsd_anyType" />
+  </wsdl:message>
+  <wsdl:message name="modificarRecepcionRequest">
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+    <wsdl:part name="muelle" type="xsd:string" />
+    <wsdl:part name="albaran" type="xsd:string" />
+    <wsdl:part name="observaciones" type="xsd:string" />
+    <wsdl:part name="idOperario" type="xsd:int" />
+    <wsdl:part name="idRecurso" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="existeSSCCRequest">
+    <wsdl:part name="SSCC" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="tratarTotalRequest">
+    <wsdl:part name="eanLeido" type="xsd:string" />
+    <wsdl:part name="tipoEntrada" type="xsd:int" />
+    <wsdl:part name="tipoRecepcion" type="xsd:string" />
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+    <wsdl:part name="idpedidopro" type="xsd:int" />
+    <wsdl:part name="linea" type="xsd:int" />
+    <wsdl:part name="idArticulo" type="xsd:int" />
+    <wsdl:part name="idCarro" type="xsd:int" />
+    <wsdl:part name="udsCaja" type="xsd:int" />
+    <wsdl:part name="cjsPalet" type="xsd:int" />
+    <wsdl:part name="udsTotales" type="xsd:int" />
+    <wsdl:part name="ean" type="xsd:string" />
+    <wsdl:part name="multi" type="xsd:string" />
+    <wsdl:part name="lote" type="xsd:string" />
+    <wsdl:part name="tipoPalet" type="xsd:string" />
+    <wsdl:part name="SSCC" type="xsd:string" />
+    <wsdl:part name="igualTransito" type="xsd:boolean" />
+    <wsdl:part name="atributos" type="impl:ArrayOfArrayOf_xsd_anyType" />
+    <wsdl:part name="nSerie" type="xsd:string" />
+    <wsdl:part name="idUnidadTipo" type="xsd:string" />
+    <wsdl:part name="idExistenciaEstado" type="xsd:string" />
+    <wsdl:part name="cogerUnidadTipoArticulo" type="xsd:boolean" />
+    <wsdl:part name="identificador" type="impl:ArrayOf_xsd_string" />
+    <wsdl:part name="idOperario" type="xsd:int" />
+    <wsdl:part name="idRecurso" type="xsd:int" />
+    <wsdl:part name="sinMovimiento" type="xsd:boolean" />
+  </wsdl:message>
+  <wsdl:message name="getPresentacionesArticuloRequest">
+    <wsdl:part name="idPresentacion" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="generarEntradaDirectaPreavisoRecepcionRequest">
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+    <wsdl:part name="idHueco" type="xsd:int" />
+    <wsdl:part name="idExistenciaEstado" type="xsd:string" />
+    <wsdl:part name="identificador" type="impl:ArrayOf_xsd_string" />
+    <wsdl:part name="sinMovimiento" type="xsd:boolean" />
+    <wsdl:part name="idOperario" type="xsd:int" />
+    <wsdl:part name="idRecurso" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="comprobarPorcentajeResponse">
+    <wsdl:part name="comprobarPorcentajeReturn" type="xsd:boolean" />
+  </wsdl:message>
+  <wsdl:portType name="WSRecepcionMotor">
+    <wsdl:operation name="getVersion">
+      <wsdl:input name="getVersionRequest" message="impl:getVersionRequest" />
+      <wsdl:output name="getVersionResponse" message="impl:getVersionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="comprobarRestriccionFechaCaducidad" parameterOrder="idPedidoPro idPedidoProlin fechaCaducidad">
+      <wsdl:input name="comprobarRestriccionFechaCaducidadRequest" message="impl:comprobarRestriccionFechaCaducidadRequest" />
+      <wsdl:output name="comprobarRestriccionFechaCaducidadResponse" message="impl:comprobarRestriccionFechaCaducidadResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="crearEtiquetaTransitoMultiReferencia" parameterOrder="tipo leido idrecepcion idpedidopro idCarroMovil identificador idOperario idRecurso">
+      <wsdl:input name="crearEtiquetaTransitoMultiReferenciaRequest" message="impl:crearEtiquetaTransitoMultiReferenciaRequest" />
+      <wsdl:output name="crearEtiquetaTransitoMultiReferenciaResponse" message="impl:crearEtiquetaTransitoMultiReferenciaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="generarEntradaDirectaPreavisoRecepcion" parameterOrder="idRecepcion idHueco idExistenciaEstado identificador sinMovimiento idOperario idRecurso">
+      <wsdl:input name="generarEntradaDirectaPreavisoRecepcionRequest" message="impl:generarEntradaDirectaPreavisoRecepcionRequest" />
+      <wsdl:output name="generarEntradaDirectaPreavisoRecepcionResponse" message="impl:generarEntradaDirectaPreavisoRecepcionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="generarEntradaDirectaPreavisoCarroRecepcion" parameterOrder="idRecepcion idHueco identificador idOperario idRecurso impresora">
+      <wsdl:input name="generarEntradaDirectaPreavisoCarroRecepcionRequest" message="impl:generarEntradaDirectaPreavisoCarroRecepcionRequest" />
+      <wsdl:output name="generarEntradaDirectaPreavisoCarroRecepcionResponse" message="impl:generarEntradaDirectaPreavisoCarroRecepcionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="crearEtiquetaTransitoMultiReferenciaP" parameterOrder="etiqueta idrecepcion idpedidopro idCarro idOperario idRecurso">
+      <wsdl:input name="crearEtiquetaTransitoMultiReferenciaPRequest" message="impl:crearEtiquetaTransitoMultiReferenciaPRequest" />
+      <wsdl:output name="crearEtiquetaTransitoMultiReferenciaPResponse" message="impl:crearEtiquetaTransitoMultiReferenciaPResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getDatosBD">
+      <wsdl:input name="getDatosBDRequest" message="impl:getDatosBDRequest" />
+      <wsdl:output name="getDatosBDResponse" message="impl:getDatosBDResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getConteosPendientes" parameterOrder="filtros">
+      <wsdl:input name="getConteosPendientesRequest" message="impl:getConteosPendientesRequest" />
+      <wsdl:output name="getConteosPendientesResponse" message="impl:getConteosPendientesResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="generarNuevaLineaRecepcion" parameterOrder="idpedidopro idpedidoprolin idarticulo cantidad idRecepcion">
+      <wsdl:input name="generarNuevaLineaRecepcionRequest" message="impl:generarNuevaLineaRecepcionRequest" />
+      <wsdl:output name="generarNuevaLineaRecepcionResponse" message="impl:generarNuevaLineaRecepcionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getArticuloRecepcion" parameterOrder="tipo leido idrecepcion idpedidopro">
+      <wsdl:input name="getArticuloRecepcionRequest" message="impl:getArticuloRecepcionRequest" />
+      <wsdl:output name="getArticuloRecepcionResponse" message="impl:getArticuloRecepcionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="comprobarPorcentaje" parameterOrder="idPedido idArticulo cantidadAEntrar">
+      <wsdl:input name="comprobarPorcentajeRequest" message="impl:comprobarPorcentajeRequest" />
+      <wsdl:output name="comprobarPorcentajeResponse" message="impl:comprobarPorcentajeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getArticuloRecepcionDesdeLinea" parameterOrder="tipo idrecepcion idpedidopro idpedidoprolin">
+      <wsdl:input name="getArticuloRecepcionDesdeLineaRequest" message="impl:getArticuloRecepcionDesdeLineaRequest" />
+      <wsdl:output name="getArticuloRecepcionDesdeLineaResponse" message="impl:getArticuloRecepcionDesdeLineaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="generarMultiproducto" parameterOrder="idArticulo idHueco idPaletTipo idOperario idRecurso">
+      <wsdl:input name="generarMultiproductoRequest" message="impl:generarMultiproductoRequest" />
+      <wsdl:output name="generarMultiproductoResponse" message="impl:generarMultiproductoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getResumenRecepcion" parameterOrder="idRecepcion">
+      <wsdl:input name="getResumenRecepcionRequest" message="impl:getResumenRecepcionRequest" />
+      <wsdl:output name="getResumenRecepcionResponse" message="impl:getResumenRecepcionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmarMatriculaRA" parameterOrder="idEntrada idRecepcion idOperario idRecurso idTarea">
+      <wsdl:input name="confirmarMatriculaRARequest" message="impl:confirmarMatriculaRARequest" />
+      <wsdl:output name="confirmarMatriculaRAResponse" message="impl:confirmarMatriculaRAResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="modificarRecepcion" parameterOrder="idRecepcion muelle albaran observaciones idOperario idRecurso">
+      <wsdl:input name="modificarRecepcionRequest" message="impl:modificarRecepcionRequest" />
+      <wsdl:output name="modificarRecepcionResponse" message="impl:modificarRecepcionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="comprobarPeticionAtributosEAN" parameterOrder="idRecepcion EAN">
+      <wsdl:input name="comprobarPeticionAtributosEANRequest" message="impl:comprobarPeticionAtributosEANRequest" />
+      <wsdl:output name="comprobarPeticionAtributosEANResponse" message="impl:comprobarPeticionAtributosEANResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="impresionEtiquetas" parameterOrder="operario recurso articulo copias">
+      <wsdl:input name="impresionEtiquetasRequest" message="impl:impresionEtiquetasRequest" />
+      <wsdl:output name="impresionEtiquetasResponse" message="impl:impresionEtiquetasResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getArticulosRecepcionMulti" parameterOrder="tipoRecepcion idRecepcion">
+      <wsdl:input name="getArticulosRecepcionMultiRequest" message="impl:getArticulosRecepcionMultiRequest" />
+      <wsdl:output name="getArticulosRecepcionMultiResponse" message="impl:getArticulosRecepcionMultiResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getPresentacionesArticulo" parameterOrder="idPresentacion">
+      <wsdl:input name="getPresentacionesArticuloRequest" message="impl:getPresentacionesArticuloRequest" />
+      <wsdl:output name="getPresentacionesArticuloResponse" message="impl:getPresentacionesArticuloResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getPedidosProveedorPendientes" parameterOrder="modo filtros valores">
+      <wsdl:input name="getPedidosProveedorPendientesRequest" message="impl:getPedidosProveedorPendientesRequest" />
+      <wsdl:output name="getPedidosProveedorPendientesResponse" message="impl:getPedidosProveedorPendientesResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="comprobarPeticionAtributos" parameterOrder="idRecepcion idArticulo">
+      <wsdl:input name="comprobarPeticionAtributosRequest" message="impl:comprobarPeticionAtributosRequest" />
+      <wsdl:output name="comprobarPeticionAtributosResponse" message="impl:comprobarPeticionAtributosResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getResumenRecepcionEAN" parameterOrder="idRecepcion EAN">
+      <wsdl:input name="getResumenRecepcionEANRequest" message="impl:getResumenRecepcionEANRequest" />
+      <wsdl:output name="getResumenRecepcionEANResponse" message="impl:getResumenRecepcionEANResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="generarTareaRecepcion" parameterOrder="idRecepcion">
+      <wsdl:input name="generarTareaRecepcionRequest" message="impl:generarTareaRecepcionRequest" />
+      <wsdl:output name="generarTareaRecepcionResponse" message="impl:generarTareaRecepcionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="isCerradaRecepcion" parameterOrder="idRecepcion">
+      <wsdl:input name="isCerradaRecepcionRequest" message="impl:isCerradaRecepcionRequest" />
+      <wsdl:output name="isCerradaRecepcionResponse" message="impl:isCerradaRecepcionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="cerrarRecepcionesMultiple" parameterOrder="json identificador">
+      <wsdl:input name="cerrarRecepcionesMultipleRequest" message="impl:cerrarRecepcionesMultipleRequest" />
+      <wsdl:output name="cerrarRecepcionesMultipleResponse" message="impl:cerrarRecepcionesMultipleResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="modificarRecepcionCabYLin" parameterOrder="json">
+      <wsdl:input name="modificarRecepcionCabYLinRequest" message="impl:modificarRecepcionCabYLinRequest" />
+      <wsdl:output name="modificarRecepcionCabYLinResponse" message="impl:modificarRecepcionCabYLinResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="cumpleCondicionCierre" parameterOrder="tipo id">
+      <wsdl:input name="cumpleCondicionCierreRequest" message="impl:cumpleCondicionCierreRequest" />
+      <wsdl:output name="cumpleCondicionCierreResponse" message="impl:cumpleCondicionCierreResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="crearRecepcionCabYLin" parameterOrder="json">
+      <wsdl:input name="crearRecepcionCabYLinRequest" message="impl:crearRecepcionCabYLinRequest" />
+      <wsdl:output name="crearRecepcionCabYLinResponse" message="impl:crearRecepcionCabYLinResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="generarPreclasificacionEntradas" parameterOrder="json identificador">
+      <wsdl:input name="generarPreclasificacionEntradasRequest" message="impl:generarPreclasificacionEntradasRequest" />
+      <wsdl:output name="generarPreclasificacionEntradasResponse" message="impl:generarPreclasificacionEntradasResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="cerrarPedidoProveedor" parameterOrder="idPedidoPro identificador">
+      <wsdl:input name="cerrarPedidoProveedorRequest" message="impl:cerrarPedidoProveedorRequest" />
+      <wsdl:output name="cerrarPedidoProveedorResponse" message="impl:cerrarPedidoProveedorResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getEANdesdeSSCC" parameterOrder="SSCC">
+      <wsdl:input name="getEANdesdeSSCCRequest" message="impl:getEANdesdeSSCCRequest" />
+      <wsdl:output name="getEANdesdeSSCCResponse" message="impl:getEANdesdeSSCCResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getEANconSSCC" parameterOrder="sscc ean">
+      <wsdl:input name="getEANconSSCCRequest" message="impl:getEANconSSCCRequest" />
+      <wsdl:output name="getEANconSSCCResponse" message="impl:getEANconSSCCResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="estaOtroPedido" parameterOrder="idpedidopro SSCC">
+      <wsdl:input name="estaOtroPedidoRequest" message="impl:estaOtroPedidoRequest" />
+      <wsdl:output name="estaOtroPedidoResponse" message="impl:estaOtroPedidoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="generarEntrada" parameterOrder="tipo SSCC tipoEntrada cantidadPalet cantidadUnidad cantidadTotal idoperario idunidadtipo idpalettipo lote impresora muelle paletContenedor nEtiquetas nSerie ean identificador">
+      <wsdl:input name="generarEntradaRequest" message="impl:generarEntradaRequest" />
+      <wsdl:output name="generarEntradaResponse" message="impl:generarEntradaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="existeSSCC" parameterOrder="SSCC">
+      <wsdl:input name="existeSSCCRequest" message="impl:existeSSCCRequest" />
+      <wsdl:output name="existeSSCCResponse" message="impl:existeSSCCResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="tratarTotal" parameterOrder="eanLeido tipoEntrada tipoRecepcion idRecepcion idpedidopro linea idArticulo idCarro udsCaja cjsPalet udsTotales ean multi lote tipoPalet SSCC igualTransito atributos nSerie idUnidadTipo idExistenciaEstado cogerUnidadTipoArticulo identificador idOperario idRecurso sinMovimiento">
+      <wsdl:input name="tratarTotalRequest" message="impl:tratarTotalRequest" />
+      <wsdl:output name="tratarTotalResponse" message="impl:tratarTotalResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="existeNSerie" parameterOrder="nSerie">
+      <wsdl:input name="existeNSerieRequest" message="impl:existeNSerieRequest" />
+      <wsdl:output name="existeNSerieResponse" message="impl:existeNSerieResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="cerrarRecepcion" parameterOrder="tipo idRecepcion idpedidopro identificador idOperario idRecurso">
+      <wsdl:input name="cerrarRecepcionRequest" message="impl:cerrarRecepcionRequest" />
+      <wsdl:output name="cerrarRecepcionResponse" message="impl:cerrarRecepcionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="crearRecepcion" parameterOrder="idpedidopro muelle albaran matricula chofer observaciones modo idOperario idRecurso">
+      <wsdl:input name="crearRecepcionRequest" message="impl:crearRecepcionRequest" />
+      <wsdl:output name="crearRecepcionResponse" message="impl:crearRecepcionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getPedidos" parameterOrder="idRecepcion">
+      <wsdl:input name="getPedidosRequest" message="impl:getPedidosRequest" />
+      <wsdl:output name="getPedidosResponse" message="impl:getPedidosResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="isPrimeraEntrada" parameterOrder="idpedidopro identrada">
+      <wsdl:input name="isPrimeraEntradaRequest" message="impl:isPrimeraEntradaRequest" />
+      <wsdl:output name="isPrimeraEntradaResponse" message="impl:isPrimeraEntradaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getTareasRA" parameterOrder="idRecurso">
+      <wsdl:input name="getTareasRARequest" message="impl:getTareasRARequest" />
+      <wsdl:output name="getTareasRAResponse" message="impl:getTareasRAResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getHuecoDefecto">
+      <wsdl:input name="getHuecoDefectoRequest" message="impl:getHuecoDefectoRequest" />
+      <wsdl:output name="getHuecoDefectoResponse" message="impl:getHuecoDefectoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminarEntradas" parameterOrder="idEntrada idOperario">
+      <wsdl:input name="eliminarEntradasRequest" message="impl:eliminarEntradasRequest" />
+      <wsdl:output name="eliminarEntradasResponse" message="impl:eliminarEntradasResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="cerrarDescarga" parameterOrder="idRecepcion identificador idOperario idRecurso">
+      <wsdl:input name="cerrarDescargaRequest" message="impl:cerrarDescargaRequest" />
+      <wsdl:output name="cerrarDescargaResponse" message="impl:cerrarDescargaResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSRecepcionMotorSoapBinding" type="impl:WSRecepcionMotor">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="getVersion">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getVersionRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getVersionResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="comprobarRestriccionFechaCaducidad">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="comprobarRestriccionFechaCaducidadRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="comprobarRestriccionFechaCaducidadResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="crearEtiquetaTransitoMultiReferencia">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="crearEtiquetaTransitoMultiReferenciaRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="crearEtiquetaTransitoMultiReferenciaResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="generarEntradaDirectaPreavisoRecepcion">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="generarEntradaDirectaPreavisoRecepcionRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="generarEntradaDirectaPreavisoRecepcionResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="generarEntradaDirectaPreavisoCarroRecepcion">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="generarEntradaDirectaPreavisoCarroRecepcionRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="generarEntradaDirectaPreavisoCarroRecepcionResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="crearEtiquetaTransitoMultiReferenciaP">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="crearEtiquetaTransitoMultiReferenciaPRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="crearEtiquetaTransitoMultiReferenciaPResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDatosBD">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getDatosBDRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getDatosBDResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getConteosPendientes">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getConteosPendientesRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getConteosPendientesResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="generarNuevaLineaRecepcion">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="generarNuevaLineaRecepcionRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="generarNuevaLineaRecepcionResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getArticuloRecepcion">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getArticuloRecepcionRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getArticuloRecepcionResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="comprobarPorcentaje">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="comprobarPorcentajeRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="comprobarPorcentajeResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getArticuloRecepcionDesdeLinea">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getArticuloRecepcionDesdeLineaRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getArticuloRecepcionDesdeLineaResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="generarMultiproducto">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="generarMultiproductoRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="generarMultiproductoResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getResumenRecepcion">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getResumenRecepcionRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getResumenRecepcionResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmarMatriculaRA">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="confirmarMatriculaRARequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="confirmarMatriculaRAResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modificarRecepcion">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="modificarRecepcionRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="modificarRecepcionResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="comprobarPeticionAtributosEAN">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="comprobarPeticionAtributosEANRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="comprobarPeticionAtributosEANResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="impresionEtiquetas">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="impresionEtiquetasRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="impresionEtiquetasResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getArticulosRecepcionMulti">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getArticulosRecepcionMultiRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getArticulosRecepcionMultiResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPresentacionesArticulo">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getPresentacionesArticuloRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getPresentacionesArticuloResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPedidosProveedorPendientes">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getPedidosProveedorPendientesRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getPedidosProveedorPendientesResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="comprobarPeticionAtributos">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="comprobarPeticionAtributosRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="comprobarPeticionAtributosResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getResumenRecepcionEAN">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getResumenRecepcionEANRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getResumenRecepcionEANResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="generarTareaRecepcion">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="generarTareaRecepcionRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="generarTareaRecepcionResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isCerradaRecepcion">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="isCerradaRecepcionRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="isCerradaRecepcionResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cerrarRecepcionesMultiple">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cerrarRecepcionesMultipleRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="cerrarRecepcionesMultipleResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modificarRecepcionCabYLin">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="modificarRecepcionCabYLinRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="modificarRecepcionCabYLinResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cumpleCondicionCierre">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cumpleCondicionCierreRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="cumpleCondicionCierreResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="crearRecepcionCabYLin">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="crearRecepcionCabYLinRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="crearRecepcionCabYLinResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="generarPreclasificacionEntradas">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="generarPreclasificacionEntradasRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="generarPreclasificacionEntradasResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cerrarPedidoProveedor">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cerrarPedidoProveedorRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="cerrarPedidoProveedorResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEANdesdeSSCC">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getEANdesdeSSCCRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getEANdesdeSSCCResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEANconSSCC">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getEANconSSCCRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getEANconSSCCResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="estaOtroPedido">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="estaOtroPedidoRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="estaOtroPedidoResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="generarEntrada">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="generarEntradaRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="generarEntradaResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="existeSSCC">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="existeSSCCRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="existeSSCCResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tratarTotal">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="tratarTotalRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="tratarTotalResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="existeNSerie">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="existeNSerieRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="existeNSerieResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cerrarRecepcion">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cerrarRecepcionRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="cerrarRecepcionResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="crearRecepcion">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="crearRecepcionRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="crearRecepcionResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPedidos">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getPedidosRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getPedidosResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isPrimeraEntrada">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="isPrimeraEntradaRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="isPrimeraEntradaResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTareasRA">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getTareasRARequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getTareasRAResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getHuecoDefecto">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getHuecoDefectoRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getHuecoDefectoResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarEntradas">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="eliminarEntradasRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="eliminarEntradasResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cerrarDescarga">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cerrarDescargaRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="cerrarDescargaResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSRecepcionMotorService">
+    <wsdl:port name="WSRecepcionMotor" binding="impl:WSRecepcionMotorSoapBinding">
+      <wsdlsoap:address location="http://localhost:8080/RumboServices/services/WSRecepcionMotor" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

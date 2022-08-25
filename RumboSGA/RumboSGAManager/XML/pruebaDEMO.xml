@@ -1,0 +1,19 @@
+﻿<RadGridView BackColor="236, 251, 254" ForeColor="Black" Cursor="Default" TabIndex="1">
+  <MasterTemplate Caption="" AllowAddNewRow="False" EnableFiltering="True" ShowGroupedColumns="True" AutoGenerateColumns="False" AutoExpandGroups="True">
+    <Columns>
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="141" FieldName="CustomerID" Name="CustomerID" VisibleInColumnChooser="False" IsVisible="True" HeaderText="CustomerID" HeaderTextAlignment="MiddleLeft" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="169" FieldName="CompanyName" Name="CompanyName" IsVisible="True" AllowGroup="False" HeaderText="CompanyName" HeaderTextAlignment="MiddleLeft" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="522" FieldName="Country" Name="Country" IsVisible="True" HeaderText="Country" HeaderTextAlignment="MiddleLeft" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="141" FieldName="City" Name="City" IsVisible="True" HeaderText="City" HeaderTextAlignment="MiddleLeft" />
+      <Telerik.WinControls.UI.GridViewTextBoxColumn Width="170" FieldName="ContactName" Name="ContactName" IsVisible="True" HeaderText="ContactName" HeaderTextAlignment="MiddleLeft" />
+    </Columns>
+    <GroupDescriptors>
+      <Telerik.WinControls.Data.GroupDescriptor>
+        <GroupNames>
+          <Telerik.WinControls.Data.SortDescriptor PropertyName="Country" />
+        </GroupNames>
+      </Telerik.WinControls.Data.GroupDescriptor>
+    </GroupDescriptors>
+    <ViewDefinition xsi:type="Telerik.WinControls.UI.TableViewDefinition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+  </MasterTemplate>
+</RadGridView>

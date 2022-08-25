@@ -1,0 +1,34 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDFORMATO",
+        "Etiqueta": "Formato",
+        "EtiqIngles": "Format",
+        "Tipo": "VARCHAR(3)",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "DEFINICION",
+        "Etiqueta": "Definicion",
+        "EtiqIngles": "Definition",
+        "Tipo": "VARCHAR(100)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 0,
+        "Ancho": 200,
+        "Alto": 0
+      }
+    ],
+    "From": "TBLFORMATOSSCC",
+    "Data": "[DATA]"
+  }
+]

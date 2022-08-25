@@ -1,0 +1,128 @@
+//comentario
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDPEDIDOPRO",
+        "Etiqueta": "ID",
+        "EtiqIngles": "ID",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "IDPROVEEDOR",
+        "Etiqueta": "Proveedor",
+        "EtiqIngles": "Provider",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "REFERENCIA",
+        "etiqueta": "Referencia",
+        "EtiqIngles": "Reference",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "IDPEDIDOPROESTADO",
+        "Etiqueta": "Estado",
+        "EtiqIngles": "Status",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "SERIE",
+        "Etiqueta": "Serie",
+        "EtiqIngles": "Serie",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "FECHACREACION",
+        "Etiqueta": "Fecha de Creacion",
+        "EtiqIngles": "Creation Date",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "IDAGENCIA",
+        "Etiqueta": "Agencia",
+        "EtiqIngles": "Agency",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "FECHAPREVRECEPCION",
+        "Etiqueta": "Fecha Prevista",
+        "EtiqIngles": "Expected Date",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "MUELLE",
+        "Etiqueta": "Muelle",
+        "EtiqIngles": "'Dock'",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "FECHARECEPCION",
+        "Etiqueta": "Fecha Recepcion",
+        "EtiqIngles": "Reception Date",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "idhuecoalmacen",
+        "Etiqueta": "Almacen",
+        "EtiqIngles": "Warehouse",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "TIPOPEDIDO",
+        "Etiqueta": "Tipo",
+        "EtiqIngles": "Type",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "PERMSUPCANT",
+        "Etiqueta": "",
+        "EtiqIngles": "",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "TIPODOCUMENTO",
+        "Etiqueta": "Tipo de Documento",
+        "EtiqIngles": "Document Type",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "IDPERSONACONTACTO",
+        "Etiqueta": "Persona de Contacto",
+        "EtiqIngles": "Contact Person",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "IDESTADOADUANERO",
+        "Etiqueta": "Estado Aduanero",
+        "EtiqIngles": "",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "IDEXPEDIENTE",
+        "Etiqueta": "Expediente",
+        "EtiqIngles": "Case File",
+        "EsModificable": false,
+        "EsVisible": true
+      }
+    ],
+    "From": "TBLPEDIDOSPROCAB",
+    "Data": "[DATA]"
+  }
+]

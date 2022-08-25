@@ -1,0 +1,86 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDUSUARIO",
+        "Etiqueta": "ID",
+        "EtiqIngles": "ID",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "NOMUSUARIO",
+        "Etiqueta": "Nombre",
+        "EtiqIngles": "Name",
+        "Tipo": "VARCHAR(30)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "CLAVEUSUARIO",
+        "Etiqueta": "Clave",
+        "EtiqIngles": "Password",
+        "Tipo": "VARCHAR(10)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "RUTAIMP",
+        "Etiqueta": "Ruta",
+        "EtiqIngles": "Route",
+        "Tipo": "VARCHAR(200)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 1,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "ALMACEN",
+        "Etiqueta": "Almacen",
+        "EtiqIngles": "Warehouse",
+        "Tipo": "VARCHAR(2)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 2,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "CLAVEHASH",
+        "Etiqueta": "Hash",
+        "EtiqIngles": "Hash",
+        "Tipo": "VARCHAR(200)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 2,
+        "Ancho": 200,
+        "Alto": 0
+      }
+    ],
+    "From": "RUMUSUARIOS",
+    "Data": "[DATA]"
+  }
+]

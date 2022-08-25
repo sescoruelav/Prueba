@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TreeView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+          LineStyle="Solid" SpacingBetweenNodes="-1" ItemHeight="28" AllowDrop="true" BackColor="191; 219; 255" 
+          LineColor="204; 204; 204" ShowExpandCollapse="false">
+
+  <Nodes name ="gestionAlmacen" Expanded="false" Text="Gestion Almacén" Font="(ninguno)">
+    <Nodes Name="planificacion" Text="Planificación" Font="(ninguno)" />
+    <Nodes Name="devolProveedor" Text="Devoluciones Proveedor" Font="(ninguno)"/>
+  
+
+
+  </Nodes>
+    <Nodes Name="maestrosNode" Expanded="false" Text="Maestros" Font="(ninguno)">
+    <Nodes Name="clientesMainNode" Text="Clientes" Font="(ninguno)" >
+      <Nodes Name="clientesNode" Text="Clientes" Font="(ninguno)" />
+      <Nodes Name="clientesPedidosNode" Text="Pedidos" Font="(ninguno)" />
+    </Nodes>
+    <Nodes Name="proveedoresNodeMain" Text="Proveedores" Font="(ninguno)">
+      <Nodes Name="proveedoresNode" Text="Proveedores" Font="(ninguno)" />
+      <Nodes Name="proveedoresPedidosNode" Text="Pedidos" Font="(ninguno)" />
+      <Nodes Name="estadoPedidoNode" Text="Estado Pedidos" Font="(ninguno)" />
+    </Nodes>
+      <Nodes Name="maquinasNode" Text="Maquinas" Font="(ninguno)" />
+    <Nodes Name="articulosNode" Text="Artículos" Font="(ninguno)" />
+    <Nodes Name="familiasNode" Text="Familias" Font="(ninguno)" />
+    <Nodes Name="agenciasNode" Text="Agencias" Font="(ninguno)" />
+    <Nodes Name="bomNode" Text="Bom" Font="(ninguno)" />
+    <!--<Nodes Name="zonaIntercambioNode" Text="Zona Intercambio" Font="(ninguno)" />-->
+    <Nodes Name="motivosRegularizacionNode" Text="Motivos Regularización" Font="(ninguno)" />
+    <Nodes Name="rutasNode" Text="Rutas" Font="(ninguno)" />
+    <Nodes Name="rutasPreparacionNode" Text="Rutas Preparacion" Font="(ninguno)" />
+    <Nodes Name="tareasPendientesNode" Text="Tareas Pendientes" Font="(ninguno)" />
+    <Nodes Name="tareasTipoNode" Text="Tareas Tipo" Font="(ninguno)" />
+    <Nodes Name="combiPaletsNode" Text="Combi Palet" Font="(ninguno)" />
+    <Nodes Name="paletsTipoNode" Text="Palets Tipo" Font="(ninguno)" />
+    <Nodes Name="formatosNode" Text="Formatos SSCC" Font="(ninguno)" />
+    <Nodes Name="lotesNode" Text="Lotes" Font="(ninguno)" />
+    <Nodes Name="propietariosNode" Text="Propietario" Font="(ninguno)" />
+    <Nodes Name ="estadoFabNode"  Text="Estado Fabricacion" Font="(ninguno)"/>
+    <Nodes Name ="estadoMaqNode" Expanded="false" Text="Estado Maquina" Font="(ninguno)"></Nodes>
+    <Nodes Name ="estadoExistNode" Expanded="false" Text="Estado Existencias" Font="(ninguno)"/>
+    <Nodes Name ="estadoTareaNode" Expanded="false" Text="Estado Tareas" Font="(ninguno)"></Nodes>
+    <Nodes Name ="tipoTareasNode" Expanded="false" Text="Tipo Tareas" Font="(ninguno)"></Nodes>
+
+  </Nodes>
+  <Nodes name="herramientasNode" Expanded="false" Text="Herramientas" Font="(ninguno)">
+    <Nodes Name ="movimientosNode" Expanded="false" Text="Movimientos" Font="(ninguno)"></Nodes>
+    <Nodes Name="stockNode" Expanded="false" Text="Stock" Font="(ninguno)"/>
+    <Nodes Name="controlTareasNode" Expanded="false" Text="Control de Tareas" Font="(ninguno)"/>
+    <Nodes Name="acopiosProduccionNode" Text="Acopios Produccion" Font="(ninguno)" />
+
+    <Nodes Name="trazabilidadNode" Expanded="false" Text="Trazabilidad" Font="(ninguno)"/>
+    <Nodes Name="reposiciones" Expanded="false" Text="Reposiciones" Font="(ninguno)"/>
+    <Nodes Name="compactadorApilamientosNode" Expanded="false" Text="Compactador de apilamientos" Font="(ninguno)"/>
+    <Nodes Name="menuInventario" Text="Menú Inventario" Font="(ninguno)">
+      <Nodes Name="inventarioInicialNode" Text="Inventario Inicial" Font="(ninguno)" />
+      <Nodes Name="inventarioContinuoNode" Text="Inventario Continuo" Font="(ninguno)" />
+      <Nodes Name="incidenciasInventarioNode" Text="Incidencias Inventario" Font="(ninguno)" />
+      <Nodes Name="limpiarIncidenciasNode" Text="Limpiar Incidencias" Font="(ninguno)" />
+    </Nodes>
+  </Nodes>
+  <Nodes name="historicosNode" Expanded="false" Text="Históricos" Font="(ninguno)">
+    <Nodes Name="existenciasHistoricoNode" Text="Existencias Histórico" Font="(ninguno)"/>
+    <Nodes Name="reservaHistoricoNode" Text="Reserva Histórico" Font="(ninguno)"/>
+  </Nodes>
+  <!--<Nodes Name="utilidades" Expanded="false" Text="Utilidades" Font="(ninguno)">-->
+    
+  <!--</Nodes>-->
+  <Nodes name="permisosNode" Expanded="false" Text="Permisos y Configuración" Font="(ninguno)">
+    <Nodes Name="usuariosNode" Text="Usuarios" Font="(ninguno)" />
+    <!--<Nodes Name="usuariosGruposNode" Text="Grupo Usuario" Font="(ninguno)" />-->
+    <Nodes Name="permisos" Text="Permisos" Font="(ninguno)"/>
+    <!--<Nodes Name="operario" Text="Operario" Font="(ninguno)"/>
+    <Nodes Name="recursosTarea" Text="Recursos Tarea" Font="(ninguno)"/>
+    <Nodes Name="grupo" Text="Grupo" Font="(ninguno)"/>-->
+    <Nodes Name="rumMantenimientoNode" Text="Mantenimiento" Font="(ninguno)" />
+  </Nodes>
+  
+</TreeView> 

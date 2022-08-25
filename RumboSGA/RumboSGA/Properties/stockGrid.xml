@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SQL>
+  <SELECT>
+    SELECT ex.*,
+    a.referencia as codarticulo,ex.atrib1 as Calidad,
+    a.descripcion as articulo,
+    a.cantidadunidad as udscjart,
+    a.idpalettipo as paletsart,
+    a.idunidadtipo as tipoudart,
+    a.idzonapicking,
+    a.idzonaubicacion,
+    a.idzonaubicacion2,
+    a.cantidad as udsart,
+    a.idarticuloestado as estadoART,a.idformato,
+    en.lote,en.SSCC,en.identradatipo,
+    en.fecha,
+    h.descripcion as ubicacion,h.bloque,
+    HP.DESCRIPCION AS HPICKINGCJ,
+    Hu.DESCRIPCION AS HPICKINGUDS,
+    h.idhuecoalmacen,
+    h.acera,
+    h.portal,
+    h.piso,
+    pc.referencia as pedidoprov,
+    en.idrecepcion,
+    pc.idpedidopro  FROM (@TBLEXISTENCIAS ex LEFT JOIN @TBLARTICULOS a on ex.idarticulo=a.idarticulo)
+    LEFT join @TBLHUECOS h on h.idhueco=ex.idhueco
+    left join @tblentradas en on ex.identrada=en.identrada
+    LEFT JOIN @TBLHUECOS HP ON A.IDHUECOPICKING=HP.IDHUECO
+    LEFT JOIN @TBLHUECOS Hu ON A.IDHUECOPICKINGUDS=Hu.IDHUECO
+    left join @tblpedidosprocab pc on en.idpedidopro=pc.idpedidopro ORDER BY en.identrada
+  </SELECT>
+  <COLUMNASMOD>
+    <CAMPO>Calidad</CAMPO>
+    <CAMPO>CANTIDAD</CAMPO>
+  </COLUMNASMOD>
+</SQL>

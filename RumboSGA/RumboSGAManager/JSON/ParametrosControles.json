@@ -1,0 +1,40 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDGRUPO",
+        "Etiqueta": "ID Grupo",
+        "EtiqIngles": "Group ID",
+        "Tipo": "int",
+        "Control": "CMBSQL",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 100,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "From": "RUMPARAMETROS"
+        }
+      },
+      {
+        "Nombre": "TIPORECURSO",
+        "Etiqueta": "Tipo Recurso",
+        "EtiqIngles": "Resource Type",
+        "Tipo": "CHAR(1)",
+        "Control": "CMBSQL",
+        "EsPK": true,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 0,
+        "Alto": 0,
+        "CmbObject": {
+          "From": ""
+        }
+      }
+    ],
+    "Data": "[DATA]"
+  }
+]

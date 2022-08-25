@@ -1,0 +1,34 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDFAMILIA",
+        "Etiqueta": "Familia",
+        "EtiqIngles": "Family",
+        "Tipo": "VARCHAR(10)",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "DESCRIPCION",
+        "Etiqueta": "Descripcion",
+        "EtiqIngles": "Description",
+        "Tipo": "VARCHAR(100)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 200,
+        "Alto": 0
+      }
+    ],
+    "From": "TBLFAMILIAS",
+    "Data": "[DATA]"
+  }
+]

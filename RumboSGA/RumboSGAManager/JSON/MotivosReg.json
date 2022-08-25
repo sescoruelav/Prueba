@@ -1,0 +1,71 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDMOTIVO",
+        "Etiqueta": "Motivo",
+        "EtiqIngles": "Reason",
+        "Tipo": "CHAR(2)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "DESCRIPCION",
+        "Etiqueta": "Descripcion",
+        "EtiqIngles": "Description",
+        "Tipo": "VARCHAR(100)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 0,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "ASTOCK",
+        "Tipo": "CHAR(1)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "ACTIVOTERMINAL",
+        "Etiqueta": "Activo Terminal",
+        "EtiqIngles": "Active Terminal",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 1,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "TIPOMOT",
+        "Etiqueta": "Tipo",
+        "EtiqIngles": "Type",
+        "Tipo": "VARCHAR(255)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 2,
+        "Ancho": 100,
+        "Alto": 0
+      }
+    ],
+    "From": "TBLMOTIVOSREG",
+    "Data": "[DATA]"
+  }
+]

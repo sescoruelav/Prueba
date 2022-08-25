@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:intf="http://motor" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:impl="http://motor" targetNamespace="http://motor" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://motor">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:complexType name="ArrayOfArrayOf_xsd_anyType">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="xsd:anyType[][]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfArrayOfArrayOf_xsd_anyType">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="xsd:anyType[][][]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOf_xsd_string">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="xsd:string[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="cerrarMultiReferenciaResponse" />
+  <wsdl:message name="cerrarMultiReferenciaRequest">
+    <wsdl:part name="idEntradaPadre" type="xsd:int" />
+    <wsdl:part name="subsistemaClas" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getArticulosClasificacionPendientesResponse">
+    <wsdl:part name="getArticulosClasificacionPendientesReturn" type="impl:ArrayOfArrayOfArrayOf_xsd_anyType" />
+  </wsdl:message>
+  <wsdl:message name="confirmarPreclasificacionEntradasResponse">
+    <wsdl:part name="confirmarPreclasificacionEntradasReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="generarEntradaEnCarroPTLResponse">
+    <wsdl:part name="generarEntradaEnCarroPTLReturn" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="getCarroClasificacionRequest">
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+    <wsdl:part name="idPedidoPro" type="xsd:int" />
+    <wsdl:part name="idPedidoProLin" type="xsd:int" />
+    <wsdl:part name="idArticulo" type="xsd:int" />
+    <wsdl:part name="subsistema" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="ponerClasificacionTratadoResponse" />
+  <wsdl:message name="getCompartimentoCarroPorDescripcionResponse">
+    <wsdl:part name="getCompartimentoCarroPorDescripcionReturn" type="impl:ArrayOfArrayOf_xsd_anyType" />
+  </wsdl:message>
+  <wsdl:message name="asignarPaletMultiASubsistemaResponse" />
+  <wsdl:message name="getEntradasMultiPadrePendienteResponse">
+    <wsdl:part name="getEntradasMultiPadrePendienteReturn" type="impl:ArrayOfArrayOfArrayOf_xsd_anyType" />
+  </wsdl:message>
+  <wsdl:message name="confirmarPreclasificacionEntradasRequest">
+    <wsdl:part name="json" type="xsd:string" />
+    <wsdl:part name="identificador" type="impl:ArrayOf_xsd_string" />
+  </wsdl:message>
+  <wsdl:message name="getEntradasMultiPadrePendienteRequest">
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+    <wsdl:part name="idPedidoPro" type="xsd:int" />
+    <wsdl:part name="idPedidoProLin" type="xsd:int" />
+    <wsdl:part name="subSistema" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getCompartimentoCarroClasificacionResponse">
+    <wsdl:part name="getCompartimentoCarroClasificacionReturn" type="impl:ArrayOfArrayOf_xsd_anyType" />
+  </wsdl:message>
+  <wsdl:message name="generarPreclasificacionEntradasResponse">
+    <wsdl:part name="generarPreclasificacionEntradasReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getCompartimentoCarroClasificacionRequest">
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+    <wsdl:part name="idPedidoPro" type="xsd:int" />
+    <wsdl:part name="idPedidoProLin" type="xsd:int" />
+    <wsdl:part name="idArticulo" type="xsd:int" />
+    <wsdl:part name="subsistema" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="generarEntradaEnCarroPTLRequest">
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+    <wsdl:part name="idPedidoPro" type="xsd:int" />
+    <wsdl:part name="idPedidoProLin" type="xsd:int" />
+    <wsdl:part name="idArticulo" type="xsd:int" />
+    <wsdl:part name="cantidad" type="xsd:int" />
+    <wsdl:part name="cantidadUnidad" type="xsd:int" />
+    <wsdl:part name="atributos" type="impl:ArrayOfArrayOf_xsd_anyType" />
+    <wsdl:part name="idHueco" type="xsd:int" />
+    <wsdl:part name="idOperario" type="xsd:int" />
+    <wsdl:part name="idRecurso" type="xsd:int" />
+    <wsdl:part name="estado" type="xsd:int" />
+    <wsdl:part name="lote" type="xsd:string" />
+    <wsdl:part name="identificador" type="impl:ArrayOf_xsd_string" />
+  </wsdl:message>
+  <wsdl:message name="getCompartimentoCarroPorDescripcionRequest">
+    <wsdl:part name="descripcion" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="generarPreclasificacionEntradasRequest">
+    <wsdl:part name="json" type="xsd:string" />
+    <wsdl:part name="identificador" type="impl:ArrayOf_xsd_string" />
+  </wsdl:message>
+  <wsdl:message name="asignarHuecoACarroResponse" />
+  <wsdl:message name="getExistenciaClasificacionResponse">
+    <wsdl:part name="getExistenciaClasificacionReturn" type="impl:ArrayOfArrayOf_xsd_anyType" />
+  </wsdl:message>
+  <wsdl:message name="hayClasificacionEntradasRequest">
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="asignarHuecoACarroRequest">
+    <wsdl:part name="idHueco" type="xsd:int" />
+    <wsdl:part name="idCarro" type="xsd:int" />
+    <wsdl:part name="subSistema" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getExistenciaClasificacionRequest">
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+    <wsdl:part name="idPedidoPro" type="xsd:int" />
+    <wsdl:part name="idPedidoProLin" type="xsd:int" />
+    <wsdl:part name="idArticulo" type="xsd:int" />
+    <wsdl:part name="subsistema" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getClasificacionesPtesLineaRecepcionRequest">
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+    <wsdl:part name="idPedidoPro" type="xsd:int" />
+    <wsdl:part name="idPedidoProLin" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="getCarroClasificacionResponse">
+    <wsdl:part name="getCarroClasificacionReturn" type="impl:ArrayOfArrayOf_xsd_anyType" />
+  </wsdl:message>
+  <wsdl:message name="getClasificacionesPtesLineaRecepcionResponse">
+    <wsdl:part name="getClasificacionesPtesLineaRecepcionReturn" type="impl:ArrayOfArrayOfArrayOf_xsd_anyType" />
+  </wsdl:message>
+  <wsdl:message name="hayClasificacionEntradasResponse">
+    <wsdl:part name="hayClasificacionEntradasReturn" type="xsd:boolean" />
+  </wsdl:message>
+  <wsdl:message name="asignarPaletMultiASubsistemaRequest">
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+    <wsdl:part name="idPedidoPro" type="xsd:int" />
+    <wsdl:part name="idPedidoProLin" type="xsd:int" />
+    <wsdl:part name="idEntrada" type="xsd:int" />
+    <wsdl:part name="subsistema" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getArticulosClasificacionPendientesRequest">
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="ponerClasificacionTratadoRequest">
+    <wsdl:part name="idEntrada" type="xsd:int" />
+    <wsdl:part name="idRecepcion" type="xsd:int" />
+    <wsdl:part name="idPedidoPro" type="xsd:int" />
+    <wsdl:part name="idPedidoProLin" type="xsd:int" />
+    <wsdl:part name="subsistema" type="xsd:string" />
+    <wsdl:part name="id" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:portType name="WSClasificacion">
+    <wsdl:operation name="getCarroClasificacion" parameterOrder="idRecepcion idPedidoPro idPedidoProLin idArticulo subsistema">
+      <wsdl:input name="getCarroClasificacionRequest" message="impl:getCarroClasificacionRequest" />
+      <wsdl:output name="getCarroClasificacionResponse" message="impl:getCarroClasificacionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="generarPreclasificacionEntradas" parameterOrder="json identificador">
+      <wsdl:input name="generarPreclasificacionEntradasRequest" message="impl:generarPreclasificacionEntradasRequest" />
+      <wsdl:output name="generarPreclasificacionEntradasResponse" message="impl:generarPreclasificacionEntradasResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="hayClasificacionEntradas" parameterOrder="idRecepcion">
+      <wsdl:input name="hayClasificacionEntradasRequest" message="impl:hayClasificacionEntradasRequest" />
+      <wsdl:output name="hayClasificacionEntradasResponse" message="impl:hayClasificacionEntradasResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getExistenciaClasificacion" parameterOrder="idRecepcion idPedidoPro idPedidoProLin idArticulo subsistema">
+      <wsdl:input name="getExistenciaClasificacionRequest" message="impl:getExistenciaClasificacionRequest" />
+      <wsdl:output name="getExistenciaClasificacionResponse" message="impl:getExistenciaClasificacionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="generarEntradaEnCarroPTL" parameterOrder="idRecepcion idPedidoPro idPedidoProLin idArticulo cantidad cantidadUnidad atributos idHueco idOperario idRecurso estado lote identificador">
+      <wsdl:input name="generarEntradaEnCarroPTLRequest" message="impl:generarEntradaEnCarroPTLRequest" />
+      <wsdl:output name="generarEntradaEnCarroPTLResponse" message="impl:generarEntradaEnCarroPTLResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="asignarHuecoACarro" parameterOrder="idHueco idCarro subSistema">
+      <wsdl:input name="asignarHuecoACarroRequest" message="impl:asignarHuecoACarroRequest" />
+      <wsdl:output name="asignarHuecoACarroResponse" message="impl:asignarHuecoACarroResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="asignarPaletMultiASubsistema" parameterOrder="idRecepcion idPedidoPro idPedidoProLin idEntrada subsistema">
+      <wsdl:input name="asignarPaletMultiASubsistemaRequest" message="impl:asignarPaletMultiASubsistemaRequest" />
+      <wsdl:output name="asignarPaletMultiASubsistemaResponse" message="impl:asignarPaletMultiASubsistemaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="cerrarMultiReferencia" parameterOrder="idEntradaPadre subsistemaClas">
+      <wsdl:input name="cerrarMultiReferenciaRequest" message="impl:cerrarMultiReferenciaRequest" />
+      <wsdl:output name="cerrarMultiReferenciaResponse" message="impl:cerrarMultiReferenciaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ponerClasificacionTratado" parameterOrder="idEntrada idRecepcion idPedidoPro idPedidoProLin subsistema id">
+      <wsdl:input name="ponerClasificacionTratadoRequest" message="impl:ponerClasificacionTratadoRequest" />
+      <wsdl:output name="ponerClasificacionTratadoResponse" message="impl:ponerClasificacionTratadoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getEntradasMultiPadrePendiente" parameterOrder="idRecepcion idPedidoPro idPedidoProLin subSistema">
+      <wsdl:input name="getEntradasMultiPadrePendienteRequest" message="impl:getEntradasMultiPadrePendienteRequest" />
+      <wsdl:output name="getEntradasMultiPadrePendienteResponse" message="impl:getEntradasMultiPadrePendienteResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getCompartimentoCarroClasificacion" parameterOrder="idRecepcion idPedidoPro idPedidoProLin idArticulo subsistema">
+      <wsdl:input name="getCompartimentoCarroClasificacionRequest" message="impl:getCompartimentoCarroClasificacionRequest" />
+      <wsdl:output name="getCompartimentoCarroClasificacionResponse" message="impl:getCompartimentoCarroClasificacionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getClasificacionesPtesLineaRecepcion" parameterOrder="idRecepcion idPedidoPro idPedidoProLin">
+      <wsdl:input name="getClasificacionesPtesLineaRecepcionRequest" message="impl:getClasificacionesPtesLineaRecepcionRequest" />
+      <wsdl:output name="getClasificacionesPtesLineaRecepcionResponse" message="impl:getClasificacionesPtesLineaRecepcionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getArticulosClasificacionPendientes" parameterOrder="idRecepcion">
+      <wsdl:input name="getArticulosClasificacionPendientesRequest" message="impl:getArticulosClasificacionPendientesRequest" />
+      <wsdl:output name="getArticulosClasificacionPendientesResponse" message="impl:getArticulosClasificacionPendientesResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getCompartimentoCarroPorDescripcion" parameterOrder="descripcion">
+      <wsdl:input name="getCompartimentoCarroPorDescripcionRequest" message="impl:getCompartimentoCarroPorDescripcionRequest" />
+      <wsdl:output name="getCompartimentoCarroPorDescripcionResponse" message="impl:getCompartimentoCarroPorDescripcionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmarPreclasificacionEntradas" parameterOrder="json identificador">
+      <wsdl:input name="confirmarPreclasificacionEntradasRequest" message="impl:confirmarPreclasificacionEntradasRequest" />
+      <wsdl:output name="confirmarPreclasificacionEntradasResponse" message="impl:confirmarPreclasificacionEntradasResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSClasificacionSoapBinding" type="impl:WSClasificacion">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="getCarroClasificacion">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getCarroClasificacionRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getCarroClasificacionResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="generarPreclasificacionEntradas">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="generarPreclasificacionEntradasRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="generarPreclasificacionEntradasResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="hayClasificacionEntradas">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="hayClasificacionEntradasRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="hayClasificacionEntradasResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getExistenciaClasificacion">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getExistenciaClasificacionRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getExistenciaClasificacionResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="generarEntradaEnCarroPTL">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="generarEntradaEnCarroPTLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="generarEntradaEnCarroPTLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="asignarHuecoACarro">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="asignarHuecoACarroRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="asignarHuecoACarroResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="asignarPaletMultiASubsistema">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="asignarPaletMultiASubsistemaRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="asignarPaletMultiASubsistemaResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cerrarMultiReferencia">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cerrarMultiReferenciaRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="cerrarMultiReferenciaResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ponerClasificacionTratado">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="ponerClasificacionTratadoRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="ponerClasificacionTratadoResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEntradasMultiPadrePendiente">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getEntradasMultiPadrePendienteRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getEntradasMultiPadrePendienteResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCompartimentoCarroClasificacion">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getCompartimentoCarroClasificacionRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getCompartimentoCarroClasificacionResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getClasificacionesPtesLineaRecepcion">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getClasificacionesPtesLineaRecepcionRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getClasificacionesPtesLineaRecepcionResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getArticulosClasificacionPendientes">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getArticulosClasificacionPendientesRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getArticulosClasificacionPendientesResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCompartimentoCarroPorDescripcion">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getCompartimentoCarroPorDescripcionRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getCompartimentoCarroPorDescripcionResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmarPreclasificacionEntradas">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="confirmarPreclasificacionEntradasRequest">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="confirmarPreclasificacionEntradasResponse">
+        <wsdlsoap:body use="encoded" namespace="http://motor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSClasificacionService">
+    <wsdl:port name="WSClasificacion" binding="impl:WSClasificacionSoapBinding">
+      <wsdlsoap:address location="http://localhost:8080/RumboClasificacionEntradaServices/services/WSClasificacion" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

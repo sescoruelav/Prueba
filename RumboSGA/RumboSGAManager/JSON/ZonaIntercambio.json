@@ -1,0 +1,60 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "ZLORIGEN",
+        "Etiqueta": "Origen",
+        "EtiqIngles": "Origin",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "ZLDESTINO",
+        "Etiqueta": "Destino",
+        "EtiqIngles": "Destiny",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 2,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "ZLBUFFER",
+        "Etiqueta": "Intercambio",
+        "EtiqIngles": "Exchange",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 0,
+        "Alto": 100
+      },
+      {
+        "Nombre": "ORDEN",
+        "Etiqueta": "Orden",
+        "EtiqIngles": "Order",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 3,
+        "Ancho": 50,
+        "Alto": 0
+      }
+    ],
+    "From": "TBLZONAINTERCAMBIO",
+    "Data": "[DATA]"
+  }
+]

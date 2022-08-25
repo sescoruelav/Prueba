@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <filtroRecepcionesVistaPedido>
+    <!--Prefijos Tablas:
+       TBLPEDIDOSPROCAB ped
+       TBLPROVEEDORES pro
+       TBLAGENCIAS agen 
+       TBLPEDIDOSPROESTADO pedest-->
+    <filtro>
+    <campo>ped.IDPEDIDOPROESTADO</campo>
+      <operadorComparacion>=</operadorComparacion>
+    <valor>'PC'</valor>
+    </filtro>
+    <filtro operadorSQL="AND">
+¡      <campo>ped.REFERENCIA</campo>
+      <operadorComparacion>like</operadorComparacion>
+      <valor>'PC180%'</valor>
+    </filtro>
+  </filtroRecepcionesVistaPedido>
+</root>

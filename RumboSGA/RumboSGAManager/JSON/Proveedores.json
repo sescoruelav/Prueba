@@ -1,0 +1,192 @@
+//comentario
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDPROVEEDOR",
+        "Etiqueta": "ID",
+        "EtiqIngles": "ID",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "CODIGO",
+        "Etiqueta": "Codigo",
+        "EtiqIngles": "Code",
+        "Tipo": "VARCHAR(20)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 0,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "NOMBRE",
+        "Etiqueta": "Nombre",
+        "EtiqIngles": "Name",
+        "Tipo": "VARCHAR(80)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 2,
+        "Fila": 0,
+        "Ancho": 0,
+        "Alto": 100
+      },
+      {
+        "Nombre": "MUELLEDEVOLUCIONES",
+        "Etiqueta": "Muelle Devoluciones",
+        "EtiqIngles": "Refund Dock",
+        "Tipo": "INT",
+        "Control": "CMB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 3,
+        "Fila": 0,
+        "Ancho": 200,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "TBLHUECOS",
+          "CampoRelacionado": "IDHUECO",
+          "CampoMostrado": "DESCRIPCION",
+          "ValorDefecto": "0"
+        }
+      },
+      {
+        "Nombre": "DIRECCION",
+        "Etiqueta": "Direccion",
+        "EtiqIngles": "Adress",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 2,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "CODIGOPOSTAL",
+        "Etiqueta": "Codigo Postal",
+        "EtiqIngles": "Postal Code",
+        "Tipo": "VARCHAR(20)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 2,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "POBLACION",
+        "Etiqueta": "Poblacion",
+        "EtiqIngles": "City",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 2,
+        "Fila": 2,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "PROVINCIA",
+        "Etiqueta": "Provincia",
+        "EtiqIngles": "Province",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 3,
+        "Fila": 2,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "PAIS",
+        "Etiqueta": "Pais",
+        "EtiqIngles": "Country",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 3,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "EMAIL",
+        "Etiqueta": "Email",
+        "EtiqIngles": "Email",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 3,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "TELEFONO",
+        "Etiqueta": "Telefono",
+        "EtiqIngles": "Phone",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 2,
+        "Fila": 3,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "FAX",
+        "Tipo": "VARCHAR(30)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 3,
+        "Fila": 3,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "PASS",
+        "Tipo": "VARCHAR(20)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 4,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "CIF",
+        "Tipo": "VARCHAR(20)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 4,
+        "Ancho": 100,
+        "Alto": 0
+      }
+    ],
+    "From": "TBLPROVEEDORES",
+    "Data": "[DATA]"
+  }
+]

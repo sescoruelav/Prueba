@@ -1,0 +1,22 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDPEDIDOPROESTADO",
+        "Etiqueta": "Estado_Pedido",
+        "EtiqIngles": "Status_Order",
+        "EsModificable": false,
+        "EsVisible": true
+      },
+      {
+        "Nombre": "DESCRIPCION",
+        "Etiqueta": "Descripcion",
+        "EtiqIngles": "Description",
+        "EsModificable": false,
+        "EsVisible": true
+      }
+    ],
+    "From": "TBLPEDIDOSPROESTADO",
+    "Data": "[DATA]"
+  }
+]

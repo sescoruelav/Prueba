@@ -1,0 +1,67 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDRUTA",
+        "Etiqueta": "ID",
+        "EtiqIngles": "ID",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "CODIGO",
+        "Etiqueta": "Codigo",
+        "EtiqIngles": "Code",
+        "Tipo": "VARCHAR(20)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "DESCRIPCION",
+        "Etiqueta": "Descripcion",
+        "EtiqIngles": "Description",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 2,
+        "Ancho": 0,
+        "Alto": 100
+      },
+      {
+        "Nombre": "MUELLE",
+        "Etiqueta": "Muelle",
+        "EtiqIngles": "Dock",
+        "Tipo": "INT",
+        "Control": "CMB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 3,
+        "Ancho": 50,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "TBLHUECOS",
+          "CampoRelacionado": "IDHUECO",
+          "CampoMostrado": "DESCRIPCION",
+          "ValorDefecto": "0"
+        }
+      }
+    ],
+    "From": "TBLRUTAS",
+    "Data": "[DATA]"
+  }
+]

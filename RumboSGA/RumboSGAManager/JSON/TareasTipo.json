@@ -1,0 +1,111 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "TIPOTAREA",
+        "Etiqueta": "Tipo_Tarea",
+        "EtiqIngles": "Task Type",
+        "Tipo": "CHAR(2)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "DESCRIPCION",
+        "Etiqueta": "Descripcion",
+        "EtiqIngles": "Description",
+        "Tipo": "VARCHAR(100)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 2,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "PRIORIDAD",
+        "Etiqueta": "Prioridad",
+        "EtiqIngles": "Priority",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 3,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "ZONALOGACTUACION",
+        "Etiqueta": "Zona_Log_Actuacion",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 4,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "MAXNUMLINEAS",
+        "Etiqueta": "Max_NumLineas",
+        "EtiqIngles": "Max Lines",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 5,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "TIPOMOVASOCIADO",
+        "Etiqueta": "Tipo_MovAsociado",
+        "EtiqIngles": "Associated Movement Type",
+        "Tipo": "VARCHAR(10)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 6,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDTAREATIPO",
+        "Etiqueta": "Num_Tarea",
+        "EtiqIngles": "Task Type ID",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "DURSEGUNDOS",
+        "Etiqueta": "Duracion_Segundos",
+        "EtiqIngles": "Seconds Duration",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 7,
+        "Ancho": 50,
+        "Alto": 0
+      }
+    ],
+    "From": "TBLTAREASTIPO",
+    "Data": "[DATA]"
+  }
+]

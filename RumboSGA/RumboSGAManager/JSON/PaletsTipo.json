@@ -1,0 +1,112 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDPALETTIPO",
+        "Etiqueta": "Tipo",
+        "EtiqIngles": "Type",
+        "Tipo": "CHAR(2)",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "DESCRIPCION",
+        "Etiqueta": "Descripcion",
+        "EtiqIngles": "Description",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "ALTURACM",
+        "Etiqueta": "Altura(Cm)",
+        "EtiqIngles": "Height(cm)",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 3,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "ANCHURACM",
+        "Etiqueta": "Anchura(Cm)",
+        "EtiqIngles": "Width(cm)",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 3,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "PROFUNDIDADCM",
+        "Etiqueta": "Profundidad(Cm)",
+        "EtiqIngles": "Depth(cm)",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 2,
+        "Fila": 3,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "PESOKG",
+        "Etiqueta": "Peso(Kg)",
+        "EtiqIngles": "Weight(Kg)",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 3,
+        "Fila": 3,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "PROPIETARIO",
+        "Etiqueta": "Propietario",
+        "EtiqIngles": "Owner",
+        "Tipo": "VARCHAR(30)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 2,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "TIPOANCHO",
+        "Etiqueta": "Tipo Ancho",
+        "EtiqIngles": "Width Type",
+        "Tipo": "CHAR(2)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 2,
+        "Ancho": 50,
+        "Alto": 0
+      }
+    ],
+    "From": "TBLPALETSTIPO",
+    "Data": "[DATA]"
+  }
+]

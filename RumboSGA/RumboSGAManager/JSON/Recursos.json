@@ -1,0 +1,63 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDRECURSO",
+        "Etiqueta": "Recurso",
+        "EtiqIngles": "Resource",
+        "EsPK": true
+      },
+      {
+        "Nombre": "DESCRIPCION",
+        "Etiqueta": "Descripcion",
+        "EtiqIngles": "Description",
+        "EsPK": false
+      },
+      {
+        "Nombre": "ESTADO",
+        "Etiqueta": "Estado",
+        "EtiqIngles": "State",
+		"EsPK": false
+      },
+	  {
+        "Nombre": "NOMBREIMPRESORA",
+        "Etiqueta": "Nombre Impresora",
+        "EtiqIngles": "Printer name",
+		"EsPK": false,
+      },
+      {
+        "Nombre": "IDUBICACIONACTUAL",
+        "Etiqueta": "ID Ubicacion Actual",
+        "EtiqIngles": "Id current location",
+        "EsPK": false
+      },
+	  {
+        "Nombre": "IDUBICACIONPRINCIPAL",
+        "Etiqueta": "ID Ubicacion Principal",
+        "EtiqIngles": "Id main location",
+        "EsPK": false
+      },
+	  {
+        "Nombre": "MAXTAREASRECURSO",
+        "Etiqueta": "Max tareas",
+        "EtiqIngles": "Max tasks",
+        "EsPK": false
+      },
+	  {
+        "Nombre": "FECHALOGIN",
+        "Etiqueta": "Fecha login",
+        "EtiqIngles": "Login date",
+        "EsPK": false
+      },
+	  {
+        "Nombre": "FECHALOGOUT",
+        "Etiqueta": "Fecha logout",
+        "EtiqIngles": "Logout date",
+        "EsPK": false
+      }
+    
+    ],
+    "From": "TBLRECURSOS",
+    "Data": "[DATA]"
+  }
+]

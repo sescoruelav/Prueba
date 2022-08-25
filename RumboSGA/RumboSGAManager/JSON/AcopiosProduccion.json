@@ -1,0 +1,111 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "fc.ORDEN",
+        "Etiqueta": "Orden",
+        "EsModificable": false
+      },
+      {
+        "Nombre": "fc.FECHACREACION",
+        "Etiqueta": "Fecha_Creacion",
+        "EsModificable": false
+      },
+      {
+        "Nombre": "artf.DESCRIPCION",
+        "Etiqueta": "Articulo_Final",
+        "EsModificable": false
+      },
+      {
+        "Nombre": "fc.UDSPREVISTASFAB",
+        "Etiqueta": "Previstas_Fabricacion",
+        "EsModificable": false
+      },
+      {
+        "Nombre": "coalesce(sum(en.cantidad),0)",
+        "Etiqueta": "Cantidad_Fabricado",
+        "EsModificable": false
+      },
+      {
+        "Nombre": "FECHAPREVFAB",
+        "Etiqueta": "FechaPrevFab",
+        "EsModificable": false
+      },
+      {
+        "Nombre": "FECHAREALFAB",
+        "Etiqueta": "FechaRealFab",
+        "EsModificable": false
+      },
+      {
+        "Nombre": "IDORDENFABESTADO",
+        "Etiqueta": "Estado_Fabricacion",
+        "EsModificable": false
+      },
+      {
+        "Nombre": "maq.DESCRIPCION",
+        "Etiqueta": "Maquina",
+        "EsModificable": false
+      },
+      {
+        "Nombre": "maq.IDMAQUINAESTADO",
+        "Etiqueta": "Estado_Maquina",
+        "EsModificable": false
+      },
+      {
+        "Nombre": "TIPOORDEN",
+        "Etiqueta": "Tipo_Orden",
+        "EsModificable": false
+      },
+      {
+        "Nombre": "TIPOPALET",
+        "Etiqueta": "Tipo_Palet",
+        "EsModificable": false
+      },
+      {
+        "Nombre": "observaciones",
+        "Etiqueta": "Observaciones",
+        "EsModificable": false
+      },
+      {
+        "Nombre": "TIEMPODEDICADO",
+        "Etiqueta": "Tiempo_Dedicado",
+        "EsModificable": false
+      },
+      {
+        "Nombre": "FECHAEXPEDICION",
+        "Etiqueta": "Fecha_Expedicion",
+        "EsModificable": false
+      },
+      {
+        "Nombre": "CONSUMOAUTOMATICO",
+        "Etiqueta": "Consumo_Automatico",
+        "EsModificable": false
+      },
+      {
+        "Nombre": "TIEMPOESTIMADO",
+        "Etiqueta": "Tiempo_Estimado",
+        "EsModificable": false
+      },
+      {
+        "Nombre": "TIEMPOREAL",
+        "Etiqueta": "Tiempo_Real",
+        "EsModificable": false
+      },
+      {
+        "Nombre": "RUTAIMAGEN",
+        "Etiqueta": "Ruta_Imagen",
+        "EsModificable": false
+      },
+      {
+        "Nombre": "artf.referencia",
+        "Etiqueta": "Referencia",
+        "EsModificable": false
+      }
+    ],
+    "From": "(TBLORDENFABRICACIONCAB FC left join dbo.TBLARTICULOS artF on fc.IDARTICULO=artf.IDARTICULO) left join dbo.TBLENTRADAS en on en.IDPEDIDOFAB=fc.IDPEDIDOFAB left join dbo.TBLMAQUINAS maq on fc.IDMAQUINA=maq.IDMAQUINA",
+    "Where": "",
+    "Group By": "fc.[ORDEN],fc.[FECHACREACION],fc.[UDSPREVISTASFAB],[FECHAPREVFAB],[FECHAREALFAB],[IDORDENFABESTADO],[TIPOORDEN],[TIPOPALET],[observaciones],[TIEMPODEDICADO],[FECHAEXPEDICION],[CONSUMOAUTOMATICO],[TIEMPOESTIMADO],[TIEMPOREAL],[RUTAIMAGEN],artf.referencia, artf.DESCRIPCION, maq.DESCRIPCION, maq.IDMAQUINAESTADO",
+    "Order By": "FECHAPREVFAB,ORDEN",
+    "Data": "[DATA]"
+  }
+]

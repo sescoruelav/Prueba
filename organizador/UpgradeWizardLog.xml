@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\organizador\organizador.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\organizador\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\organizador\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\organizador\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\organizador\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\organizador\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\organizador\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\organizador\App.config" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\organizador\Properties\Resources.resx" />
+  <event action="Analyze" type="Success" name="RadForm1.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\organizador\RadForm1.resx" />
+  <event action="Analyze" type="Success" name="rRbnOrganizador.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\organizador\rRbnOrganizador.resx" />
+  <event action="Analyze" type="Success" name="organizador" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\organizador\organizador.csproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\RumboSGA.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\App.config" />
+  <event action="Analyze" type="Success" name="ArchivoJira.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Controles\ArchivoJira.resx" />
+  <event action="Analyze" type="Success" name="RumMessageBox.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Controles\RumMessageBox.resx" />
+  <event action="Analyze" type="Success" name="RumMessageInputBox.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Controles\RumMessageInputBox.resx" />
+  <event action="Analyze" type="Success" name="VentanaDateTimePicker.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Controles\VentanaDateTimePicker.resx" />
+  <event action="Analyze" type="Success" name="VisorInforme.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Controles\VisorInforme.resx" />
+  <event action="Analyze" type="Success" name="VisorSQLRibbon.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Controles\VisorSQLRibbon.resx" />
+  <event action="Analyze" type="Success" name="AcopiosProduccion.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\AcopiosProduccion.resx" />
+  <event action="Analyze" type="Success" name="BuscarRecepcion.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\BuscarRecepcion.resx" />
+  <event action="Analyze" type="Success" name="CargaCab.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\CargaCab.resx" />
+  <event action="Analyze" type="Success" name="DevolucionesCliente.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\DevolucionesCliente.resx" />
+  <event action="Analyze" type="Success" name="DevolucionesProveedorPendientes.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\DevolucionesProveedorPendientes.resx" />
+  <event action="Analyze" type="Success" name="DevolucionProveedor.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\DevolucionProveedor.resx" />
+  <event action="Analyze" type="Success" name="AgregarRecepcion.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\Formulario Recepciones\AgregarRecepcion.resx" />
+  <event action="Analyze" type="Success" name="FiltroInicialRecepciones.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\Formulario Recepciones\FiltroInicialRecepciones.resx" />
+  <event action="Analyze" type="Success" name="FrmAltaChep.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\Formulario Recepciones\FrmAltaChep.resx" />
+  <event action="Analyze" type="Success" name="FrmAltaDirectaPreaviso.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\Formulario Recepciones\FrmAltaDirectaPreaviso.resx" />
+  <event action="Analyze" type="Success" name="FrmAltaModEmbalaje.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\Formulario Recepciones\FrmAltaModEmbalaje.resx" />
+  <event action="Analyze" type="Success" name="FrmModificarLineasRecepcion.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\Formulario Recepciones\FrmModificarLineasRecepcion.resx" />
+  <event action="Analyze" type="Success" name="ProveedoresPedidosCabGridView.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\Formulario Recepciones\ProveedoresPedidosCabGridView.resx" />
+  <event action="Analyze" type="Success" name="AgregarRecurso.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\FormularioGestorRecursos\AgregarRecurso.resx" />
+  <event action="Analyze" type="Success" name="AgregarZonaLin.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\FormularioGestorRecursos\AgregarZonaLin.resx" />
+  <event action="Analyze" type="Success" name="exportarExcel.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\FormularioGestorRecursos\exportarExcel.resx" />
+  <event action="Analyze" type="Success" name="FrmDevolucionesCliente.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\FrmDevolucionesCliente.resx" />
+  <event action="Analyze" type="Success" name="FrmDevolucionesProveedor.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\FrmDevolucionesProveedor.resx" />
+  <event action="Analyze" type="Success" name="FrmGestorRecursos.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\FrmGestorRecursos.resx" />
+  <event action="Analyze" type="Success" name="FrmUbicaciones.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\FrmUbicaciones.resx" />
+  <event action="Analyze" type="Success" name="GenerarMantenimientos.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\GenerarMantenimientos.resx" />
+  <event action="Analyze" type="Success" name="OrdenesRecogida.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\OrdenesRecogida.resx" />
+  <event action="Analyze" type="Success" name="PlanificacionDiariaRecepciones.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\PlanificacionDiariaRecepciones.resx" />
+  <event action="Analyze" type="Success" name="prueba.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\prueba.resx" />
+  <event action="Analyze" type="Success" name="rAlgoritmo.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\rAlgoritmo.resx" />
+  <event action="Analyze" type="Success" name="rRbnOrganizador.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\rRbnOrganizador.resx" />
+  <event action="Analyze" type="Success" name="SeleccionarPlanificacion.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\GestionAlmacen\SeleccionarPlanificacion.resx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\log4net.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\log4net.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\log4net.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\log4net.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\log4net.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\log4net.config" />
+  <event action="Analyze" type="Success" name="log4net.config" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\log4net.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\packages.config" />
+  <event action="Analyze" type="Success" name="AcercaDe.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\AcercaDe.resx" />
+  <event action="Analyze" type="Success" name="FormularioCrearLote.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\FormulariosComunes\FormularioCrearLote.resx" />
+  <event action="Analyze" type="Success" name="FormularioCrearPaletMultireferencia.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\FormulariosComunes\FormularioCrearPaletMultireferencia.resx" />
+  <event action="Analyze" type="Success" name="FormularioCrearTarea.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\FormulariosComunes\FormularioCrearTarea.resx" />
+  <event action="Analyze" type="Success" name="FormularioCrearTareaTipo.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\FormulariosComunes\FormularioCrearTareaTipo.resx" />
+  <event action="Analyze" type="Success" name="FormularioCrearZonaCab.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\FormulariosComunes\FormularioCrearZonaCab.resx" />
+  <event action="Analyze" type="Success" name="FrmImportarStock.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\FormulariosComunes\FrmImportarStock.resx" />
+  <event action="Analyze" type="Success" name="FrmSalidasRegularizacion.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\FormulariosComunes\FrmSalidasRegularizacion.resx" />
+  <event action="Analyze" type="Success" name="FrmSeleccionAlmacen.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\FormulariosComunes\FrmSeleccionAlmacen.resx" />
+  <event action="Analyze" type="Success" name="FrmSeleccionarFecha.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\FormulariosComunes\FrmSeleccionarFecha.resx" />
+  <event action="Analyze" type="Success" name="FrmSeleccionInforme.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\FormulariosComunes\FrmSeleccionInforme.resx" />
+  <event action="Analyze" type="Success" name="FrmSeleccionTipoMovimiento.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\FormulariosComunes\FrmSeleccionTipoMovimiento.resx" />
+  <event action="Analyze" type="Success" name="FrmSeleccionZona.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\FormulariosComunes\FrmSeleccionZona.resx" />
+  <event action="Analyze" type="Success" name="VisorComentarios.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\FormulariosComunes\VisorComentarios.resx" />
+  <event action="Analyze" type="Success" name="ArticulosFrm.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\ArticulosFrm.resx" />
+  <event action="Analyze" type="Success" name="ControlTareas.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\ControlTareas.resx" />
+  <event action="Analyze" type="Success" name="DialogCantidad.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\DialogCantidad.resx" />
+  <event action="Analyze" type="Success" name="EnCurso.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\EnCurso.resx" />
+  <event action="Analyze" type="Success" name="FrmMapaAlmacen.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\FrmMapaAlmacen.resx" />
+  <event action="Analyze" type="Success" name="FrmProductividad.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\FrmProductividad.resx" />
+  <event action="Analyze" type="Success" name="InventarioInicial.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\InventarioInicial.resx" />
+  <event action="Analyze" type="Success" name="Movimientos.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Movimientos.resx" />
+  <event action="Analyze" type="Success" name="OperariosForm.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\OperariosForm.resx" />
+  <event action="Analyze" type="Success" name="AltaProductoWS.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\PantallasWS\AltaProductoWS.resx" />
+  <event action="Analyze" type="Success" name="AnularConsumoParcial.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\PantallasWS\AnularConsumoParcial.resx" />
+  <event action="Analyze" type="Success" name="ConsumosOrdenFab.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\PantallasWS\ConsumosOrdenFab.resx" />
+  <event action="Analyze" type="Success" name="ConsumosOrdenFabMatricula.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\PantallasWS\ConsumosOrdenFabMatricula.resx" />
+  <event action="Analyze" type="Success" name="ElegirMaquina.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\PantallasWS\ElegirMaquina.resx" />
+  <event action="Analyze" type="Success" name="ElegirMuelle.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\PantallasWS\ElegirMuelle.resx" />
+  <event action="Analyze" type="Success" name="ElegirRecurso.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\PantallasWS\ElegirRecurso.resx" />
+  <event action="Analyze" type="Success" name="FrmDevolucionesOrdenFab.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\PantallasWS\FrmDevolucionesOrdenFab.resx" />
+  <event action="Analyze" type="Success" name="FrmResumenPedidosCarga.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\PantallasWS\FrmResumenPedidosCarga.resx" />
+  <event action="Analyze" type="Success" name="FrmSeleccionarExistencia.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\PantallasWS\FrmSeleccionarExistencia.resx" />
+  <event action="Analyze" type="Success" name="FrmSeleccionarReposiciones.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\PantallasWS\FrmSeleccionarReposiciones.resx" />
+  <event action="Analyze" type="Success" name="FrmVerMovimientosError.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\PantallasWS\FrmVerMovimientosError.resx" />
+  <event action="Analyze" type="Success" name="LanzamientoPedidoWS.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\PantallasWS\LanzamientoPedidoWS.resx" />
+  <event action="Analyze" type="Success" name="ModificarEntrada.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\PantallasWS\ModificarEntrada.resx" />
+  <event action="Analyze" type="Success" name="ModificarReserva.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\PantallasWS\ModificarReserva.resx" />
+  <event action="Analyze" type="Success" name="RecursosTareaForm.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\RecursosTareaForm.resx" />
+  <event action="Analyze" type="Success" name="Reposicion.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Reposicion.resx" />
+  <event action="Analyze" type="Success" name="Reposiciones.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Reposiciones.resx" />
+  <event action="Analyze" type="Success" name="AgregarTransferencia.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Stock\AgregarTransferencia.resx" />
+  <event action="Analyze" type="Success" name="CambiarAtributos.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Stock\CambiarAtributos.resx" />
+  <event action="Analyze" type="Success" name="CambiarEstadoExistencia.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Stock\CambiarEstadoExistencia.resx" />
+  <event action="Analyze" type="Success" name="CambiarPickingEstado.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Stock\CambiarPickingEstado.resx" />
+  <event action="Analyze" type="Success" name="ChecksColumnas.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Stock\ChecksColumnas.resx" />
+  <event action="Analyze" type="Success" name="FrmImportacionExportacion.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Stock\FrmImportacionExportacion.resx" />
+  <event action="Analyze" type="Success" name="GridHistArticulos.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Stock\GridHistArticulos.resx" />
+  <event action="Analyze" type="Success" name="HistArticulosFecha.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Stock\HistArticulosFecha.resx" />
+  <event action="Analyze" type="Success" name="Reubicar.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Stock\Reubicar.resx" />
+  <event action="Analyze" type="Success" name="SeleccionRegularizacion.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Stock\SeleccionRegularizacion.resx" />
+  <event action="Analyze" type="Success" name="Stock.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Stock\Stock.resx" />
+  <event action="Analyze" type="Success" name="DevolucionesCliente.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Filtros\DevolucionesCliente.resx" />
+  <event action="Analyze" type="Success" name="DevolucionesProveedor.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Filtros\DevolucionesProveedor.resx" />
+  <event action="Analyze" type="Success" name="Existencias.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Filtros\Existencias.resx" />
+  <event action="Analyze" type="Success" name="Maquina.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Filtros\Maquina.resx" />
+  <event action="Analyze" type="Success" name="Matriculas.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Filtros\Matriculas.resx" />
+  <event action="Analyze" type="Success" name="OrdenesCargaControl.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Filtros\OrdenesCargaControl.resx" />
+  <event action="Analyze" type="Success" name="OrdenesFabricacion.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Filtros\OrdenesFabricacion.resx" />
+  <event action="Analyze" type="Success" name="OrdenesRecogidaControl.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Filtros\OrdenesRecogidaControl.resx" />
+  <event action="Analyze" type="Success" name="Packing.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Filtros\Packing.resx" />
+  <event action="Analyze" type="Success" name="PedidosProv.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Filtros\PedidosProv.resx" />
+  <event action="Analyze" type="Success" name="PedidosTan.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Filtros\PedidosTan.resx" />
+  <event action="Analyze" type="Success" name="Preavisos.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Filtros\Preavisos.resx" />
+  <event action="Analyze" type="Success" name="Recepciones.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Filtros\Recepciones.resx" />
+  <event action="Analyze" type="Success" name="RegularizacionesEntrada.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Filtros\RegularizacionesEntrada.resx" />
+  <event action="Analyze" type="Success" name="RegularizacionesSalida.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Filtros\RegularizacionesSalida.resx" />
+  <event action="Analyze" type="Success" name="AbonarPackingMuelle.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Funciones\AbonarPackingMuelle.resx" />
+  <event action="Analyze" type="Success" name="AbonarUnidadesRegSalida.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Funciones\AbonarUnidadesRegSalida.resx" />
+  <event action="Analyze" type="Success" name="CambiarEstadoOrdRec.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Funciones\CambiarEstadoOrdRec.resx" />
+  <event action="Analyze" type="Success" name="CambiarEstadoPacking.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Funciones\CambiarEstadoPacking.resx" />
+  <event action="Analyze" type="Success" name="CambiarUbicacionPacking.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Funciones\CambiarUbicacionPacking.resx" />
+  <event action="Analyze" type="Success" name="EntreFechas.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Funciones\EntreFechas.resx" />
+  <event action="Analyze" type="Success" name="PorCodigoCliente.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Funciones\PorCodigoCliente.resx" />
+  <event action="Analyze" type="Success" name="PorEstadoOrdRec.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Funciones\PorEstadoOrdRec.resx" />
+  <event action="Analyze" type="Success" name="PorFecha.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Funciones\PorFecha.resx" />
+  <event action="Analyze" type="Success" name="PorNum.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Funciones\PorNum.resx" />
+  <event action="Analyze" type="Success" name="PorTipoTarea.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Funciones\PorTipoTarea.resx" />
+  <event action="Analyze" type="Success" name="PanelTabs.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\PanelTabs.resx" />
+  <event action="Analyze" type="Success" name="Trazabilidad.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Trazabilidad\Trazabilidad.resx" />
+  <event action="Analyze" type="Success" name="AgregarGrupoOperario.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Ventanas\AgregarGrupoOperario.resx" />
+  <event action="Analyze" type="Success" name="AgregarUsuarioOperario.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Ventanas\AgregarUsuarioOperario.resx" />
+  <event action="Analyze" type="Success" name="CambiarPassword.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Ventanas\CambiarPassword.resx" />
+  <event action="Analyze" type="Success" name="CrearIncidencia.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Ventanas\CrearIncidencia.resx" />
+  <event action="Analyze" type="Success" name="CrearOperario.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Ventanas\CrearOperario.resx" />
+  <event action="Analyze" type="Success" name="CrearRecursoForm.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Ventanas\CrearRecursoForm.resx" />
+  <event action="Analyze" type="Success" name="EditarGrupoOperario.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Ventanas\EditarGrupoOperario.resx" />
+  <event action="Analyze" type="Success" name="EditarOperario.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Ventanas\EditarOperario.resx" />
+  <event action="Analyze" type="Success" name="FormularioAltaProducto.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Ventanas\FormularioAltaProducto.resx" />
+  <event action="Analyze" type="Success" name="FormularioAltaProductoDevolucion.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Ventanas\FormularioAltaProductoDevolucion.resx" />
+  <event action="Analyze" type="Success" name="FormularioAltaProductoRecepcion.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Ventanas\FormularioAltaProductoRecepcion.resx" />
+  <event action="Analyze" type="Success" name="FormularioAltaProductoRegularizacion.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Ventanas\FormularioAltaProductoRegularizacion.resx" />
+  <event action="Analyze" type="Success" name="FormularioBOM.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Ventanas\FormularioBOM.resx" />
+  <event action="Analyze" type="Success" name="FormularioImpresionEtiquetasSSCC.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Ventanas\FormularioImpresionEtiquetasSSCC.resx" />
+  <event action="Analyze" type="Success" name="FrmMostrarHistorialRecurso.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Ventanas\FrmMostrarHistorialRecurso.resx" />
+  <event action="Analyze" type="Success" name="FrmSeleccionOpDate.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Ventanas\FrmSeleccionOpDate.resx" />
+  <event action="Analyze" type="Success" name="VentanaGrid.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Ventanas\VentanaGrid.resx" />
+  <event action="Analyze" type="Success" name="VentanaSeleccionArticulo.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Herramientas\Ventanas\VentanaSeleccionArticulo.resx" />
+  <event action="Analyze" type="Success" name="ImprimirEtiquetas.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\ImprimirEtiquetas.resx" />
+  <event action="Analyze" type="Success" name="MyMessgageBox.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\MyMessgageBox.resx" />
+  <event action="Analyze" type="Success" name="pruebaBotones.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\Pruebas\pruebaBotones.resx" />
+  <event action="Analyze" type="Success" name="SFCierre.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\SFCierre.resx" />
+  <event action="Analyze" type="Success" name="SFDetalles.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\SFDetalles.resx" />
+  <event action="Analyze" type="Success" name="SFDetallesArticulos.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\SFDetallesArticulos.resx" />
+  <event action="Analyze" type="Success" name="SFDetallesN.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\SFDetallesN.resx" />
+  <event action="Analyze" type="Success" name="SFLoginForm.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\SFLoginForm.resx" />
+  <event action="Analyze" type="Success" name="SFPrincipal.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\SFPrincipal.resx" />
+  <event action="Analyze" type="Success" name="ArticulosBaseGridControl.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\UserControls\ArticulosBaseGridControl.resx" />
+  <event action="Analyze" type="Success" name="ArticulosTabControl.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\UserControls\ArticulosTabControl.resx" />
+  <event action="Analyze" type="Success" name="BaseGridControl.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\UserControls\BaseGridControl.resx" />
+  <event action="Analyze" type="Success" name="CheckBoxNameValue.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\UserControls\CheckBoxNameValue.resx" />
+  <event action="Analyze" type="Success" name="DataDialog.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\UserControls\DataDialog.resx" />
+  <event action="Analyze" type="Success" name="DataDialogConfigurarArticulos.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\UserControls\DataDialogConfigurarArticulos.resx" />
+  <event action="Analyze" type="Success" name="ExportarForm.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\UserControls\ExportarForm.resx" />
+  <event action="Analyze" type="Success" name="FiltroInicialForm.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\UserControls\FiltroInicialForm.resx" />
+  <event action="Analyze" type="Success" name="GridViewControl.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\UserControls\GridViewControl.resx" />
+  <event action="Analyze" type="Success" name="ArticulosControl.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\UserControls\Mantenimientos\ArticulosControl.resx" />
+  <event action="Analyze" type="Success" name="ClientesPedidosLineasControl.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\UserControls\Mantenimientos\ClientesPedidosLineasControl.resx" />
+  <event action="Analyze" type="Success" name="EstadoExistenciasControl.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\UserControls\Mantenimientos\EstadoExistenciasControl.resx" />
+  <event action="Analyze" type="Success" name="EstadoFabricacionControl.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\UserControls\Mantenimientos\EstadoFabricacionControl.resx" />
+  <event action="Analyze" type="Success" name="EstadoMaquinaControl.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\UserControls\Mantenimientos\EstadoMaquinaControl.resx" />
+  <event action="Analyze" type="Success" name="EstadoRecepcionControl.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\UserControls\Mantenimientos\EstadoRecepcionControl.resx" />
+  <event action="Analyze" type="Success" name="PackingList.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\UserControls\Mantenimientos\Historicos\PackingList.resx" />
+  <event action="Analyze" type="Success" name="PedidoProEstadoControl.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\UserControls\Mantenimientos\PedidoProEstadoControl.resx" />
+  <event action="Analyze" type="Success" name="RumControlGeneralLineas.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\UserControls\Mantenimientos\RumControlGeneralLineas.resx" />
+  <event action="Analyze" type="Success" name="VisorSQLRibbonArticulos.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\UserControls\Mantenimientos\VisorSQLRibbonArticulos.resx" />
+  <event action="Analyze" type="Success" name="NameValue.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\UserControls\NameValue.resx" />
+  <event action="Analyze" type="Success" name="TitleBarControl.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\UserControls\TitleBarControl.resx" />
+  <event action="Analyze" type="Success" name="TopControl.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\UserControls\TopControl.resx" />
+  <event action="Analyze" type="Success" name="VentanaGuardarEstilo.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Presentation\UserControls\VentanaGuardarEstilo.resx" />
+  <event action="Analyze" type="Success" name="customFiltersStrings.en.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Properties\customFiltersStrings.en.resx" />
+  <event action="Analyze" type="Success" name="customFiltersStrings.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Properties\customFiltersStrings.resx" />
+  <event action="Analyze" type="Success" name="NombresFormularios.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Properties\NombresFormularios.resx" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Properties\Resources.resx" />
+  <event action="Analyze" type="Success" name="strings.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Properties\strings.resx" />
+  <event action="Analyze" type="Success" name="telerikStrings.en.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Properties\telerikStrings.en.resx" />
+  <event action="Analyze" type="Success" name="telerikStrings.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Properties\telerikStrings.resx" />
+  <event action="Analyze" type="Success" name="Report1.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Report1.resx" />
+  <event action="Analyze" type="Success" name="ReportViewerForm1.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\ReportViewerForm1.resx" />
+  <event action="Analyze" type="Success" name="RumboSGA" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\RumboSGA.csproj" />
+  <event action="Analyze" type="Success" name="organizador" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\organizador.sln" />
+  <event action="Backup" type="Success" name="RumboSGA" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\RumboSGA.csproj" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\RumboSGA.csproj" />
+  <event action="Upgrade" type="Success" name="Report1.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\Report1.resx" />
+  <event action="Upgrade" type="Success" name="ReportViewerForm1.resx" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\ReportViewerForm1.resx" />
+  <event action="Upgrade" type="Success" name="RumboSGA" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\Backup\RumboSGA\RumboSGA.csproj" />
+  <event action="Upgrade" type="Success" name="organizador" path="C:\Users\tolmeda\Documents\GitHub\Rumbo2020_2.0\organizador\organizador.sln" />
+</log>

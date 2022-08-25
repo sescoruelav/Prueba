@@ -1,0 +1,286 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDPEDIDOCLI",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDPEDIDOCLILIN",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 1,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDARTICULO",
+        "Tipo": "INT",
+        "Control": "CMB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 200,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "TBLARTICULOS",
+          "CampoRelacionado": "IDARTICULO",
+          "CampoMostrado": "DESCRIPCION",
+          "ValorDefecto": "0"
+        }
+      },
+      {
+        "Nombre": "CANTIDAD",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 1,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDUNIDADTIPO",
+        "Tipo": "CHAR(2)",
+        "Control": "CMB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 2,
+        "Ancho": 200,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "TBLUNIDADESTIPO",
+          "CampoRelacionado": "IDUNIDADTIPO",
+          "CampoMostrado": "DESCRIPCION",
+          "ValorDefecto": "0"
+        }
+      },
+      {
+        "Nombre": "CANTIDADUNIDAD",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 2,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "PCTMINCANTIDAD",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 3,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "ATRIB1",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 3,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "ATRIB2",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 4,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "ATRIB3",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 4,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "ATRIB4",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 5,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "ATRIB5",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 5,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "TIPOPREPARACION",
+        "Tipo": "VARCHAR(2)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 6,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "CANTIDADCOMPLETO",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 6,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "NUMPALETSCOMPLETOS",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 7,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "NUMPALETSPICKING",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 7,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "NUMPALETS",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 8,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "IDZONALOGPRINCIPAL",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 8,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "UDS",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 9,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "NUMPICKING",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 9,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "NUMCOMPLETOS",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 10,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "DURSEGUNDOS",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 10,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "RESERVABLANDA",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 11,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "FECHARESERVABLANDA",
+        "Tipo": "DATETIME",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 11,
+        "Ancho": 200,
+        "Alto": 0
+      }
+    ],
+    "From": "TBLPEDIDOSCLILIN",
+    "Data": "[DATA]"
+  }
+]

@@ -1,0 +1,160 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "O.IDOPERARIO",
+        "Etiqueta": "ID",
+        "EtiqIngles": "ID",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "O.NOMBRE",
+        "Etiqueta": "Nombre",
+        "EtiqIngles": "Name",
+        "Tipo": "VARCHAR(20)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "O.APELLIDOS",
+        "Etiqueta": "Apellidos",
+        "EtiqIngles": "Surname",
+        "Tipo": "VARCHAR(40)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 200,
+        "Alto": 0
+      },{
+        "Nombre": "G.IDGRUPO",
+        "Etiqueta": "IDGrupo",
+        "EtiqIngles": "GroupID",
+        "Tipo": "INT",
+        "Control": "CMB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 50,
+        "Alto": 0
+      },{
+        "Nombre": "G.DESCGRUPO",
+        "Etiqueta": "Nombre Grupo",
+        "EtiqIngles": "Group Name",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 200,
+        "Alto": 0
+      },{
+        "Nombre": "U.IDUSUARIO",
+        "Etiqueta": "IDUsuario",
+        "EtiqIngles": "IDUser",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },{
+        "Nombre": "U.NOMUSUARIO",
+        "Etiqueta": "Nombre usuario",
+        "EtiqIngles": "User Name",
+        "Tipo": "VARCHAR(30)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "O.VOLUMEN",
+        "Etiqueta": "Volumen",
+        "EtiqIngles": "Volume",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 3,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "O.STRENGTH",
+        "Etiqueta": "Fuerza",
+        "EtiqIngles": "Strength",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 3,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "O.ULTIMAMAQUINA",
+        "Etiqueta": "UltimaMaquina",
+        "EtiqIngles": "LastMachine",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 4,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "O.ULTIMAMODIFICACION",
+        "Etiqueta": "UltimaModificacion",
+        "EtiqIngles": "LastModification",
+        "Tipo": "NVARCHAR(27)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 4,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "O.PERMISOREGULARIZACION",
+        "Etiqueta": "PermisoRegularizacion",
+        "EtiqIngles": "RegularizationPermission",
+        "Tipo": "VARCHAR(2)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 5,
+        "Ancho": 50,
+        "Alto": 0
+      }
+    ],
+    "From": "TBLOPERARIOS O LEFT JOIN TBLUSUARIOOPERARIO UO ON o.IDOPERARIO=UO.IDOPERARIO LEFT JOIN RUMUSUARIOS U ON U.IDUSUARIO = UO.IDUSUARIO LEFT JOIN RUMUSUGRUPO UG ON UG.IDUSUARIO = U.IDUSUARIO LEFT JOIN RUMGRUPOS G ON G.IDGRUPO = UG.IDGRUPO",
+    "Data": "[DATA]"
+  }
+]

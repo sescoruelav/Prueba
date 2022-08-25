@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TreeView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+          LineStyle="Solid" SpacingBetweenNodes="-1" ItemHeight="28" AllowDrop="true" BackColor="191; 219; 255"
+          LineColor="204; 204; 204" ShowExpandCollapse="false">
+
+  <Nodes name ="filtro" Expanded="false" Text="Filtro" Font="(ninguno)">
+    <Nodes Name="packing" Text="Packing" Font="(ninguno)" />
+    <Nodes Name="pedidosCliente" Text="Pedidos Cliente" Font="(ninguno)"/>
+    <Nodes Name="ordenesRecogida" Text="Ordenes Recogida" Font="(ninguno)"/>
+    <Nodes Name="ordenesCarga" Text="Ordenes Carga" Font="(ninguno)"/>
+    <Nodes Name="movimientosSalida" Text="Movimientos Salida" Font="(ninguno)"/>
+    <Nodes Name="matricula" Text="Matricula" Font="(ninguno)"/>
+    <Nodes Name="articulo" Text="Articulo" Font="(ninguno)"/>
+    <Nodes Name="pedidosProveedor" Text="Pedidos Proveedor" Font="(ninguno)"/>
+    <Nodes Name="recepciones" Text="Recepciones" Font="(ninguno)"/>
+    <Nodes Name="devolucionesCliente" Text="Devoluciones Cliente" Font="(ninguno)"/>
+    <Nodes Name="devolucionesProveedor" Text="Devoluciones Proveedor" Font="(ninguno)"/>
+    <Nodes Name="ordenesFabricacion" Text="Ordenes Fabricación" Font="(ninguno)"/>
+    <Nodes Name="regularizacionesEntrada" Text="Regularizaciones Entrada" Font="(ninguno)"/>
+    <Nodes Name="regularicacionesSalida" Text="Regularizaciones Salida" Font="(ninguno)"/>
+    <Nodes Name="preavisos" Text="Preavisos" Font="(ninguno)"/>
+    <Nodes Name="maquinas" Text="Máquinas" Font="(ninguno)"/>
+    <Nodes Name="tareasPendientes" Text="Tareas Pendientes" Font="(ninguno)"/>
+  </Nodes>
+  <Nodes name="subFiltro" Expanded="false" Text="Sub Filtro" Font="(ninguno)">
+    <Nodes Name="packingListHoy" Text="Packing List Hoy" Font="(ninguno)"/>
+    <Nodes Name="packingPendienteCarga" Text="Packing List Pendiente de Carga" Font="(ninguno)"/>
+    <Nodes Name="packingPendienteCargaHoy" Text="Packing List Pendiente de Carga Hoy" Font="(ninguno)"/>
+    <Nodes Name="packingPendienteCargaHoySinOrden" Text="Packing List Pendiente de Carga Hoy Sin Orden de Carga" Font="(ninguno)"/>
+    <Nodes Name="packingPendienteCargaHoyConOrden" Text="Packing List Pendiente de Carga Hoy Con Orden de Carga" Font="(ninguno)"/>
+    <Nodes Name="pedidosProveedor" Text="Packing List Por Número Packing List" Font="(ninguno)"/>
+    <Nodes Name="pedidosProveedor" Text="Packing List Por Fecha Creación" Font="(ninguno)"/>
+    <Nodes Name="pedidosProveedor" Text="Packing List por Ubicación Actual" Font="(ninguno)"/>
+    <Nodes Name="pedidosProveedor" Text="Packing List por Estados" Font="(ninguno)"/>
+  </Nodes>
+</TreeView>

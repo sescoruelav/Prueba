@@ -1,0 +1,169 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "IDAGENCIA",
+        "Etiqueta": "ID",
+        "EtiqIngles": "ID",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "CODIGO",
+        "Etiqueta": "Codigo",
+        "EtiqIngles": "Code",
+        "Tipo": "VARCHAR(20)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "NOMBRE",
+        "Etiqueta": "Nombre",
+        "EtiqIngles": "Name",
+        "Tipo": "VARCHAR(120)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "DIRECCION",
+        "Etiqueta": "Direccion",
+        "EtiqIngles": "Address",
+        "Tipo": "VARCHAR(120)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 1,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "POBLACION",
+        "Etiqueta": "Poblacion",
+        "EtiqIngles": "City",
+        "Tipo": "VARCHAR(100)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 2,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "CODIGOPOSTAL",
+        "Etiqueta": "Codigo Postal",
+        "EtiqIngles": "Postal Code",
+        "Tipo": "VARCHAR(20)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 2,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "PROVINCIA",
+        "Etiqueta": "Provincia",
+        "EtiqIngles": "Province",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 3,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "PAIS",
+        "Etiqueta": "Pais",
+        "EtiqIngles": "Country",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 3,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "TELEFONO",
+        "Etiqueta": "Telefono",
+        "EtiqIngles": "Phone",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 4,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "FAX",
+        "Etiqueta": "Fax",
+        "EtiqIngles": "Fax",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 4,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "CIF",
+        "Tipo": "VARCHAR(50)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 5,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "muelle",
+        "Etiqueta": "Muelle",
+        "EtiqIngles": "Dock",
+        "Tipo": "INT",
+        "Control": "CMB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 5,
+        "Ancho": 50,
+        "Alto": 0,
+        "EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "TBLHUECOS",
+          "CampoRelacionado": "IDHUECO",
+          "CampoMostrado": "DESCRIPCION",
+          "ValorDefecto": "0"
+        }
+      }
+    ],
+    "From": "TBLAGENCIAS",
+    "Data": "[DATA]"
+  }
+]

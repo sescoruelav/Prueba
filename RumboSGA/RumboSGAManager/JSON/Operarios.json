@@ -1,0 +1,225 @@
+[
+  {
+    "Scheme": [
+      {
+        "Nombre": "op.IDOPERARIO",
+        "Etiqueta": "ID",
+        "EtiqIngles": "ID",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+	  
+	  {
+        "Nombre": "usu.NOMUSUARIO",
+        "Etiqueta": "Usuario",
+        "EtiqIngles": "User",
+        "Tipo": "VARCHAR(30)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 5,
+        "Ancho": 50,
+        "Alto": 0
+      },
+	  {
+        "Nombre": "gr.IDGRUPO",
+        "Etiqueta": "IDGrupo",
+        "EtiqIngles": "IDGroup",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": false,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 50,
+        "Alto": 0,
+		"EsFK": true,
+		"CmbObject": {
+          "TablaRelacionada": "RUMGRUPOS",
+          "CampoRelacionado": "IDGRUPO",
+          "CampoMostrado": "IDGRUPO",
+          "ValorDefecto": "0"
+        }
+      },
+	  
+	   {
+        "Nombre": "gr.DESCGRUPO",
+        "Etiqueta": "Nombre Grupo",
+        "EtiqIngles": "Group Name",
+        "Tipo": "VARCHAR(20)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 5,
+        "Ancho": 50,
+        "Alto": 0,
+		"EsFK": true,
+        "CmbObject": {
+          "TablaRelacionada": "RUMGRUPOS",
+          "CampoRelacionado": "IDGRUPO",
+          "CampoMostrado": "DESCGRUPO",
+          "ValorDefecto": "0"
+        }
+      },
+	  
+	   {
+        "Nombre": "usu.IDUSUARIO",
+        "Etiqueta": "IDUsuario",
+        "EtiqIngles": "IDUser",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": true,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+	 
+      {
+        "Nombre": "op.NOMBRE",
+        "Etiqueta": "Nombre",
+        "EtiqIngles": "Name",
+        "Tipo": "VARCHAR(20)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 0,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "op.APELLIDOS",
+        "Etiqueta": "Apellidos",
+        "EtiqIngles": "Surname",
+        "Tipo": "VARCHAR(120)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 1,
+        "Ancho": 200,
+        "Alto": 0
+      },
+	 
+	  {
+        "Nombre": "op.PASSWORD",
+        "Etiqueta": "Password",
+        "EtiqIngles": "Password",
+        "Tipo": "char(5)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 1,
+        "Ancho": 200,
+        "Alto": 0
+      },
+      {
+        "Nombre": "op.MODOPANT",
+        "Etiqueta": "ModoPant",
+        "EtiqIngles": "PantMode",
+        "Tipo": "VARCHAR(2)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 2,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "op.IDESTADO",
+        "Etiqueta": "Estado",
+        "EtiqIngles": "Status",
+        "Tipo": "CHAR(2)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 2,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "op.VOLUMEN",
+        "Etiqueta": "Volumen",
+        "EtiqIngles": "Volume",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 3,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "op.STRENGTH",
+        "Etiqueta": "Fuerza",
+        "EtiqIngles": "Strength",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 3,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "op.ULTIMAMAQUINA",
+        "Etiqueta": "UltimaMaquina",
+        "EtiqIngles": "LastMachine",
+        "Tipo": "INT",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 0,
+        "Fila": 4,
+        "Ancho": 100,
+        "Alto": 0
+      },
+      {
+        "Nombre": "op.ULTIMAMODIFICACION",
+        "Etiqueta": "UltimaModificacion",
+        "EtiqIngles": "LastModification",
+        "Tipo": "NVARCHAR(27)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 4,
+        "Ancho": 50,
+        "Alto": 0
+      },
+      {
+        "Nombre": "op.PERMISOREGULARIZACION",
+        "Etiqueta": "PermisoRegularizacion",
+        "EtiqIngles": "RegularizationPermission",
+        "Tipo": "VARCHAR(2)",
+        "Control": "TB",
+        "EsPK": false,
+        "EsModificable": true,
+        "Columna": 1,
+        "Fila": 5,
+        "Ancho": 50,
+        "Alto": 0
+      }
+	  
+	  
+      
+    ],
+    "From": " (TBLOPERARIOS OP left join TBLUSUARIOOPERARIO usuop on op.IDOPERARIO = usuop.IDOPERARIO) left join RUMUSUARIOS usu on usuop.IDUSUARIO=usu.IDUSUARIO left join rumusugrupo usugr on usu.IDUSUARIO=usugr.IDUSUARIO left join rumgrupos gr on usugr.IDGRUPO=gr.IDGRUPO",
+    "Data": "[DATA]"
+  }
+]
